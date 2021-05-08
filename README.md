@@ -1,4 +1,4 @@
-# Yin-&-Yang-Theme
+# Yin-and-Yang-Theme
 
 ## Showcase
 
