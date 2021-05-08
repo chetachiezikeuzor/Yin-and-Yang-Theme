@@ -5,8 +5,8 @@
 ** ██║                     ██║   ██║██════               ██║             ██║    ██║    ██║                      ██║   ██║██      
 ** ╚██████╗██       ██║██████║           ██║             ██        ██  ╝╚██████╗ ██       ██║██   
 **     ╚═════╝ ╚═        ═╝ ╚═════╝           ╚═╝                 ╚═════╝     ╚═════╝ ╚═        ═╝ ╚═    
-**  —— Name: Cotton Candy 
-**  —— GitHub Repo: https://github.com/chetachiezikeuzor/Cotton-Candy-Theme
+**  —— Name: Yin and Yang 
+**  —— GitHub Repo: https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme
 **  —— Made with ❤ by Chetachi 
 ** --------------------------------------------------------------- */
 
@@ -106,20 +106,20 @@
     --dark1: #3b4252;
     --dark2:	#434c5e;
     --dark3:	#4c566a;
-    --dark4: #0f0e14; /* #0f0e14 #0b0f14 #161A21; #181B20 🌟 trying a new one but this is the previous; #2c2c34;*/
-    --dark5:	#0b0b0b;  /* #161A21; #0b0b0b;   #181B20;*/
+    --dark4: #0f0e14; 
+    --dark5:	#0b0b0b;  
 
     --light0: #d8dee9;
     --light1: #e5e9f0;
     --light2:	#cacfd9;
     --light3:	#ffffff;
-    --light4:	#f9fafb; /*#f7faff; #EFF1F5*/
+    --light4:	#f9fafb; 
     --light5: #eff1f5;
 
-    --frost0:	#e69ca2; /*#8fbcbb or #e8b4b8 or #e69ca2 or #aeb9d1// button color*/
+    --frost0:	#e69ca2; 
     --frost1: #88c0d0;
-    --frost2:	#81a1c1; /*#f1ceD0 or #f0e1e2*/
-    --frost3:	#f1ceD0; /*#5e81ac*/
+    --frost2:	#81a1c1; 
+    --frost3:	#f1ceD0; 
 
    /*----------------------------------------------------------------
     COLORS
@@ -261,7 +261,7 @@
     --background-primary: var(--light3);
     --background-primary-alt: var(--light4);
     --background-secondary: var(--light3); /* light5 !important*/
-    --background-secondary-alt: var(--light4);  /* var(--light5) light1 !important*/
+    --background-secondary-alt: var(--light5);  /* var(--light5) light1 !important*/
     --background-modifier-error: #e60026;
     --background-modifier-error-hover: red;
     --background-modifier-border: var(--light1);
@@ -769,8 +769,7 @@ ol, ul{
   left: 10px;
   border: 2px solid var(--background-modifier-border);
   background: var(--background-primary-alt);
-  /*box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);*/
-  box-shadow: none;
+  /*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);*/
   max-width: 275px;
   font-weight: 500;
   border-radius: 4px;
@@ -1164,6 +1163,26 @@ a:hover,
   text-decoration: none;
 }
 
+.nav-files-container {
+  flex-grow: 1 !important;
+  overflow-y: auto !important;
+  padding-left: 7px;  /* reduce to 0 for more space */
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+/*
+.nav-folder-children { 
+  column-width:150px;
+  column-rule: 1px solid var(--border);
+}*/
+
+/*.workspace-split.mod-left-split .view-content, .workspace-split.mod-right-split .view-content*/
+.workspace-split.mod-left-split .view-content, .workspace-split.mod-right-split .view-content{ /*findit*/
+	/*column-width:150px;
+  column-rule: 1px solid var(--border);*/
+}
+
 /* preview */
 
 .markdown-preview-view .internal-link {
@@ -1249,17 +1268,17 @@ aside > p {
   font-weight: 600 !important;
 }
 
-
-strong > em { /*italics wrapped in bold*/
+/*
+strong > em { 
   color: var(--palegreen);
   font-weight: 600;
 }
 
 
-em > strong { /*bold wrapped in italics*/
+em > strong { 
   color: var(--purple) !important;
   font-weight: 600;
-}
+}*/
 
 /* italics */
 
@@ -2892,6 +2911,11 @@ div.popover.hover-popover .markdown-embed-content .markdown-preview-section {
   background-color: transparent;
 }
 
+.workspace-split.mod-root::-webkit-scrollbar,
+.workspace-split.mod-vertical.mod-root ::-webkit-scrollbar{
+	display:none;
+}
+
 /*----------------------------------------------------------------
 SUGGESTIONS
 ----------------------------------------------------------------*/
@@ -2920,6 +2944,12 @@ SUGGESTIONS
 /*----------------------------------------------------------------
 WORKSPACE - see later
 ----------------------------------------------------------------*/
+.workspace-ribbon.mod-left.is-collapsed {
+  border-right-color: var(--background-secondary-alt);
+}
+.workspace-ribbon.mod-right.is-collapsed {
+  border-left-color: var(--background-secondary-alt);
+}
 
 .view-header-icon {
     color: var(--text-muted);
@@ -2977,6 +3007,12 @@ WORKSPACE - see later
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
 	border-bottom-right-radius: 0px;
+}
+
+.workspace-split.mod-root > .workspace-leaf:first-of-type .workspace-leaf-content,
+.workspace-split.mod-root > .workspace-leaf:last-of-type .workspace-leaf-content {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
 }
 
 /*----------------------------------------------------------------
@@ -3360,7 +3396,7 @@ ANDY'S MODE SLIDING PANES v3.2.1 (death_au's plugin)
 
 body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf,
 body.plugin-sliding-panes .workspace-split.mod-vertical > .workspace-leaf {
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
 /* fill title container for better visual separation */
@@ -3397,14 +3433,14 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
 body.plugin-sliding-panes .mod-horizontal .workspace-leaf {
   box-shadow: none !important;
 }
-
+/*findit
 body.plugin-sliding-panes .workspace-split.mod-left-split {
   border-right: 1px solid var(--background-modifier-border);
 }
 
 body.plugin-sliding-panes .workspace-split.mod-right-split {
   border-left: 1px solid var(--background-modifier-border);
-}
+}*/
 
 body:not(.plugin-sliding-panes-rotate-header) .workspace > .mod-root > .workspace-leaf.mod-active > .workspace-leaf-content > .view-header {
   border-right: none;
@@ -3500,7 +3536,7 @@ body.plugin-sliding-panes.hider-frameless:not(.hider-ribbon):not(.plugin-sliding
 
 /*FRONT MATTER (META) BKGD COLOR*/
 .frontmatter-container{ 
-  background-color: var(--background-primary-alt); /*background-color: var(--background-tertiary); - not working color*/
+  background-color: var(--background-secondary); /*background-color: var(--background-tertiary); - not working color*/
   transition: 350ms;
 }
 
@@ -3635,7 +3671,7 @@ body.plugin-sliding-panes.hider-frameless:not(.hider-ribbon):not(.plugin-sliding
 .full-file-names .search-result-file-title {
   text-overflow: unset;
   white-space: normal;
-  line-height: 1.4;
+  line-height: 1.2em;
 }
 
 .full-file-names .nav-file-title {
@@ -3643,13 +3679,13 @@ body.plugin-sliding-panes.hider-frameless:not(.hider-ribbon):not(.plugin-sliding
 }
 
 /*Text Width*/
-
+.nav-folder-title,
 .nav-file-title {
   width: calc(100% - 30px);
 }
 
 /*Text Cut Off*/
-
+.nav-folder-title-content,
 .nav-file-title-content {
   width: 100%;
   white-space: nowrap;
@@ -3855,13 +3891,13 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 /* Set the left nav background to different color from ribbon, and give a curved corner with statusbar */
 .side-dock.mod-left .side-dock-plugin-panel {
   background-color: var(--background-nav);
-  border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 0px;
 }
 
 /* Set the right nav background to different color from ribbon, and give a curved corner with statusbar */
 .side-dock.mod-right .side-dock-plugin-panel {
   background-color: var(--background-nav);
-  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 0px;
 }
 
 /* Left nav ribbon background color */
@@ -3974,18 +4010,20 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 /*Status bar */
 
 .status-bar-item {
-  padding: 0 0 0 5px;
+  padding: 0 0 0 8px;
 }
 
 .theme-light .status-bar-item:after{
-	padding-left: 5px;
+	padding-left: 8px;
+	vertical-align: -.2em;
 	color: var(--text-normal);
 	content: "\ee5a";
 	font-family: boxicons;
 }
 
 .theme-dark .status-bar-item:after{
-	padding-left: 5px;
+	padding-left: 8px;
+	vertical-align: -.2em;
 	color: var(--text-normal);
 	opacity: .9;
 	content: "\ee5a";
@@ -4314,6 +4352,11 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
   font-variant: normal;
   line-height: 1;
 }
+/*.view-header-icon > svg, .workspace-tab-header, .side-dock-ribbon-action, .side-dock-ribbon-tab > svg, .side-dock-ribbon-tab, .view-header-icon, .workspace-ribbon-collapse-btn, .side-dock-ribbon-action .is-active, .side-dock-collapse-btn*/
+.view-header-icon > svg, .view-header-icon .nav-action-button{
+	height: 17.5px;
+	width: 17.5px;
+}
 
 .workspace-leaf-content[data-type="audio"] .view-header .view-header-icon
   > svg,
@@ -4329,6 +4372,16 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
   > svg{
   	display: none;
 }
+
+.workspace-leaf-content[data-type="audio"] .view-header .view-header-icon:after,
+.workspace-leaf-content[data-type="image"] .view-header .view-header-icon:after,
+.workspace-leaf-content[data-type="video"] .view-header .view-header-icon:after,
+.workspace-leaf-content[data-type="markdown"] .view-header .view-header-icon:after,
+.workspace-leaf-content[data-type="kanban"] .view-header .view-header-icon:after,
+.workspace-leaf-content[data-type="excalidraw"] .view-header .view-header-icon:after{
+	font-size: 18px !important;
+}
+
 
 .workspace-leaf-content[data-type="audio"] .view-header .view-header-icon:after{
 	content: "\ea6a";
@@ -6059,7 +6112,6 @@ DAILY PLANNER PLUGIN
     --russian-violet: #3e1f47ff;
     --russian-violet-2: #4d194dff;
 }
-
 .header_title.svelte-e43ld1.svelte-e43ld1, .ei_Title.svelte-e43ld1.svelte-e43ld1, .ce_title.svelte-e43ld1.svelte-e43ld1,
 .ei_Copy.svelte-e43ld1.svelte-e43ld1, .ei_Title.svelte-e43ld1.svelte-e43ld1 {
     color: var(--text-normal) !important;
@@ -6132,6 +6184,10 @@ DAILY PLANNER PLUGIN
 	stroke: var(--red) !important;
 }
 
+.mermaid .task{
+	font-size: 17px !important;
+}
+
 .mermaid text{
 	font-size: 13px !important;
 	line-height: 1.75 !important;
@@ -6151,11 +6207,12 @@ input#auto-scroll.toggle.svelte-e43ld1{
 	font: Space Grotesk !important;
 	background-image: none !important;
 	box-shadow: none !important;
+	width: 18% !important;
 }
 
 #scroll-controls.svelte-e43ld1 .toggle.svelte-e43ld1:before {
-	width: 18px !important;
-	height: 18px !important;
+	width: 17px !important;
+	height: 16px !important;
     border-radius: 3px !important;
     font-size: 10px !important;
     font-family: Space Grotesk !important;
@@ -6279,9 +6336,13 @@ KANBAN PLUGIN
 	content: "\eb13"; /*"\ea22";*/
 }
 
-.kanban-plugin__icon[data-icon="vertical-three-dots"]:after,
 .kanban-plugin__icon[data-icon="gear"]:after{
 	content: "\e9d0";
+}
+
+.kanban-plugin__icon[data-icon="vertical-three-dots"]:after{
+	font-size: 17px;
+	content: "\ea16";
 }
 
 .kanban-plugin__icon[data-icon="sheets-in-box"]:after{
@@ -6323,11 +6384,20 @@ body .kanban-plugin{
 	margin: .25em 0em !important;
 	display: inline-block;
 }
-
+ /*findit*/
 .kanban-plugin__new-item-button,
 .kanban-plugin__new-lane-button{
     height: 3em !important;
     background: var(--background-primary) !important;
+}
+
+.kanban-plugin__item button.kanban-plugin__item-prefix-button, 
+.kanban-plugin__item button.kanban-plugin__item-postfix-button, 
+.kanban-plugin__lane button.kanban-plugin__lane-settings-button{
+	box-shadow: none;
+	border: none !important;
+	padding: 4px !important;
+	line-height: 1em;
 }
 
 .kanban-plugin__new-lane-button{
