@@ -1,4 +1,4 @@
-# Cotton-Candy-Theme
+# Yin-&-Yang-Theme
 
 ## Showcase
 
