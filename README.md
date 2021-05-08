@@ -4,6 +4,8 @@
 
 ### Dark Mode
 #### Highlighting In Dark Mode
+
+
 <img width="1680" alt="Dark" src="https://user-images.githubusercontent.com/79069364/117465963-d2c27500-af17-11eb-8130-021841e1e69e.png">
 
 #### Tables In Dark Mode
@@ -15,6 +17,8 @@
 
 ### Light Mode
 #### Highlighting In Light Mode
+
+
 <img width="1680" alt="Light" src="https://user-images.githubusercontent.com/79069364/117465983-d9e98300-af17-11eb-87e0-7503ec492e3e.png">
 
 #### Tables In Light Mode
