@@ -4,13 +4,12 @@
 
 ### Dark Mode
 #### Highlighting In Dark Mode
-<img width="1680" alt="Dark" src="https://user-images.githubusercontent.com/79069364/117465963-d2c27500-af17-11eb-8130-021841e1e69e.png">
+<img width="1680" alt="Screen Shot 2021-05-13 at 8 31 35 PM" src="https://user-images.githubusercontent.com/79069364/118207459-53a6d280-b42a-11eb-8957-b738d8e65831.png">
 
 #### Tables In Dark Mode
-<img width="1680" alt="Dark Mode 2" src="https://user-images.githubusercontent.com/79069364/116840970-56d5cf00-ab9d-11eb-87bc-021d1441883b.png">
 
 #### Nested Lists In Dark Mode
-<img width="1680" alt="Dark Mode 3" src="https://user-images.githubusercontent.com/79069364/116840975-5b01ec80-ab9d-11eb-91a4-d6e95ceaf126.png">
+
 
 
 ### Light Mode
@@ -18,8 +17,5 @@
 <img width="1680" alt="Screen Shot 2021-05-13 at 9 20 03 AM" src="https://user-images.githubusercontent.com/79069364/118205935-286eb400-b427-11eb-9605-a210f000717f.png">
 
 #### Tables In Light Mode
-<img width="1680" alt="Light Mode 2" src="https://user-images.githubusercontent.com/79069364/116840991-61906400-ab9d-11eb-89c8-1106af1cf0cc.png">
 
 #### Nested Lists In Light Mode
-<img width="1680" alt="Light Mode 3" src="https://user-images.githubusercontent.com/79069364/116840995-63f2be00-ab9d-11eb-8a44-83757d8976d8.png">
-
