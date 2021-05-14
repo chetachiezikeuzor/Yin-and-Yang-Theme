@@ -4,8 +4,6 @@
 
 ### Dark Mode
 #### Highlighting In Dark Mode
-
-
 <img width="1680" alt="Dark" src="https://user-images.githubusercontent.com/79069364/117465963-d2c27500-af17-11eb-8130-021841e1e69e.png">
 
 #### Tables In Dark Mode
@@ -17,9 +15,7 @@
 
 ### Light Mode
 #### Highlighting In Light Mode
-
-
-<img width="1680" alt="Light" src="https://user-images.githubusercontent.com/79069364/117465983-d9e98300-af17-11eb-87e0-7503ec492e3e.png">
+<img width="1680" alt="Screen Shot 2021-05-13 at 9 20 03 AM" src="https://user-images.githubusercontent.com/79069364/118205935-286eb400-b427-11eb-9605-a210f000717f.png">
 
 #### Tables In Light Mode
 <img width="1680" alt="Light Mode 2" src="https://user-images.githubusercontent.com/79069364/116840991-61906400-ab9d-11eb-89c8-1106af1cf0cc.png">
