@@ -19,3 +19,8 @@
 #### Tables In Light Mode
 
 #### Nested Lists In Light Mode
+
+#How To Install
+Find this theme in the Obsidian's community themes browser under Settings > Appearance > Themes.
+
+Alternatively, download Solarized.css to .obsidian/themes in your Vault folder and activate it under Settings > Appearance. (For older versions of Obsidian that do not support themes yet, rename Solarized.css to obsidian.css and place it in the root of your Vault.)
