@@ -9,6 +9,6 @@
 <img width="1680" alt="Screen Shot 2021-05-13 at 9 20 03 AM" src="https://user-images.githubusercontent.com/79069364/118205935-286eb400-b427-11eb-9605-a210f000717f.png">
 
 # How To Install
-Find this theme in the Obsidian's community themes browser under Settings > Appearance > Themes.
+Find this theme in the Obsidian's community themes browser under `Settings` > `Appearance` > `Themes`.
 
-Alternatively, download Solarized.css to .obsidian/themes in your Vault folder and activate it under Settings > Appearance. (For older versions of Obsidian that do not support themes yet, rename Solarized.css to obsidian.css and place it in the root of your Vault.)
+Alternatively, download Yin and Yang.css to .obsidian/themes in your Vault folder and activate it under `Settings` > `Appearance`. (For older versions of Obsidian that do not support themes yet, rename Yin and Yang.css to obsidian.css and place it in the root of your Vault.)
