@@ -21,6 +21,10 @@ I'm much more of a light mode > dark mode kind of person but having Yin and Yang
 
 ## Features
 
+### Graph
+
+
+
 # How To Install
 Find this theme in the Obsidian's community themes browser under `Settings` > `Appearance` > `Themes`.
 
