@@ -1,11 +1,13 @@
+<img width="1549" alt="Screen Shot 2021-05-19 at 2 52 18 PM" src="https://user-images.githubusercontent.com/79069364/118875630-e5429400-b8b1-11eb-93e8-9041ed7b810b.png">
 # Yin and Yang Obsidian Theme
+I'm much more of a light mode user than a dark mode user but having Yin and Yang in dark mode with translucent window on is just gorgeous!
 
 ## Plugins You'll Love
 - Sliding Panes : 
 - Focus Mode : 
 - Hider : Hides certain UI elements
 
-
+<img width="1549" alt="Screen Shot 2021-05-19 at 2 52 18 PM" src="https://user-images.githubusercontent.com/79069364/118875630-e5429400-b8b1-11eb-93e8-9041ed7b810b.png">
 <img width="1487" alt="Screen Shot 2021-05-19 at 2 22 51 PM" src="https://user-images.githubusercontent.com/79069364/118874113-29349980-b8b0-11eb-8359-3e4515618d6b.png">
 <img width="1480" alt="Screen Shot 2021-05-19 at 2 25 11 PM" src="https://user-images.githubusercontent.com/79069364/118874127-2b96f380-b8b0-11eb-8c7a-d18be87436df.png">
 
