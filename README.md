@@ -1,4 +1,7 @@
 # Yin and Yang
+<img width="1487" alt="Screen Shot 2021-05-19 at 2 22 51 PM" src="https://user-images.githubusercontent.com/79069364/118874113-29349980-b8b0-11eb-8359-3e4515618d6b.png">
+<img width="1480" alt="Screen Shot 2021-05-19 at 2 25 11 PM" src="https://user-images.githubusercontent.com/79069364/118874127-2b96f380-b8b0-11eb-8c7a-d18be87436df.png">
+
 
 ## Showcase
 ### Dark Mode
