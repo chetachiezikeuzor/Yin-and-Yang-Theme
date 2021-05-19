@@ -1,4 +1,3 @@
-<img width="1549" alt="Screen Shot 2021-05-19 at 2 52 18 PM" src="https://user-images.githubusercontent.com/79069364/118875630-e5429400-b8b1-11eb-93e8-9041ed7b810b.png">
 # Yin and Yang Obsidian Theme
 I'm much more of a light mode user than a dark mode user but having Yin and Yang in dark mode with translucent window on is just gorgeous!
 
