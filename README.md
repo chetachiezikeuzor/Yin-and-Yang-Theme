@@ -2,6 +2,7 @@
 I'm much more of a light mode > dark mode kind of person but having Yin and Yang in dark mode with translucent window on is just gorgeous!
 
 ## Plugins You'll Love
+- Style Settings I've added support for this setting so that you can customize the theme as you wish.
 - Sliding Panes : 
 - Focus Mode : 
 - Hider : Hides certain UI elements
