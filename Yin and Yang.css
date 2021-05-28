@@ -822,12 +822,6 @@ opacity: .5;
 color: inherit;
 }
 
-@media, print {
-hr{
-  display: none;
-}
-}
-
 .mermaid rect{
 fill: var(--background-tertiary) !important;
 }
@@ -1435,7 +1429,7 @@ transition: background 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border 0
 }
 
 .graph-controls .checkbox-container.is-enabled {
-background-color: var(--checkbox-after);/
+background-color: var(--checkbox-after);
 }
 
 .graph-controls .checkbox-container:after {
@@ -3707,12 +3701,6 @@ body.plugin-sliding-panes .workspace-split.mod-vertical > .workspace-leaf {
 box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-/*gets rid of left workspace border of first note*/
-body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf:first-of-type > .workspace-leaf-content > .view-header{
-/*border-left: 1px solid transparent !important; 
-border-right: 1px solid transparent !important; */
-}
-
 /* fill title container for better visual separation */
 body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header {
 background-color: var(--background-primary);
@@ -3770,11 +3758,6 @@ border-bottom: 1px solid var(--background-primary-alt) !important;
 
 body.plugin-sliding-panes.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header{
 border-right: solid 1px var(--background-modifier-border) !important; 
-}
-
-/*highlight current leaf (in rotated headers)*/
-body.plugin-sliding-panes.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf.mod-active > .workspace-leaf-content > .view-header {
-/*border-right: 3px solid var(--paleblue) !important;*/
 }
 
 .workspace-leaf-resize-handle {
@@ -5863,7 +5846,7 @@ padding: 0;
 
 #calendar-container .arrow {
 color: var(--text-faint);
-pointer: var(--cursor);
+cursor: var(--cursor);
 }
 
 #calendar-container .year {
@@ -5872,7 +5855,7 @@ color: var(--paleblue) !important;
 
 #calendar-container .day {
 transition: 100ms !important;
-pointer: var(--vim-cursor);
+cursor: var(--vim-cursor);
 }
 
 #calendar-container .arrow:hover > svg {
