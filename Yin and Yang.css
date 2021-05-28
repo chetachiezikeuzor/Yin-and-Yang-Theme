@@ -886,20 +886,6 @@ opacity: 0;
 transition: opacity 100ms ease-in-out;
 }
 
-/*
-body .titlebar{
-opacity: .9;
- -webkit-animation: bgcolor 1s infinite;
-  animation: bgcolor 10s infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-background-color: var(--red);
-}
-
-.titlebar{
-background-color: black;
-}*/
-
 /*----------------------------------------------------------------
 FOUNDATIONS
 ----------------------------------------------------------------*/
