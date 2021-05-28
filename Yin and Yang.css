@@ -2863,7 +2863,6 @@ input.task-list-item-checkbox {
   appearance: none;
   padding: 0;
   cursor: pointer;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' aria-hidden='true' focusable='false' width='1em' height='1em' style='-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);' preserveAspectRatio='xMidYMid meet' viewBox='0 0 24 24'%3e%3cpath d='M10 15.586l-3.293-3.293l-1.414 1.414L10 18.414l9.707-9.707l-1.414-1.414z' fill='white'/%3e%3c/svg%3e ");
   background-color: var(--background-primary-alt);
   border: 1px solid var(--background-modifier-border);
   border-radius: 3px;
@@ -2880,6 +2879,7 @@ input.task-list-item-checkbox:hover {
 input[type=checkbox]:checked,
 input.task-list-item-checkbox:checked {
   background-color: var(--paleblue);
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' aria-hidden='true' focusable='false' width='1em' height='1em' style='-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);' preserveAspectRatio='xMidYMid meet' viewBox='0 0 24 24'%3e%3cpath d='M10 15.586l-3.293-3.293l-1.414 1.414L10 18.414l9.707-9.707l-1.414-1.414z' fill='white'/%3e%3c/svg%3e ");
   border: 1px solid var(--paleblue);
   background-position: center;
   background-repeat: no-repeat;
