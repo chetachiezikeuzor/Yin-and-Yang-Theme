@@ -1,11 +1,9 @@
 # Yin and Yang Obsidian Theme
-I'm much more of a light mode > dark mode kind of person but having Yin and Yang in dark mode with translucent window on is just gorgeous!
+Welcome to the Yin and Yang Obsidian theme! This theme was created to with both dark mode and light mode in mind. Hopefully you too will enjoy the stark contrast in colors.
 
-## Plugins You'll Love
-- Style Settings I've added support for this setting so that you can customize the theme as you wish.
-- Sliding Panes : 
-- Focus Mode : 
-- Hider : Hides certain UI elements
+## Plugins to Use
+- Style Settings: I've only added a few customizable features using this plugin but I will be sure to add more in the next few days.
+- Hider: This will allow you to hide various elements of the Obsidian UI.
 
 ## Showcase
 
