@@ -18,9 +18,6 @@ Welcome to the Yin and Yang Obsidian theme! This theme was created with both dar
 ### Light Mode
 ![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/l2.png)
 
-## Features
-
-
 ## How To Install
 Find this theme in the Obsidian's community themes browser under `Settings` > `Appearance` > `Themes`.
 
