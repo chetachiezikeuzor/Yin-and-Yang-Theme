@@ -6973,18 +6973,17 @@ DANGLING LINKS PLUGIN
 /*----------------------------------------------------------------
 DICTIONARY PLUGIN 
 ----------------------------------------------------------------*/
-
 .workspace-leaf-content[data-type="dictionary-view"]{
 	font-size: .875em;
 }
-.container.svelte-180qotg.svelte-180qotg,
-.container.svelte-jf56lj.svelte-jf56lj{
+
+.results.svelte-14wlot0.svelte-14wlot0{
 	margin: 0em .75em;
 }
 
-.main.svelte-jpkc8o.svelte-jpkc8o.svelte-jpkc8o,
-.main.svelte-fon41p.svelte-fon41p.svelte-fon41p{
-	background-color: var(--background-primary-alt) !important;
+.container.svelte-14wlot0.svelte-14wlot0,
+.main.svelte-nmuzfy.svelte-nmuzfy.svelte-nmuzfy,
+.main.svelte-jpkc8o.svelte-jpkc8o.svelte-jpkc8o{
 	border: 1px solid var(--background-modifier-border);
 }
 
@@ -6994,9 +6993,22 @@ DICTIONARY PLUGIN
 	cursor: pointer;
 }
 
-details[open].svelte-1fio09r summary.svelte-1fio09r~.svelte-1fio09r,
-details[open].svelte-fon41p summary.svelte-fon41p~.svelte-fon41p{
+.definition.svelte-nmuzfy.svelte-nmuzfy.svelte-nmuzfy{
 	margin: 0em 1.25em;
+}
+
+.main.svelte-nmuzfy blockquote.svelte-nmuzfy.svelte-nmuzfy:before {
+  content: "❝";
+  font-size: 2em;
+  margin-right: .05em;
+  line-height: 0.1em;
+  vertical-align: -0.3em;
+}
+
+.main.svelte-nmuzfy blockquote.svelte-nmuzfy.svelte-nmuzfy{
+  line-height: 1.75em;
+  color:  var(--text-muted);
+  border-left: 0.2rem solid var(--background-modifier-border) !important;
 }
 
 /*----------------------------------------------------------------
