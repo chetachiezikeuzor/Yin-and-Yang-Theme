@@ -14,7 +14,7 @@ settings:
     type: heading
     level: 4
   -
-    title: All Backgrounds Customization
+    title: All Side Panes Background Customization
     description: Toggle on to customize backgrounds for all panes. Simply edit the image url within the "url()" function.
     id: all-sides
     type: class-toggle
