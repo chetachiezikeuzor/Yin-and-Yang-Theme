@@ -1,5 +1,5 @@
 # Yin and Yang Obsidian Theme
-Welcome to the Yin and Yang Obsidian theme! This theme was created to with both dark mode and light mode in mind. Hopefully you too will enjoy the stark contrast in colors.
+Welcome to the Yin and Yang Obsidian theme! This theme was created with both dark mode and light mode in mind. Hopefully, you too will enjoy the stark contrast in colors.
 
 ## Plugins to Use
 - Style Settings: I've only added a few customizable features using this plugin but I will be sure to add more in the next few days.
