@@ -13,8 +13,6 @@ Welcome to the Yin and Yang Obsidian theme! This theme was created with both dar
 
 ![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/dark1.png)
 
-![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/light2.png)
-
 ---
 
 | Dark Mode | Light Mode |
