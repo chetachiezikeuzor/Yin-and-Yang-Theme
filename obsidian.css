@@ -1456,13 +1456,17 @@ input[type=range]::-webkit-slider-thumb:active {
 HEADINGS
 ----------------------------------------------------------------*/
 
+/*----------------------------------------------------------------
+HEADINGS
+----------------------------------------------------------------*/
+
 .cm-s-obsidian .cm-header.cm-header-1,
 .markdown-preview-section h1{
     font-family: var(--header-font);
     line-height: 1.2em;
     font-weight: 750;
     font-size: 32px;
-    color: var(--text-title-h1);
+    color: var(--text-normal);
 }
 
 .cm-s-obsidian .cm-header.cm-header-2,
@@ -1471,7 +1475,7 @@ HEADINGS
     line-height: 1.2em;
     font-weight: 700;
     font-size: 29px;
-    color: var(--text-title-h2);
+    color: var(--text-normal);
 }
 
 .cm-s-obsidian .cm-header.cm-header-3,
@@ -1480,7 +1484,7 @@ HEADINGS
     line-height: 1.2em;
     font-weight: 650;
     font-size: 26px;
-    color: var(--text-title-h3);
+    color: var(--text-normal);
 }
 
 .cm-s-obsidian .cm-header.cm-header-4,
@@ -1488,7 +1492,7 @@ HEADINGS
     font-family: var(--header-font);
     font-weight: 650;
     font-size: 23px;
-    color: var(--text-title-h4);
+    color: var(--text-normal);
 }
 
 .cm-s-obsidian .cm-header.cm-header-5,
@@ -1497,7 +1501,7 @@ HEADINGS
     font-family: var(--header-font);
     font-weight: 650;
     font-size: 20px;
-    color: var(--text-title-h5);
+    color: var(--text-normal);
 }
 
 .cm-s-obsidian .cm-header.cm-header-6,
@@ -1505,7 +1509,7 @@ HEADINGS
     font-family: var(--header-font);
     font-weight: 600;
     font-size: 18px;
-    color: var(--text-title-h6);
+    color: var(--text-normal);
 }
 
 /*----------------------------------------------------------------

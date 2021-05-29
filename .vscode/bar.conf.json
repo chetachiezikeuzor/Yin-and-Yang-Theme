@@ -1,0 +1,13 @@
+{
+    "commands": {
+        "build": "Changed headings",
+        "run": "Changed headings"
+    },
+    "messages": {
+        "building": true,
+        "buildSuccess": true,
+        "buildError": true,
+        "buildErrorMessageBox": true,
+        "run": true
+    }
+}
