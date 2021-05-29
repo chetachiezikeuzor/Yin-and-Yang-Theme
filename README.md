@@ -9,6 +9,10 @@ Welcome to the Yin and Yang Obsidian theme! This theme was created with both dar
 
 ![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/screenshot.png)
 
+| Dark Mode | Light Mode |
+|------ | ------|
+|![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/dark1.png)| ![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/light1.png) |
+
 ### Dark Mode
 ![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/dark1.png)
 
