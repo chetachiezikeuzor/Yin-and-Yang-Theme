@@ -25,7 +25,7 @@ Welcome to the Yin and Yang Obsidian theme! This theme was created with both dar
 ![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/light3.png)
 
 ## How To Install
-Find this theme in the Obsidian's community themes browser under `Settings` > `Appearance` > `Themes`.
+The theme is currently under review. Soon you'll be able to find this theme in the Obsidian's community themes browser under `Settings` > `Appearance` > `Themes`.
 
 Alternatively, download Yin and Yang.css to .obsidian/themes in your Vault folder and activate it under `Settings` > `Appearance`. (For older versions of Obsidian that do not support themes yet, rename Yin and Yang.css to obsidian.css and place it in the root of your Vault.)
 
