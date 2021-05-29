@@ -12,21 +12,11 @@ Welcome to the Yin and Yang Obsidian theme! This theme was created with both dar
 | Dark Mode | Light Mode |
 |------ | ------|
 |![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/dark1.png)| ![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/light1.png) |
-
-### Dark Mode
-![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/dark1.png)
-
-![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/dark2.png)
-
-![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/dark3.png)
-
-
-### Light Mode
-![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/light1.png)
-
-![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/light2.png)
-
-![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/light3.png)
+|
+|![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/dark2.png)| ![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/light2.png) |
+|
+|![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/dark3.png)| ![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/light3.png) |
+|
 
 ## How To Install
 The theme is currently under review. Soon you'll be able to find this theme in the Obsidian's community themes browser under `Settings` > `Appearance` > `Themes`.
