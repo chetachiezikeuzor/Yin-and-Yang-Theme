@@ -353,8 +353,8 @@ settings:
 }
 
 :root{
-  	--default-font: "Galaxie Copernicus", -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-    --font-monospace: "Space Grotesk" !important;
+  	--default-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, sans-serif;
+    --font-monospace: Menlo, SFMono-Regular, Consolas, "Roboto Mono", monospace;
   	--editor-font: var(--default-font);
   	--header-font: var(--default-font);
   	--app-font: var(----default-font);
