@@ -8,6 +8,8 @@ Welcome to the Yin and Yang Obsidian theme! This theme was created with both dar
 ## Showcase
 
 ![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/screenshot.png)
+![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/dark1.png)
+![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/dark2.png)
 
 ---
 
