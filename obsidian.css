@@ -3758,15 +3758,16 @@ body.plugin-sliding-panes.plugin-sliding-panes-rotate-header .workspace > .mod-r
 	border-right: solid 1px var(--background-modifier-border) !important; 
 }
 
-.workspace-leaf-resize-handle {
-    width: 1px !important;
-    opacity: .1;
-    background-color: var(--background-modifier-border) !important;
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle, .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+  opacity: .25;
+  width: 2px;
+  background-color: var(--background-modifier-border) !important;
 }
 
 .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle{
-	opacity: .9;
-	height: 1px !important;
+opacity: .25;
+height: 2px;
+background-color: var(--background-primary-alt) !important;
 }
 
 .is-translucent .workspace-leaf-resize-handle,
