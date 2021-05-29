@@ -3760,14 +3760,20 @@ body.plugin-sliding-panes.plugin-sliding-panes-rotate-header .workspace > .mod-r
 
 .workspace-split.mod-left-split > .workspace-leaf-resize-handle, .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
   opacity: .25;
-  width: 2px;
-  background-color: var(--background-modifier-border) !important;
+  width: 1px;
+  background-color: var(--background-modifier-border);
 }
 
-.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle{
+.theme-light .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle{
+opacity: .5;
+height: 1px;
+background-color: var(--background-modifier-border);
+}
+
+.theme-dark .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle{
 opacity: .25;
-height: 2px;
-background-color: var(--background-primary-alt) !important;
+height: 1px;
+background-color: var(--background-modifier-border);
 }
 
 .is-translucent .workspace-leaf-resize-handle,
