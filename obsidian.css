@@ -533,13 +533,6 @@ settings:
 
     --text-highlight-rgb: var(--pink-highlighter);
 
-    --scrollbar-bg: transparent;
-    --scrollbar-thin-thumb: hsla(216, 7%, 14%, 1);
-    --scrollbar-thin-track: transparent;
-    --scrollbar-auto-thumb: var(--background-tertiary); 
-    --scrollbar-auto-track: hsla(210, 10%, 20%, 1);
-    --scrollbar-auto-scrollbar-color-thumb: hsla(216, 7%, 14%, 1);
-
     /*----------------------------------------------------------------
     DARK THEME GRAPH
     ----------------------------------------------------------------*/
@@ -622,14 +615,6 @@ settings:
     --grey-highlighter: var(--light2);
 
     --text-highlight-rgb: var(--yellow-highlighter);
-
-    --scrollbar-bg: transparent;
-    --scrollbar-thin-thumb: hsla(216, 7%, 14%, 1);
-    --scrollbar-thin-track: transparent;
-    --scrollbar-auto-thumb: var(--background-modifier-border); 
-    --scrollbar-auto-track: hsla(210, 10%, 20%, 1);
-    --scrollbar-auto-scrollbar-color-thumb: hsla(216, 7%, 14%, 1);
-    --scrollbar-auto-scrollbar-color-track: hsla(223, 7%, 20%, 1);
 
     /*----------------------------------------------------------------
     LIGHT THEME GRAPH
