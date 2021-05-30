@@ -3800,28 +3800,6 @@ body.plugin-sliding-panes.hider-frameless:not(.hider-ribbon):not(.plugin-sliding
   padding-left: 30px !important;
 }
 
-@keyframes bgcolor {
-    0% {
-        background-color: #e3e7ef;
-    }
-
-    30% {
-        background-color: var(--duskblue);
-    }
-
-    60% {
-        background-color: var(--dusk);
-    }
-
-    90% {
-        background-color: var(--paleblue);
-    }
-
-    100% {
-        background-color: var(--dark5);
-    }
-}
-
 /*FONT SIZE OF LEFT SIDE DOCK, FRONT MATTER IN PREVIEW & EDITOR & CALENDAR HEADER*/
 .outline, .outline .pane-empty, .outline .collapsible-item-self, .outline .tree-item-inner{
   font-size: 100% !important;
