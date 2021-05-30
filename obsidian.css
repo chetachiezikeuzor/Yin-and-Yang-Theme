@@ -3297,12 +3297,12 @@ SCROLLBARS
 ----------------------------------------------------------------*/
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 10px !important;
   height: 10px;
   background-color: transparent;
 }
-::-webkit-scrollbar-track {
-  background-color:  transparent;
+.mod-root::-webkit-scrollbar-track {
+  background-color: var(--background-primary);
 }
 ::-webkit-scrollbar-thumb {
   background-clip: padding-box;
@@ -3315,16 +3315,26 @@ SCROLLBARS
 ::-webkit-scrollbar-thumb:active {
   background-color: var(--background-tertiary);
   border-radius: 0;
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
+.CodeMirror-scroll::-webkit-scrollbar-track,
+.CodeMirror-scroll::-webkit-scrollbar-thumb,
+.CodeMirror-scroll::-webkit-scrollbar {
+  opacity: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.CodeMirror-vscrollbar, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler{
+  z-index: 5;
 }
 
 .modal .vertical-tab-header::-webkit-scrollbar-track,
 .mod-left-split .workspace-tabs ::-webkit-scrollbar-track {
   background-color: transparent;
-}
-
-.workspace-split.mod-root::-webkit-scrollbar,
-.workspace-split.mod-vertical.mod-root ::-webkit-scrollbar{
-	display:none;
 }
 
 /*----------------------------------------------------------------
