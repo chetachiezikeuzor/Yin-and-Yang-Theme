@@ -2403,25 +2403,25 @@ button{
 
 button.mod-cta {
   padding: 0.6em 1em 0.6em 1em;
-  background-color: var(--pink); 
-  color: var(--dark5);
-}
-
-button.mod-cta:hover {
-  background-color: var(--pink);
-  color: var(--dark5) !important;
 }
 
  /*logout button text color*/
-.modal button:not(.mod-cta):not(.mod-warning) {
-  padding: 0.6em 1em 0.6em 1em;
-  background-color: var(--mod-button) !important; /*dark button color*/
+
+.modal.mod-settings button:not(.mod-cta):not(.mod-warning),
+.setting-item-control button,
+.modal button,
+.modal button.mod-cta,
+.modal button:not(.mod-cta):not(.mod-warning).list-item-part{
+  background-color: var(--mod-button);
   color: var(--text-normal);
 }
 
-.modal button:not(.mod-cta):not(.mod-warning):hover {
-  background-color: var(--mod-button-hover) !important; 
-  color: var(--text-normal);
+.theme-dark .modal.mod-settings button:not(.mod-cta):not(.mod-warning),
+.theme-dark .setting-item-control button,
+.theme-dark .modal button,
+.theme-dark .modal button.mod-cta
+.theme-dark .modal button:not(.mod-cta):not(.mod-warning).list-item-part{
+  background-color: var(--mod-button);
 }
 
 .modal p{
@@ -2439,26 +2439,9 @@ button.mod-cta a {
   text-decoration: none !important;
 }
 
-button:not(.mod-cta):not(.mod-warning){
-	background-color: var(--mod-button); 
-}
-
-button:not(.mod-cta):not(.mod-warning):hover{
-	background-color: var(--mod-button-hover); 
-}
-
 button.mod-cta a:hover {
   text-decoration: none !important;
   color: inherit;
-}
-
-.mod-cta{
-    color: black !important;
-}
-
-.mod-cta:hover{
-    background-color: var(--fairpink) !important; /*color of settings buttons on hover*/
-    color: black !important;
 }
 
 /*----------------------------------------------------------------
