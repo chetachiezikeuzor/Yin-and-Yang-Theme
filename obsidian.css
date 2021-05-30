@@ -2941,7 +2941,7 @@ EMBEDS
 .markdown-preview-view audio,
 .markdown-preview-view video {
   margin: 0 auto;
-  width: 100%;
+  max-width: 100%;
 }
 
 .markdown-embed-title, .file-embed-title{
@@ -3167,8 +3167,6 @@ IMAGE ZOOM */
 /*Image filters */
 
 /*Credit to @kepano https://discord.com/channels/686053708261228577/702656734631821413/828012547905945652*/
-
-/*more filters*/
 
 span[src$="#grayscale"] img {
   filter: grayscale(100%);
