@@ -354,7 +354,7 @@ settings:
 }
 
 :root{
-  	--default-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, sans-serif;
+  	--default-font: -apple-system, BlinkMacSystemFont, "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
     --font-monospace: Menlo, SFMono-Regular, Consolas, "Roboto Mono", monospace;
   	--editor-font: var(--default-font);
   	--header-font: var(--default-font);
@@ -2938,17 +2938,20 @@ ol ol::before{
 EMBEDS
 ----------------------------------------------------------------*/
 
-.markdown-preview-view img:not([width]), 
+.markdown-preview-view img:not(img.emoji):not([width]){
+  margin: 1.75em 0em;
+}
+
+.markdown-preview-view img:not(img.emoji):not([width]), 
 .markdown-preview-view audio,
 .markdown-preview-view video {
-  margin: 0 auto;
   max-width: 100%;
+  display: block;
 }
 
 .markdown-embed-title, .file-embed-title{
     display: none;
 }
-
 
 /*EMBEDDED NOTES - working on this one*/
 
@@ -3121,18 +3124,17 @@ img[alt*="border"]  {
   border: 1px solid var(--border-alt);
 }
 
-/*IMAGE EMBED SIZE FIX*/
-
-.markdown-preview-view img {
-  max-width: 100%;
-  display: block;
-  margin: 1.75em 0em !important;
-}
+/*IMAGE SIZE FIX*/
 
 .image-container{
 	width: 60%;
 	margin: 0 auto !important;
 	cursor: zoom-in;
+}
+
+.markdown-preview-section img.emoji {
+  display: inline;
+  margin: 0;
 }
 
 /*----------------------------------------------------------------
