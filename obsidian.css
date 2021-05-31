@@ -6130,53 +6130,6 @@ input#auto-scroll.toggle.svelte-e43ld1{
 }
 
 /*----------------------------------------------------------------
-FOLDER NOTE PLUGIN
-----------------------------------------------------------------*/
-
-.cute-card-view {
-    background: var(--background-primary-alt) !important;
-    border: 2px solid var(--background-modifier-border);
-    border-radius: 4px !important;
-}
-
-.cute-card-view h1 {
-    font-size: 1.75rem !important;
-    margin: 0;
-    line-height: 1.5 !important;
-    color: var(--text-normal) !important;
-}
-
-.cute-card-view .thumb {
-    border-radius: 4px 4px 0px 0px !important;
-}
-
-.cute-card-view .thumb-color {
-    border-radius: 4px 4px 0px 0px !important;
-}
-
-.cute-card-view span {
-    font-family: var(--font-monospace);
-    font-weight: 500 !important;
-    color: var(--text-muted) !important;
-}
-
-.cute-card-view p {
-    line-height: 1.25 !important;
-}
-
-.cute-card-view a:hover {
-    text-decoration: none !important;
-}
-
-.cute-card-view .thumb-color-folder {
-    background-color: var(--checkbox-base) !important;
-}
-
-.cute-card-view .thumb-color-note {
-    background-color: var(--checkbox-after) !important;
-}
-
-/*----------------------------------------------------------------
 OBSIDIAN ORTHOGRAPHY PLUGIN
 ----------------------------------------------------------------*/
 
