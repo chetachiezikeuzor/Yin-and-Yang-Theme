@@ -5761,7 +5761,7 @@ OBSIDIAN-CALENDAR-PLUGIN
   	font-weight: 500;
   }
 
- #calendar-container tr td { 
+#calendar-container tr td { 
     cursor: pointer;
     transition: 100ms;
     border: none;
@@ -6502,7 +6502,3 @@ STYLE SETTINGS PLUGIN
     font-family: boxicons;
     margin-right: -5px !important;
 }
-
-
-
-
