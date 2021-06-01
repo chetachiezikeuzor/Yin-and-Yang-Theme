@@ -988,7 +988,6 @@ font-size: var(--normal-font-size);
 body {
 --preview-font-size: var(--editor-font-size);
 --preview-line-height: var(--editor-line-height);
---preview-line-height-rem: calc(var(--preview-line-height) * 1rem);
 --preview-font-weight: var(--editor-font-weight);
 }
 
