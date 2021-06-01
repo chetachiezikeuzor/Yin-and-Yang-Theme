@@ -599,7 +599,6 @@ settings:
   --editor-font: var(--default-font);
   --header-font-pre: var(--preview-font);
   --header-font-ed: var(--editor-font);
-  --ui-font: var(--default-font);
   --mermaid-font: var(--font-monospace);
 
   --base-h:  230; 
@@ -3126,7 +3125,7 @@ display: block;
 position: absolute;
 opacity: .8;
 top: .25em;
-left: .40em;
+left: .15em;
 border-left: 1px solid var(--background-modifier-border);
 height: 100%;
 }
