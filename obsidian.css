@@ -4546,51 +4546,36 @@ cursor: pointer;
 
 /*FILE EXPLORER ICONS*/
 
-.theme-light .nav-folder.mod-root > .nav-folder-title .nav-folder-title-content::after{
-content: "🌻";
-color: var(--text-muted);
-margin-left: 3px;
-display: inline-block;
-}
-
-.theme-dark .nav-folder.mod-root > .nav-folder-title .nav-folder-title-content::after{
-content: "🌺"; 
-opacity: .9;
-color: var(--text-muted);
-margin-left: 3px;
-display: inline-block;
-}
-
 .nav-folder.mod-root > .nav-folder-title .nav-folder-title-content::before{
-content: "\F0770";
-font-family: 'Material Design Icons';
-font-size: calc(var(--large-font-size) + 3px);
-display: inline-block;
-vertical-align: -0.1em;
-margin-right: 8px;
-margin-left: -3px;
+  content: "\F0770";
+  font-family: 'Material Design Icons';
+  font-size: calc(var(--large-font-size) + 3px);
+  display: inline-block;
+  vertical-align: -0.1em;
+  margin-right: 8px;
+  margin-left: -1px;
 }
-
+  
 .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before {
-content: "\F0256";
-font-family: 'Material Design Icons';
-opacity: .85;
-font-size: calc(var(--large-font-size) + 3px);
-display: inline-block;
-vertical-align: -0.1em;
-margin-right: 8px;
-margin-left: -3px;
+  content: "\F0256";
+  font-family: 'Material Design Icons';
+  opacity: .85;
+  font-size: calc(var(--large-font-size) + 3px);
+  display: inline-block;
+  vertical-align: -0.1em;
+  margin-right: 8px;
+  margin-left: -1px;
 }
-
+  
 .nav-folder .nav-folder-title .nav-folder-title-content::before {
-content: "\F0DCF";
-font-family: 'Material Design Icons';
-opacity: .85;
-font-size:  calc(var(--large-font-size) + 3px);
-display: inline-block;
-vertical-align: -0.1em;
-margin-right: 8px;
-margin-left: -3px;
+  content: "\F0DCF";
+  font-family: 'Material Design Icons';
+  opacity: .85;
+  font-size:  calc(var(--large-font-size) + 3px);
+  display: inline-block;
+  vertical-align: -0.1em;
+  margin-right: 8px;
+  margin-left: -1px;
 }
 
 /*File icon for notes (fixes recent files pane)*/
