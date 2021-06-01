@@ -3149,10 +3149,6 @@ EMBEDS
   display: block;
 }
 
-.markdown-embed-title, .file-embed-title{
-  display: none;
-}
-
 /*EMBEDDED NOTES */
 
 .markdown-preview-view .markdown-embed-content > .markdown-preview-view {
