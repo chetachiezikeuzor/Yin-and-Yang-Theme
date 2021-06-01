@@ -856,9 +856,9 @@ settings:
   --text-accent:hsl(var(--l-accent-h),var(--l-accent-s),var(--l-accent-l));
   --text-on-accent: white;
 
-  --text-normal: hsla(calc(var(--base-h)), calc(var(--base-s) + 84%), calc(var(--base-l) - 40%), .9);
-  --text-muted: hsla(calc(var(--base-h)), calc(var(--base-s) + 84%), calc(var(--base-l) - 28%), .6);
-  --text-faint: hsla(calc(var(--base-h)), calc(var(--base-s) + 84%), calc(var(--base-l) - 28%), .3);
+  --text-normal: hsla(calc(var(--base-h)), calc(var(--base-s) + 80%), calc(var(--base-l) - 40%), .9);
+  --text-muted: hsla(calc(var(--base-h)), calc(var(--base-s) + 82%), calc(var(--base-l) - 32%), .6);
+  --text-faint: hsla(calc(var(--base-h)), calc(var(--base-s) + 82%), calc(var(--base-l) - 32%), .3);
 
   --interactive-accent: hsl(var(--l-accent-h),var(--l-accent-s),var(--l-accent-l));
   --interactive-accent-hover: hsl(var(--l-accent-h), var(--l-accent-s), calc(var(--l-accent-l) + 3%));
