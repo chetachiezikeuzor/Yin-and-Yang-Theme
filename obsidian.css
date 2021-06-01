@@ -5130,7 +5130,7 @@ font-family: remixicon;
 
 .workspace-tab-header[aria-label="Search"]
 .workspace-tab-header-inner-icon:after {
-content: "\eb56";
+content: "\ea39";
 }
 
 .workspace-tab-header[aria-label="Starred"]
