@@ -3139,14 +3139,14 @@ EMBEDS
 ----------------------------------------------------------------*/
 
 .markdown-preview-view img:not(img.emoji):not([width]){
-margin: 1.75em 0em;
+  margin: 1.75em 0em;
 }
 
 .markdown-preview-view img:not(img.emoji):not([width]), 
 .markdown-preview-view audio,
 .markdown-preview-view video {
-max-width: 100%;
-display: block;
+  max-width: 100%;
+  display: block;
 }
 
 .markdown-embed-title, .file-embed-title{
@@ -3156,61 +3156,56 @@ display: block;
 /*EMBEDDED NOTES */
 
 .markdown-preview-view .markdown-embed-content > .markdown-preview-view {
-max-height: none !important;
+  max-height: none !important;
 }
 
 .markdown-embed .markdown-preview-view {
-padding: 0;
+  padding: 0;
 }
 
 .internal-embed .markdown-embed iframe{
-max-height: 100%;
+  max-height: 100%;
 }
 
 .internal-embed .markdown-embed  ::-webkit-scrollbar{
-display: none;
-height: 0em;
+  display: none;
+  height: 0em;
 }
 
 .internal-embed .markdown-embed {
-border: .025em solid var(--background-modifier-border);
-background-color: var(--background-primary-alt);
-/*box-shadow: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);*/
-border-radius: 4px;
+  border: .025em solid var(--background-modifier-border);
+  background-color: var(--background-primary-alt);
+  /*box-shadow: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);*/
+  border-radius: 4px;
 }
 
 .workspace .markdown-preview-view .markdown-embed {
-margin: 0;
+  margin: 0;
 }
 
 .markdown-preview-view .markdown-embed {
-margin: 1.5em 0 1.5em 0 !important;
-padding-bottom: 1rem !important;
-padding-top: 1.25rem !important;
+  margin: 0;
 }
 
-.markdown-embed .markdown-embed-content{
-padding: 1em 3em;
+div.popover.hover-popover .markdown-embed .markdown-embed-content{
+  padding: .5em 3em;
 }
 
 .markdown-preview-view .markdown-embed-content {
-max-height: none !important;
+  max-height: none !important;
+}
+
+.markdown-preview-view .markdown-embed .markdown-preview-sizer {
+  padding-top: 1rem;
 }
 
 .markdown-embed-content .markdown-preview-section {
-min-height: unset !important;
+  min-height: unset !important;
 }
 
 .markdown-embed-content .markdown-preview-section > div {
-padding-left: 0;
-padding-right: 0;
-}
-
-.markdown-embed{
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-  margin-left: 10px !important;
-  margin-right: 10px !important;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /*embedded notes containing tasks*/
