@@ -3892,7 +3892,7 @@ body:not(.plugin-sliding-panes-rotate-header) .workspace-leaf .workspace-leaf-co
 
 body:not(.plugin-sliding-panes-rotate-header) .workspace-leaf-content > .view-header .view-action,
 .workspace-leaf-content > .view-header .view-action{
-  margin: 3px 4px;
+  margin: 1px 4px;
 }
 
 body:not(.plugin-sliding-panes-rotate-header) .workspace-leaf-content > .view-header .view-header-icon{
