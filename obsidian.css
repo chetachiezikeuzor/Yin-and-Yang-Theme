@@ -1030,9 +1030,9 @@ button,
 .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian, .app-container,
 .CodeMirror-scroll, .CodeMirror-sizer, .CodeMirror-gutter, 
 .CodeMirror-gutters, .CodeMirror-linenumber {
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-font-variant-ligatures: no-common-ligatures;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-variant-ligatures: no-common-ligatures;
 }
 
 .workspace-tab-header-inner-icon{
@@ -1201,7 +1201,7 @@ SECONDARY FOUNDATIONS
 
 .CodeMirror-gutter.CodeMirror-linenumbers, 
 .CodeMirror-gutter.CodeMirror-foldgutter {
-background: transparent;
+  background: transparent;
 }
 
 p, .CodeMirror pre.CodeMirror-line{
@@ -3469,35 +3469,37 @@ SCROLLBARS
 ----------------------------------------------------------------*/
 
 ::-webkit-scrollbar {
-width: 10px !important;
-height: 10px;
-background-color: transparent;
+  width: 10px !important;
+  height: 10px;
+  background-color: transparent;
 }
+
 .mod-root::-webkit-scrollbar-track {
-background-color: var(--background-primary);
+  background-color: var(--background-primary);
 }
+
 ::-webkit-scrollbar-thumb {
-background-clip: padding-box;
-border: 3px solid transparent;
-min-height: 40px;
-background-color: var(--background-tertiary);
-border-radius: 0;
+  background-clip: padding-box;
+  border: 3px solid transparent;
+  min-height: 40px;
+  background-color: var(--background-tertiary);
+  border-radius: 0;
 }
 
 ::-webkit-scrollbar-thumb:active {
-background-color: var(--background-tertiary);
-border-radius: 0;
-cursor: grabbing;
-cursor: -moz-grabbing;
-cursor: -webkit-grabbing;
+  background-color: var(--background-tertiary);
+  border-radius: 0;
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
 }
 
 .CodeMirror-scroll::-webkit-scrollbar-track,
 .CodeMirror-scroll::-webkit-scrollbar-thumb,
 .CodeMirror-scroll::-webkit-scrollbar {
-opacity: 0;
-border: none;
-background-color: transparent;
+  opacity: 0;
+  border: none;
+  background-color: transparent;
 }
 
 .CodeMirror-vscrollbar, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler{
@@ -5930,72 +5932,35 @@ content: "\e9ac" !important;
 
 .markdown-preview-view .collapse-indicator::before,
 .CodeMirror-foldgutter-open::after {
-display: block;
-font-size: var(--large-font-size);
-opacity: 0.25;
-content: "\e9ac";
-font-family: boxicons;
-color: var(--text-normal);
+  display: block;
+  font-size: var(--large-font-size);
+  opacity: 0.25;
+  content: "\e9ac";
+  font-family: boxicons;
+  color: var(--text-normal);
 }
 
 .markdown-preview-view .is-collapsed .collapse-indicator::before,
 .CodeMirror-foldgutter-folded::after {
-display: block;
-font-size: var(--large-font-size);
-opacity: 0.25;
-content: "\e9b2";
-font-family: boxicons;
-color: var(--text-normal);
+  display: block;
+  font-size: var(--large-font-size);
+  opacity: 0.25;
+  content: "\e9b2";
+  font-family: boxicons;
+  color: var(--text-normal);
 }
 
-/*----------------------------------------------------------------
-GUTTER
-----------------------------------------------------------------*/
+/*LINE NUMBER + GUTTER*/
 
-.CodeMirror-gutter-wrapper {
-padding: 0;
-height: 100%;
-width: 24px;
-left: -30px !important;
-display: flex;
-}
-
-.CodeMirror-foldgutter-open,
-.CodeMirror-foldgutter-folded {
-color: var(--text-muted);
-display: flex;
-height: 100%;
-align-items: center;
-margin-left: -.15em; /*moves folds*/
-transition: color 100ms ease;
-}
-
-.CodeMirror-foldgutter {
-width: 36px;
-}
-
-/*----------------------------------------------------------------
-LINE NUMBERS
-----------------------------------------------------------------*/
-
-.cm-s-obsidian .CodeMirror-linenumber {
-width: 5px !important;
-margin-top: 2px;
-min-width: 5px !important;
-position: absolute;
-padding: 10;
-display: flex;
-justify-content: flex-end;
-font-feature-settings: 'tnum';
-font-size: 0.75rem;
-font-weight: 500;
-color: var(--text-muted);
-margin-left: -.2rem;
+.cm-s-obsidian .CodeMirror-linenumber{
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted);
 }
 
 .cm-s-obsidian .CodeMirror-activeline-gutter > .CodeMirror-linenumber {
-font-weight: 600;
-color: var(--interactive-accent);
+  font-weight: 600;
+  color: var(--interactive-accent);
 }
 
 /*STYLE SETTINGS*/
