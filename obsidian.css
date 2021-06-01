@@ -3155,7 +3155,8 @@ EMBEDS
   vertical-align: -5.5px;
 }
 
-.file-embed-title{
+.file-embed-title,
+.markdown-embed-title{
   font-size: 15px;
 }
 
