@@ -465,7 +465,7 @@ settings:
     type: variable-text
     default: blur(0px) brightness(90%) saturate(0%)
   -
-    title: Bkgd Repeat/No Repeat
+    title: Bkgd Repeat/No-Repeat
     id: as-repeat
     type: variable-text
     default: repeat
