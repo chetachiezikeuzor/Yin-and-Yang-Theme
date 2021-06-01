@@ -5892,6 +5892,13 @@ margin-right: 5px;
 
 /*collapse icon in panes*/
 
+.nav-folder-collapse-indicator svg,
+.is-collapsed .collapse-icon svg,
+.collapse-icon > svg, .collapse-indicator > svg{
+  display: none;
+  color: transparent;
+}
+
 /*This puts the new collapse indicator in backlinks pane, graph controls pane, tag pane and search results pane*/
 .graph-controls .collapse-icon, .backlink-pane .collapse-icon, .tag-pane-tag .collapse-icon, .search-result-file-title .collapse-icon, .outline .tree-item-self .collapse-icon {
 content: "\e9ac" !important;
