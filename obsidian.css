@@ -99,7 +99,7 @@ settings:
     description: The maximum line width in em units for readable line width
     type: variable-number
     default: 47
-    format: em
+    format: rem
   - 
     id: editor-line-height
     title: Body Line Height
@@ -620,7 +620,7 @@ settings:
   --medium-font-size: 16px;
   --small-font-size: 15px;
   --titlebar-height: 24px;
-  --line-width: 47em;
+  --line-width: 47rem;
   --max-width: 85%;
   --font-size-notes: 0.875rem;
   --normal-weight: 400;
