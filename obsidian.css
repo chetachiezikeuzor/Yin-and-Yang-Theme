@@ -3151,6 +3151,14 @@ EMBEDS
 
 /*EMBEDDED NOTES */
 
+.file-embed-icon{
+  vertical-align: -.3em;
+}
+
+.file-embed-title{
+  font-size: 15px;
+}
+
 .markdown-preview-view .markdown-embed-content > .markdown-preview-view {
   max-height: none !important;
 }
