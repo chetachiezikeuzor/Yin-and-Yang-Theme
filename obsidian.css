@@ -4300,7 +4300,8 @@ cursor: pointer;
 }
 
 .nav-file-title.is-active:hover,
-.workspace-split.mod-horizontal:hover .nav-file-title.is-active,
+.workspace-split.mod-left-split .view-content:hover .nav-file-title.is-active,
+.workspace-split.mod-right-split .view-content:hover .nav-file-title.is-active,
 .workspace-leaf-content[data-type="file-explorer"]:hover .nav-file-title.is-active {
   transition: 0.3s ease-in-out;
   color: var(--text-on-accent) !important;
