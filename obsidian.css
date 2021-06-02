@@ -511,14 +511,14 @@ settings:
     type: heading
     level: 4
   -
-    title: Toggle For No Icons
+    title: Remove File Explorer Icons
     description: This removes icons in the file explorer (for those that wish to have them removed)
     id: no-fx-icons
     type: class-toggle
   -
-    title: Toggle For No Folder Icons
-    description: This keeps file and attachments icons and removes folder icons
-    id: no-fx-folder-icons
+    title: Show Folder Icons
+    description: This will display folder icons (set to none by default for those that wish to use their own icons)
+    id: show-fx-folder-icons
     type: class-toggle
   -
     title: Remove Text Reverse on Attachments 
@@ -2879,21 +2879,56 @@ margin-top: 4px;
 CUSTOM/READABLE LINE WIDTH 
 ----------------------------------------------------------------*/
 
+.workspace > .workspace-split.mod-root .markdown-preview-view:not(.is-readable-line-width):not(.markdown-preview-view .markdown-embed-content > .markdown-preview-view) {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.workspace > .workspace-split:not(.mod-root) .markdown-preview-view:not(.is-readable-line-width){
+  padding-left: 2.5em;
+  padding-right: 2.5em; 
+}
+
 .mod-root #calendar-container.is-readable-line-width,
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
   max-width: var(--max-width);
   width: var(--line-width);
 }
 
-.markdown-embed .markdown-preview-section,
+.workspace > .workspace-split:not(.mod-root) .CodeMirror,
+.workspace > .workspace-split:not(.mod-root) .markdown-preview-view {
+  font-size:  calc(100% * var(--editor-font-size) / 100);
+}
+
 .markdown-source-view.is-readable-line-width .CodeMirror,
-.markdown-preview-section.is-readable-line-width {
-  padding-left:0;
-  padding-right:0;
-  margin:0 auto 0 auto;
+.is-readable-line-width .markdown-preview-section {
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 auto 0 auto;
   width: var(--line-width);
   max-width: var(--max-width);
-} 
+}
+
+.mod-root .markdown-preview-sizer {
+  padding-top: 2rem;
+}
+
+.markdown-embed-content .markdown-preview-sizer {
+  padding-top: 0;
+}
+
+.markdown-preview-view:not(.is-readable-line-width)
+  .markdown-embed
+  .markdown-preview-sizer{
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.markdown-embed.is-readable-line-width .markdown-preview-section > div {
+  margin: 0;
+  width: auto;
+  max-width: none;
+}
 
 /* ----------------------------------------------------------------
 LISTS  
@@ -3310,8 +3345,8 @@ background-color: hsla(var(--base-h), calc(var(--base-s) - 100%), calc(var(--bas
 /*IMAGE EMBED SIZE FIX*/
 
 .image-container{
-width: 60%;
-margin: 0 auto !important;
+width: 75%;
+margin: 0 auto;
 cursor: zoom-in;
 }
 
@@ -4534,38 +4569,6 @@ cursor: pointer;
 }
 
 /*FILE EXPLORER ICONS*/
-
-.nav-folder.mod-root > .nav-folder-title .nav-folder-title-content::before{
-content: "\F0770";
-font-family: 'Material Design Icons';
-font-size: calc(var(--large-font-size) + 3px);
-display: inline-block;
-vertical-align: -0.1em;
-margin-right: 8px;
-margin-left: -1px;
-}
-
-.nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before {
-content: "\F0256";
-font-family: 'Material Design Icons';
-opacity: .85;
-font-size: calc(var(--large-font-size) + 3px);
-display: inline-block;
-vertical-align: -0.1em;
-margin-right: 8px;
-margin-left: -1px;
-}
-
-.nav-folder .nav-folder-title .nav-folder-title-content::before {
-content: "\F0DCF";
-font-family: 'Material Design Icons';
-opacity: .85;
-font-size:  calc(var(--large-font-size) + 3px);
-display: inline-block;
-vertical-align: -0.1em;
-margin-right: 8px;
-margin-left: -1px;
-}
 
 /*File icon for notes (fixes recent files pane)*/
 .nav-folder-children .nav-file-title-content:first-child::before{
@@ -5939,19 +5942,53 @@ content: "\e9ac" !important;
 
 /*STYLE SETTINGS*/
 
-.no-fx-icons .nav-folder-title .collapse-icon,
-.no-fx-folder-icons .nav-folder-title .collapse-icon{
+.no-fx-icons .nav-folder-title .collapse-icon{
   display: flex;
   font-family: boxicons;
   margin-left: 6px;
 }
 
-.no-fx-folder-icons .nav-folder .nav-folder-title .nav-folder-title-content::before,
-.no-fx-folder-icons .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before,
-.no-fx-folder-icons .nav-folder.mod-root > .nav-folder-title .nav-folder-title-content::before{
-content: "";
-margin-right: unset;
-margin-left: 6px;
+.nav-folder-title .collapse-icon{
+  display: flex;
+  font-family: boxicons;
+  margin-right: 6px;
+  margin-left: 5px;
+}
+
+.show-fx-folder-icons .nav-folder-title .collapse-icon{
+  display: none;
+}
+
+.show-fx-folder-icons .nav-folder.mod-root > .nav-folder-title .nav-folder-title-content::before{
+content: "\F0770";
+font-family: 'Material Design Icons';
+font-size: calc(var(--large-font-size) + 3px);
+display: inline-block;
+vertical-align: -0.1em;
+margin-right: 8px;
+margin-left: -1px;
+}
+
+.show-fx-folder-icons .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before {
+content: "\F0256";
+font-family: 'Material Design Icons';
+opacity: .85;
+font-size: calc(var(--large-font-size) + 3px);
+display: inline-block;
+vertical-align: -0.1em;
+margin-right: 8px;
+margin-left: -1px;
+}
+
+.show-fx-folder-icons .nav-folder .nav-folder-title .nav-folder-title-content::before {
+content: "\F0DCF";
+font-family: 'Material Design Icons';
+opacity: .85;
+font-size:  calc(var(--large-font-size) + 3px);
+display: inline-block;
+vertical-align: -0.1em;
+margin-right: 8px;
+margin-left: -1px;
 }
 
 .no-fx-icons .nav-file-icon:before,
