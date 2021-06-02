@@ -3473,7 +3473,8 @@ display: none;
 div.popover.hover-popover .markdown-preview-view {
 font-size: calc(var(--editor-font-size) - .15em);
 padding-bottom: 2.5rem;
-padding-top: 1rem;
+padding-top: 1.5rem !important;
+padding: 2.5rem;
 }
 
 .popover.hover-popover .markdown-embed {
