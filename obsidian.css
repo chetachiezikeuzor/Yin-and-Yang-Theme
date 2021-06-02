@@ -1066,8 +1066,6 @@ p .tag,
 .tooltip,
 .outline .pane-empty,
 .document-search-button,
-.workspace > .workspace-split:not(.mod-root) .CodeMirror,
-.workspace > .workspace-split:not(.mod-root) .markdown-preview-view,
 .cm-s-obsidian pre.HyperMD-footnote {
 font-size: .875em !important;
 }
@@ -2883,25 +2881,19 @@ CUSTOM/READABLE LINE WIDTH
 
 .mod-root #calendar-container.is-readable-line-width,
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
-max-width: var(--max-width);
-width: var(--line-width);
+  max-width: var(--max-width);
+  width: var(--line-width);
 }
 
+.markdown-embed .markdown-preview-section,
 .markdown-source-view.is-readable-line-width .CodeMirror,
-.CodeMirror.is-readable-line-width,
 .markdown-preview-section.is-readable-line-width {
-padding-left: 0em;
-padding-right: 0em;
-margin: 0 auto 0 auto;
-width: var(--line-width) ;
-max-width: var(--max-width);
+  padding-left:0;
+  padding-right:0;
+  margin:0 auto 0 auto;
+  width: var(--line-width);
+  max-width: var(--max-width);
 } 
-
-.markdown-preview-view:not(.is-readable-line-width),
-.markdown-source-view:not(.is-readable-line-width) .CodeMirror{
-padding-left: 5em;
-padding-right: 5em;
-}
 
 /* ----------------------------------------------------------------
 LISTS  
@@ -3160,36 +3152,38 @@ EMBEDS
     font-size: 15px;
 }
 
-.markdown-preview-view .markdown-embed-content > .markdown-preview-view {
-  max-height: none !important;
-}
-
-.markdown-embed .markdown-preview-view {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.internal-embed .markdown-embed iframe{
-  max-height: 100%;
+.markdown-embed-title{
+    font-weight: 600;
 }
 
 .internal-embed .markdown-embed {
   border: .025em solid var(--background-modifier-border);
   background-color: var(--background-primary-alt);
-  /*box-shadow: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);*/
+  /*box-shadow: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.8);*/
   border-radius: 4px;
 }
 
-.markdown-preview-view .markdown-embed {
+.workspace .markdown-preview-view .markdown-embed {
   margin: 0;
 }
 
-div.popover.hover-popover .markdown-embed .markdown-embed-content{
-  padding: .5em 3em;
+.markdown-preview-view .markdown-embed {
+  margin: 1rem 0 1rem 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.markdown-preview-view .markdown-embed-content img{
-  max-width: 100%;
+.markdown-preview-view .markdown-embed .markdown-preview-sizer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.markdown-preview-view .markdown-embed-content > .markdown-preview-view {
+  max-height: none !important;
+}
+
+.markdown-embed-content .markdown-preview-section {
+  min-height: unset !important;
 }
 
 .markdown-preview-view .markdown-embed-content{
@@ -3197,18 +3191,13 @@ div.popover.hover-popover .markdown-embed .markdown-embed-content{
     overflow-x: scroll;
 }
 
-.markdown-preview-view .markdown-embed .markdown-preview-sizer {
-  padding-top: .5rem;
-  padding-bottom: .5rem;
-}
-
-.markdown-embed-content .markdown-preview-section {
-  min-height: unset !important;
-}
-
 .markdown-embed-content .markdown-preview-section > div {
   padding-left: 0;
   padding-right: 0;
+}
+
+.markdown-preview-view .markdown-embed-content img{
+  max-width: 100%;
 }
 
 /*embedded notes containing tasks*/
