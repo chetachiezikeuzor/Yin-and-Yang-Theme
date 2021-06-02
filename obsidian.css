@@ -981,7 +981,7 @@ font-size: inherit;
 }
 
 html{
-font-size: var(--normal-font-size);
+font-size: var(--editor-font-size);
 }
 
 body {
@@ -1555,6 +1555,7 @@ font-family: var(--header-font-ed);
 font-family: var(--header-font-pre);
 }
 
+.CodeMirror .CodeMirror-line.HyperMD-header-1,
 .cm-s-obsidian .cm-header.cm-header-1,
 .markdown-preview-section h1{
   line-height: 1.2em;
@@ -1563,6 +1564,7 @@ font-family: var(--header-font-pre);
   color: var(--text-normal);
 }
 
+.CodeMirror .CodeMirror-line.HyperMD-header-2,
 .cm-s-obsidian .cm-header.cm-header-2,
 .markdown-preview-section h2{
   line-height: 1.2em;
@@ -1571,6 +1573,7 @@ font-family: var(--header-font-pre);
   color: var(--text-normal);
 }
 
+.CodeMirror .CodeMirror-line.HyperMD-header-3,
 .cm-s-obsidian .cm-header.cm-header-3,
 .markdown-preview-section h3{
   line-height: 1.2em;
@@ -1579,6 +1582,7 @@ font-family: var(--header-font-pre);
   color: var(--text-normal);
 }
 
+.CodeMirror .CodeMirror-line.HyperMD-header-4,
 .cm-s-obsidian .cm-header.cm-header-4,
 .markdown-preview-section h4{
   font-weight: 650;
@@ -1586,6 +1590,7 @@ font-family: var(--header-font-pre);
   color: var(--text-normal);
 }
 
+.CodeMirror .CodeMirror-line.HyperMD-header-5,
 .cm-s-obsidian .cm-header.cm-header-5,
 .markdown-preview-section h5{
   line-height: 1.2em;
@@ -1594,6 +1599,7 @@ font-family: var(--header-font-pre);
   color: var(--text-normal);
 }
 
+.CodeMirror .CodeMirror-line.HyperMD-header-6,
 .cm-s-obsidian .cm-header.cm-header-6,
 .markdown-preview-section h6{
   font-weight: 600;
@@ -2151,13 +2157,13 @@ background-color: var(--text-highlight-rgb) !important;
 
 .markdown-preview-view mark {
   color: var(--text-highlight-color);
-  font-weight: 500;
+  font-weight: inherit;
   background-color: var(--text-highlight-rgb);
 }
 
 .cm-s-obsidian span.cm-highlight {
   color: var(--text-highlight-color);
-  font-weight: 500;
+  font-weight: inherit;
   background-color: var(--text-highlight-rgb);
 }
 
@@ -6014,12 +6020,12 @@ content: "";
 /* WYSIWYG HEADERS  */
 
 :root {
---h1: 1em;
---h2: .95em;
---h3: .90em;
---h4: .85em;
---h5: .80em;
---h6: .75em;
+--h1: 1rem;
+--h2: .95rem;
+--h3: .90rem;
+--h4: .85rem;
+--h5: .80rem;
+--h6: .75rem;
 }
 
 .wys-headings div:not(.CodeMirror-activeline)> pre .cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1,
