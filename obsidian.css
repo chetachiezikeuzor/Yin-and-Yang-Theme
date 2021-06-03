@@ -3676,6 +3676,7 @@ Header */
   margin: 1px !important;
 }
 
+.nav-action-button,
 .nav-action-text-button,
 .nav-action-text-button:hover{
 transition: 200ms ease-in-out;
