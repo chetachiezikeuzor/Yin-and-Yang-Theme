@@ -762,7 +762,7 @@ settings:
   --text-accent:hsl(var(--d-accent-h),var(--d-accent-s),var(--d-accent-l));
   --text-on-accent: white;
 
-  --text-normal: hsl(var(--base-h),calc(var(--base-s) + 45%), calc(var(--base-d) + 95%));
+  --text-normal: hsla(var(--base-h),calc(var(--base-s) + 45%), calc(var(--base-d) + 90%), .8);
   --text-muted: hsla(var(--base-h),var(--base-s), calc(var(--base-d) + 50%), .8);
   --text-faint: hsla(var(--base-h),var(--base-s), calc(var(--base-d) + 25%), .8);
 
