@@ -6522,7 +6522,7 @@ margin-left: 15px;
 header.svelte-yzsyxo {
 border: .025em solid var(--background-modifier-border) !important;
 background-color: var(--background-primary-alt) !important;
-padding: 10px !important;
+padding: 7.5px 8px 7.5px 8px !important;
 margin-bottom: 12px !important;
 border-radius: 4px !important;
 font-size: var(--todoList-headerFontSize) !important;
@@ -6544,6 +6544,7 @@ color: var(--text-muted) !important;
 .count.svelte-yzsyxo{
 color: var(--text-muted) !important;
 border: .025em solid var(--background-modifier-border) !important;
+padding: var(--todoList-countPadding) !important;
 }
 
 .checkbox.svelte-4g53y {
@@ -6569,6 +6570,7 @@ box-shadow: none !important;
 
 ul.svelte-yzsyxo li.svelte-1q8cjhd.svelte-1q8cjhd 
 .content.svelte-1q8cjhd.svelte-1q8cjhd p{
+  line-height: 1.75em;
   color: var(--text-muted) !important;
 }
 
@@ -6578,7 +6580,7 @@ li.svelte-1q8cjhd.svelte-1q8cjhd:hover{
 }
 
 li.svelte-1q8cjhd.svelte-1q8cjhd {
-  font-size: .875em !important; 
+  font-size: .85em !important; 
   line-height: 1em;
   border: .025em solid var(--background-modifier-border) !important;
   border-radius: 4px !important;
@@ -6594,12 +6596,12 @@ li.svelte-1q8cjhd.svelte-1q8cjhd:before{
 --todoList-headerFontWeight: 500 !important;
 --todoList-headerGap: 5px !important;
 --todoList-headerFontSize: 15px !important;
---todoList-contentPadding: 5px 8px 5px 8px !important;
+--todoList-contentPadding: 3px 8px 3px 8px !important;
 --todoList-checkboxSize: 18px !important; 
 --todoList-checkboxCheckedSize: 14px !important;
 --todoList-listItemMargin: 0 0px 12px !important;
 --todoList-buttonPadding: 3.5px 4px !important;
---todoList-countPadding: 1px 5px !important;
+--todoList-countPadding: 0px 5px !important;
 --todoList-countFontSize: 10px !important;
 --todoList-listItemBackground: var(--background-primary-alt) !important;
 --todoList-listItemBackground--hover: var(--interactive-accent) !important;
@@ -6640,7 +6642,7 @@ border-bottom: 2px solid var(--background-modifier-border);
 }
 
 .nav-header#conversationDiv > p {
-  font-size: .875em !important; 
+  font-size: .925em !important; 
   color: var(--text-muted);
   border-radius: 4px; 
   line-height: 1.75 !important; 
@@ -6652,7 +6654,7 @@ border-bottom: 2px solid var(--background-modifier-border);
 }
 
 input#dual-input-box{
-font-size: .875em !important; 
+font-size: .925em !important; 
 background-color: var(--background-primary-alt) !important;
 border: .025em solid var(--background-modifier-border);
 }
