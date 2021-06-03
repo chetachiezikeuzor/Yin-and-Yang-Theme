@@ -662,24 +662,24 @@ settings:
   BASE COLORS
   ----------------------------------------------------------------*/
 
-  --dark0:	#2e3440;
+  --dark0:  #2e3440;
   --dark1: #3b4252;
-  --dark2:	#434c5e;
-  --dark3:	#4c566a;
+  --dark2:  #434c5e;
+  --dark3:  #4c566a;
   --dark4: #0f0e14; 
-  --dark5:	#0b0b0b;  
+  --dark5:  #0b0b0b;  
 
   --light0: #d8dee9;
   --light1: #e5e9f0;
-  --light2:	#cacfd9;
-  --light3:	#ffffff;
-  --light4:	#f9fafb; 
+  --light2: #cacfd9;
+  --light3: #ffffff;
+  --light4: #f9fafb; 
   --light5: #eff1f5; 
 
-  --frost0:	#e69ca2; 
+  --frost0: #e69ca2; 
   --frost1: #88c0d0;
-  --frost2:	#81a1c1; 
-  --frost3:	#f1ceD0; 
+  --frost2: #81a1c1; 
+  --frost3: #f1ceD0; 
 
  /*----------------------------------------------------------------
   COLORS
@@ -687,19 +687,19 @@ settings:
 
   --red: #ff5582;
   --pink: #f2b3cf; 
-  --fairpink:	#eed3e1; 
-  --yellow:	 #fff3a3;
+  --fairpink: #eed3e1; 
+  --yellow:  #fff3a3;
   --linen: #fcecec;
   --paleblue: #b5d3ff; 
   --purple: #d2b3ff; 
-  --palegreen:	#bbfabb;
+  --palegreen:  #bbfabb;
   --dusk: #474E5E;
   --ash: #232630;
   --cornflower-blue: #a1c4fd;
   --light-cornflower-blue: #adccff;
   --duskblue: #a2acc3; 
   --darkbrown: #34343d;
-  --pureblack:	#080808; 
+  --pureblack:  #080808; 
   --royalblue: #7288da;
 
   /*----------------------------------------------------------------
@@ -718,11 +718,11 @@ settings:
   /*----------------------------------------------------------------
   PASTEL COLORS
   ----------------------------------------------------------------*/
-  --pastelyellow:	 #fcf4c9;
+  --pastelyellow:  #fcf4c9;
   --pastelcoral: #ffe896;
   --pastelpink: #fbcdf2;
   --pastelpurple: #e8befa;
-  --pastelperiwinkle:	 #abbfff;
+  --pastelperiwinkle:  #abbfff;
   --pastelgreen: #bbf3c0;
 }
 
@@ -752,13 +752,13 @@ settings:
   --background-accent: var(--pink);
   --svg-faint: var(--text-faint);
   --text-title-h1: var(--pink);
-  --text-title-h2:	var(--purple);
-  --text-title-h3:	var(--red);
-  --text-title-h4:	var(--boldorange);
-  --text-title-h5:	var(--boldgreen);
-  --text-title-h6:	var(--paleblue);
+  --text-title-h2:  var(--purple);
+  --text-title-h3:  var(--red);
+  --text-title-h4:  var(--boldorange);
+  --text-title-h5:  var(--boldgreen);
+  --text-title-h6:  var(--paleblue);
   --text-link: var(--frost0);
-  --text-a-hover:	var(--pink);
+  --text-a-hover: var(--pink);
   --text-accent:hsl(var(--d-accent-h),var(--d-accent-s),var(--d-accent-l));
   --text-on-accent: white;
 
@@ -769,7 +769,7 @@ settings:
   --interactive-accent: hsl(var(--d-accent-h), var(--d-accent-s), var(--d-accent-l));
   --interactive-accent-hover: hsl(var(--d-accent-h), var(--d-accent-s), calc(var(--d-accent-l) - 10%));
 
-  --mod-button:	var(--dark4);
+  --mod-button: var(--dark4);
   --mod-button-hover: var(--darkbrown);
   --text-highlight-color: var(--darkbrown);
   --text-selection: var(--duskblue);
@@ -795,11 +795,11 @@ settings:
   ----------------------------------------------------------------*/
 
   --yellow-highlighter: var(--yellow);
-  --pink-highlighter:	 var(--pink);
-  --red-highlighter:	 var(--red);
-  --blue-highlighter:	 var(--paleblue);
+  --pink-highlighter:  var(--pink);
+  --red-highlighter:   var(--red);
+  --blue-highlighter:  var(--paleblue);
   --green-highlighter: var(--palegreen);
-  --purple-highlighter:	 var(--purple);
+  --purple-highlighter:  var(--purple);
   --orange-highlighter: var(--boldorange);
   --grey-highlighter: var(--light2);
 
@@ -888,11 +888,11 @@ settings:
   ----------------------------------------------------------------*/
 
   --yellow-highlighter: var(--yellow);
-  --pink-highlighter:	 hsl(var(--boldlightpink));
+  --pink-highlighter:  hsl(var(--boldlightpink));
   --red-highlighter: var(--red);
-  --blue-highlighter:	var(--paleblue);
+  --blue-highlighter: var(--paleblue);
   --green-highlighter: var(--palegreen);
-  --purple-highlighter:	var(--purple);
+  --purple-highlighter: var(--purple);
   --orange-highlighter: var(--boldorange);
   --grey-highlighter: var(--light2);
 
@@ -6634,11 +6634,12 @@ border-bottom: 2px solid var(--background-modifier-border);
   max-width: 100% !important;
 }
 
-.nav-header#conversationDiv{
-background-color: transparent !important;
+.nav-header#conversationDiv p {
+  color: var(--text-muted);
+  border: none;
 }
 
-.nav-header#conversationDiv p {
+.nav-header#conversationDiv > p {
   font-size: .875em !important; 
   color: var(--text-muted);
   border-radius: 4px; 
