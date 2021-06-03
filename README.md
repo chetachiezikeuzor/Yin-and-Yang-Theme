@@ -11,8 +11,6 @@ Welcome to the Yin and Yang Obsidian theme! This theme was created with both dar
 
 ![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/dragdrop.mov)
 
-![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/52be759f-4204-4636-9114-512e2f86f4da/dragdrop.mov?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210603%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210603T131739Z&X-Amz-Expires=86400&X-Amz-Signature=d232ed21d6242a6f214094950714baa09e2f140635c08f37619a40c6e2bc7210&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22dragdrop.mov%22)
-
 ![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/dark1.png)
 
 ---
