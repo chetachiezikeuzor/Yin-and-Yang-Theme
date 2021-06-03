@@ -2892,11 +2892,6 @@ CUSTOM/READABLE LINE WIDTH
   width: var(--line-width);
 }
 
-.workspace > .workspace-split:not(.mod-root) .CodeMirror,
-.workspace > .workspace-split:not(.mod-root) .markdown-preview-view {
-  font-size:  calc(100% * var(--editor-font-size) / 100);
-}
-
 .mod-root .markdown-source-view.is-readable-line-width .CodeMirror,
 .mod-root .is-readable-line-width .markdown-preview-section {
   padding-left: 0;
@@ -2906,8 +2901,12 @@ CUSTOM/READABLE LINE WIDTH
   max-width: var(--max-width);
 }
 
-.mod-root .markdown-preview-sizer {
-  padding-top: 2rem;
+.mod-root .markdown-source-view {
+  padding-top: 2.25rem;
+}
+
+.mod-root .markdown-preview-sizer{
+  padding-top: 1.25rem;
 }
 
 .markdown-embed-content .markdown-preview-sizer {
@@ -3199,8 +3198,8 @@ EMBEDS
 }
 
 .markdown-preview-view .markdown-embed .markdown-preview-sizer {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
 }
 
 .markdown-preview-view .markdown-embed-content > .markdown-preview-view {
