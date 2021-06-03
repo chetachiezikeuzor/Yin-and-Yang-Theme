@@ -2890,11 +2890,6 @@ CUSTOM/READABLE LINE WIDTH
   padding-right: 3em;
 }
 
-.workspace > .workspace-split:not(.mod-root) .markdown-preview-view:not(.is-readable-line-width){
-  padding-left: 2.5em;
-  padding-right: 2.5em; 
-}
-
 .mod-root #calendar-container.is-readable-line-width,
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
   max-width: var(--max-width);
@@ -2906,8 +2901,8 @@ CUSTOM/READABLE LINE WIDTH
   font-size:  calc(100% * var(--editor-font-size) / 100);
 }
 
-.markdown-source-view.is-readable-line-width .CodeMirror,
-.is-readable-line-width .markdown-preview-section {
+.mod-root .markdown-source-view.is-readable-line-width .CodeMirror,
+.mod-root .is-readable-line-width .markdown-preview-section {
   padding-left: 0;
   padding-right: 0;
   margin: 0 auto 0 auto;
@@ -6597,6 +6592,10 @@ li.svelte-1q8cjhd.svelte-1q8cjhd {
   border: .025em solid var(--background-modifier-border) !important;
   border-radius: 4px !important;
   padding: var(--todoList-contentPadding);
+}
+
+li.svelte-1q8cjhd.svelte-1q8cjhd:before{
+  display: none;
 }
 
 .checklist-plugin-main {
