@@ -6578,6 +6578,8 @@ li.svelte-1q8cjhd.svelte-1q8cjhd:hover{
 }
 
 li.svelte-1q8cjhd.svelte-1q8cjhd {
+  font-size: .875em !important; 
+  line-height: 1em;
   border: .025em solid var(--background-modifier-border) !important;
   border-radius: 4px !important;
   padding: var(--todoList-contentPadding);
