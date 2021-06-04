@@ -6,7 +6,7 @@
 ** --------------------------------------------------------------- **/
 
 /* @settings
-name: Yin and Yang Theme Settings
+name: Yin and Yang Theme
 id: Yin and Yang
 settings:
   - 
@@ -527,7 +527,7 @@ settings:
     type: class-toggle
   - 
     title: Status Bar 
-    id: heading-specific
+    id: status-bar-spec
     type: heading
     level: 4
   -
@@ -539,6 +539,16 @@ settings:
     title: Remove Status Bar Icon 
     description: This will remove the ☯️ symbol from the status bar
     id: no-status-icon
+    type: class-toggle
+  - 
+    title: Transparent Window 
+    id: transparent-win-spec
+    type: heading
+    level: 4
+  -
+    title: MacOS-Like Transparent Window
+    description: This will give your workspace a MacOS-like translucency
+    id: macOS-translucent
     type: class-toggle
 
 */
@@ -748,7 +758,7 @@ settings:
   );
 
   --background-tertiary: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 10%));
-  --background-translucent: rgba(0, 5, 10, .7);
+  --background-translucent: rgba(40, 40, 40, 0.6);
   --background-accent: var(--pink);
   --svg-faint: var(--text-faint);
   --text-title-h1: var(--pink);
@@ -824,7 +834,6 @@ settings:
 
   --accent-hsl: var(--l-accent-h), var(--l-accent-s), var(--l-accent-l);
 
-  --opacity-translucency: 0.55;
   --background-primary: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 50%));
   --background-primary-alt: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 49%));
   --background-secondary: hsl(calc(var(--base-h) - 7), calc(var(--base-s) + 12%), calc(var(--base-l) + 45%));
@@ -842,7 +851,7 @@ settings:
   );
 
   --background-tertiary: hsl(var(--base-h), calc(var(--base-s) + 10%), calc(var(--base-l) + 40%));
-  --background-translucent: rgba(250, 250, 250, .5);
+  --background-translucent: rgba(245, 245, 245, 0.75);
   --svg-faint: var(--text-faint);
   --text-title-h1: hsl(var(--boldlightpink));
   --text-title-h2: var(--purple);
@@ -856,8 +865,8 @@ settings:
   --text-on-accent: white;
 
   --text-normal: hsla(calc(var(--base-h)), calc(var(--base-s) + 80%), calc(var(--base-l) - 40%), .9);
-  --text-muted: hsla(calc(var(--base-h) - 11), calc(var(--base-s) + 2%), calc(var(--base-l) + 1%), .9);
-  --text-faint: hsla(calc(var(--base-h) - 9), calc(var(--base-s) + 0%), calc(var(--base-l) + 19%), .9);
+  --text-muted: hsla(calc(var(--base-h) - 11), calc(var(--base-s) + 2%), calc(var(--base-l) + 1%), .95);
+  --text-faint: hsla(calc(var(--base-h) - 9), calc(var(--base-s) + 0%), calc(var(--base-l) + 19%), .95);
 
   --interactive-accent: hsl(var(--l-accent-h),var(--l-accent-s),var(--l-accent-l));
   --interactive-accent-hover: hsl(var(--l-accent-h), var(--l-accent-s), calc(var(--l-accent-l) + 3%));
@@ -3539,14 +3548,12 @@ opacity: .5;
 color: inherit;
 }
 
-/*pretty cursor*/
-
-.CodeMirror-cursor, .cm-s-obsidian .cm-cursor {
-  border-left: 2px solid var(--vim-cursor);
-}
-
 .workspace-split.mod-root {
 background-color: var(--background-secondary);
+}
+
+ .mod-root > .workspace-leaf{
+  border-right: 1px solid var(--background-modifier-border) !important; 
 }
 
 .workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed{
@@ -3594,8 +3601,13 @@ transition: border-color 0s ease-in-out 0s, background-color 0s ease-in-out 0s;
 .workspace-ribbon.mod-right.is-collapsed,
 .workspace-ribbon.mod-left.is-collapsed {
 border-color: transparent;
-background-color: transparent;
 transition: border-color 0s ease-in-out 0.1s, background-color 0s ease-in-out 0.2s;
+}
+
+/*pretty cursor*/
+
+.CodeMirror-cursor, .cm-s-obsidian .cm-cursor {
+  border-left: 2px solid var(--vim-cursor);
 }
 
 /*WORKSPACE TABS*/
@@ -3625,7 +3637,6 @@ padding: 4px 4px;
 .workspace-tab-header-inner{
 padding: 5px;
 }
-
 
 /*WORKSPACE TAB RADIUS*/
 
@@ -3916,7 +3927,7 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root .view-header-titl
 body.plugin-sliding-panes-rotate-header.plugin-sliding-panes-header-alt .workspace > .mod-root .view-header-title {
   padding: 3px 0;
   line-height: 1em;
-  margin-left: 4px !important;
+  margin-left: 6px !important;
 }
 
 body.plugin-sliding-panes.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header .view-header-icon{
@@ -3993,22 +4004,22 @@ opacity: .5;
 background-color: var(--background-modifier-border);
 }
 
-.workspace-split.mod-left-split > .workspace-leaf-resize-handle, .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
-  opacity: .25;
-  width: 1px;
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+  width: 3px;
+  background-color: transparent;
+}
+
+.theme-light .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
+  opacity: .75;
+}
+
+.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
+  height: 2px;
+  border-bottom: none;
+  opacity: .5;
   background-color: var(--background-modifier-border);
-}
-
-.theme-light .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle{
-opacity: .5;
-height: 1px;
-background-color: var(--background-modifier-border);
-}
-
-.theme-dark .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle{
-opacity: .25;
-height: 1px;
-background-color: var(--background-modifier-border);
 }
 
 .is-translucent .workspace-leaf-resize-handle,
@@ -4016,8 +4027,23 @@ background-color: var(--background-modifier-border);
 --opacity-translucency: .1;
 }
 
-body.plugin-sliding-panes .view-header::after {
-content: none;
+.focus-mode .workspace,
+.focus-mode .workspace{
+  background-color: var(--background-primary) !important;
+}
+
+body.plugin-sliding-panes-rotate-header.plugin-sliding-panes-header-alt
+  .workspace
+  > .mod-root
+  > .workspace-leaf
+  > .workspace-leaf-content
+  > .view-header
+  .view-header-title-container {
+  align-items: center;
+  margin: 0 0;
+  width: 100%;
+  max-width: unset;
+  margin-left: 10px !important;
 }
 
 body.plugin-sliding-panes.hider-frameless .mod-left-split.is-collapsed + div.mod-root .workspace-leaf:first-of-type .view-header {
@@ -4478,7 +4504,7 @@ right: 0;
 bottom: 0;
 border-top-left-radius: 8px;
 line-height: 1;
-padding: 10px 12px 10px 0;
+padding: 8px 12px 8px 0;
 color: var(--text-normal);
 max-height: unset;
 }
@@ -6381,6 +6407,37 @@ right: 0;
 bottom: 0;
 }
 
+/*Translucency*/
+
+.macOS-translucent.is-translucent .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
+.macOS-translucent.is-translucent .workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.macOS-translucent.is-translucent .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+  width: 3px;
+  background-color: transparent;
+}
+
+.macOS-translucent.is-translucent .workspace-ribbon.mod-right.is-collapsed,
+.macOS-translucent.is-translucent .workspace-ribbon.mod-left.is-collapsed {
+  background-color: var(--background-primary) !important;
+  opacity: .925 !important;
+}
+
+.macOS-translucent.is-translucent .workspace-split.mod-root {
+  opacity: .925;
+}
+
+.macOS-translucent.is-translucent .workspace-tabs {
+  opacity: .75;
+}
+
+.macOS-translucent.is-translucent .workspace-ribbon {
+  opacity: .75;
+}
+
+.macOS-translucent.is-translucent .titlebar {
+  opacity: .75;
+}
+
 /*----------------------------------------------------------------
 PLUGINS!!!
 ----------------------------------------------------------------*/
@@ -6660,7 +6717,7 @@ border: .025em solid var(--background-modifier-border);
 }
 
 /*----------------------------------------------------------------
-DAILY PLANNER PLUGIN 
+DAY PLANNER PLUGIN 
 ----------------------------------------------------------------*/
 
 .header_title.svelte-e43ld1.svelte-e43ld1, .ei_Title.svelte-e43ld1.svelte-e43ld1, .ce_title.svelte-e43ld1.svelte-e43ld1,
@@ -7052,13 +7109,12 @@ STYLE SETTINGS PLUGIN
 .style-settings-collapse-indicator{
   color: var(--text-faint);
   top: 2px !important;
-  opacity: .75;
+  font-weight: 400;
 }
 
 .style-settings-collapse-indicator:after{
 cursor: pointer;
 content:"\e9ac"; 
-opacity: .75;
 font-family: boxicons;
 margin-right: -5px !important;
 }
