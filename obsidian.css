@@ -773,7 +773,7 @@ settings:
   --text-on-accent: white;
 
   --text-normal: hsla(var(--base-h),calc(var(--base-s) + 45%), calc(var(--base-d) + 95%), .8);
-  --text-muted: hsla(var(--base-h),var(--base-s), calc(var(--base-d) + 50%), .95);
+  --text-muted: hsla(var(--base-h),var(--base-s), calc(var(--base-d) + 55%), .9);
   --text-faint: hsla(var(--base-h),var(--base-s), calc(var(--base-d) + 25%), .95);
 
   --interactive-accent: hsl(var(--d-accent-h), var(--d-accent-s), var(--d-accent-l));
@@ -2780,6 +2780,7 @@ padding: 0 5px;
 
 .vertical-tab-header-group-title {
 color: var(--text-normal);
+text-transform: capitalize;
 font-size: 15px;
 padding: 5px 15px 5px 15px;
 margin-left: 4px;
