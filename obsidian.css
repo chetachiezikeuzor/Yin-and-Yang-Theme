@@ -3611,6 +3611,7 @@ background-color: var(--background-secondary);
 .workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed{
 border-right-color: var(--background-primary-alt); 
 }
+
 .workspace-ribbon.side-dock-ribbon.mod-right.is-collapsed {
 border-left-color: var(--background-primary-alt); 
 }
@@ -4287,6 +4288,103 @@ display: block;
 max-width: 100%;
 margin-left: 0;
 width: 500px;
+}
+
+/*----------------------------------------------------------------
+DOCUMENT SEARCH
+----------------------------------------------------------------*/
+
+.document-search-container.mod-replace-mode {
+  height: unset;
+}
+
+.document-search-button,
+.document-search-close-button {
+  justify-self: flex-end;
+  top: 0;
+  font-size: 18px;
+  padding: 4px 0 4px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.document-search-close-button {
+  width: 2rem;
+}
+
+.document-search-container {
+  background-color: var(--background-primary);
+  width: 100%;
+  position: absolute;
+  height: unset;
+  bottom: unset;
+  top: 0;
+  padding: 6px 10px;
+  border-top: 1px solid var(--background-modifier-border);
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+input.document-search-input,
+input.document-replace-input {
+  transition: border-color 0.1s ease-in-out;
+  font-size: 13px !important;
+  height: auto;
+  margin: 0;
+  padding: 0.75em 1em 0.75em 1em;
+  line-height: 1;
+  max-width: 400px;
+}
+
+input.document-search-input:hover,
+input.document-replace-input:hover {
+  background: var(--background-primary);
+  transition: border-color 0.1s ease-in-out;
+}
+
+input.document-search-input:focus,
+input.document-replace-input:focus {
+  background: var(--background-primary);
+  transition: all 0.05s ease-in-out;
+  border: 0.25em solid var(--accent-hsl);
+}
+
+.document-search-button {
+  color: var(--text-normal);
+  font-size: 13px;
+  line-height: 1;
+  border: 1px solid transparent;
+  background-color: var(--mod-button);
+  cursor: pointer;
+  height: auto;
+  padding: 0.6em 1.2em;
+  margin: 0 0 0 5px;
+}
+
+.document-search-button:hover {
+  background-color: var(--background-secondary);
+}
+
+.document-search-buttons,
+.document-replace-buttons {
+  margin-left: 5px;
+  display: flex;
+  font-size: 13px;
+  line-height: 1;
+  width: 210px;
+}
+
+.document-search,
+.document-replace {
+  height: auto;
+  overflow: visible;
+  justify-content: flex-end;
+}
+
+.document-replace {
+  padding-top: 10px;
 }
 
 /*----------------------------------------------------------------
@@ -5124,7 +5222,7 @@ content: "\ebe9";
 }
 
 .document-search-close-button:before {
-content: "\ebe9";
+content: "\ebea";
 }
 
 .search-input-clear-button:before {
