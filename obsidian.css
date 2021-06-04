@@ -773,8 +773,8 @@ settings:
   --text-on-accent: white;
 
   --text-normal: hsla(var(--base-h),calc(var(--base-s) + 45%), calc(var(--base-d) + 95%), .8);
-  --text-muted: hsla(var(--base-h),var(--base-s), calc(var(--base-d) + 50%), .8);
-  --text-faint: hsla(var(--base-h),var(--base-s), calc(var(--base-d) + 25%), .8);
+  --text-muted: hsla(var(--base-h),var(--base-s), calc(var(--base-d) + 50%), .95);
+  --text-faint: hsla(var(--base-h),var(--base-s), calc(var(--base-d) + 25%), .95);
 
   --interactive-accent: hsl(var(--d-accent-h), var(--d-accent-s), var(--d-accent-l));
   --interactive-accent-hover: hsl(var(--d-accent-h), var(--d-accent-s), calc(var(--d-accent-l) - 10%));
@@ -4649,11 +4649,17 @@ color: var(--text-muted);
 margin: 0 0px !important;
 }
 
+.status-bar-item-icon svg {
+  display: block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
 .status-bar,
 .is-translucent .status-bar {
 border: 1px solid var(--background-modifier-border);
 background-color: var(--background-secondary);
-font-size: 13px;
 position: absolute;
 margin: auto;
 right: 0;
@@ -4682,6 +4688,44 @@ transition: 200ms;
 .status-bar:hover{
 opacity: 1;
 transition: 200ms;
+}
+
+body .lt-predictions-container {
+  font-family: var(--default-font);
+  font-size: 14px;
+  border: .025em solid var(--background-modifier-border);
+}
+
+body .lt-buttoncontainer > button {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-normal);
+  padding: 4px 14px;
+  background: var(--mod-button);
+  border: .025em solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+body .lt-title:not(:empty) {
+  font-weight: 500;
+}
+
+body .lt-status-bar-btn {
+  margin: -3.5px 0;
+}
+
+body .lt-status-bar-btn svg {
+  width: 13px;
+  height: 13px;
+}
+
+.day-planner-progress-bar{
+  margin: -4px 0 !important;
+  top: 5px !important;
+}
+
+.progress-pie.day-planner{
+  margin: -3px 0 !important;
 }
 
 .persistent-sb .status-bar,
