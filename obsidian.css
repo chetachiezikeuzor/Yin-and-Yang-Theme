@@ -3487,7 +3487,7 @@ display: none;
 }
 
 div.popover.hover-popover .markdown-preview-view {
-font-size: calc(var(--editor-font-size) - .15em);
+font-size: calc(var(--editor-font-size) - .1em);
 padding-bottom: 2.5rem;
 padding-top: 1.5rem !important;
 padding: 2.5rem;
