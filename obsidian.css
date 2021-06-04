@@ -3041,6 +3041,7 @@ input[type="checkbox"],
   cursor: pointer;
   width: 1.2em;
   height: 1.2em;
+  top: 1px;
   position: inherit;
   position: relative;
   line-height: 0;
