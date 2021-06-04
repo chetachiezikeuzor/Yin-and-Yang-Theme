@@ -3704,10 +3704,15 @@ Header */
   margin: 1px !important;
 }
 
-.nav-action-button,
+
+.workspace-split
+.nav-action-button{
+transition: 50ms ease-in-out;
+}
+
 .nav-action-text-button,
 .nav-action-text-button:hover{
-transition: 200ms ease-in-out;
+transition: 100ms ease-in-out;
 }
 
 body:not(.plugin-sliding-panes-rotate-header)
