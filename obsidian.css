@@ -233,110 +233,110 @@ settings:
     title: Heading 1 Size Preview
     id: s-header-1-pre
     type: variable-number-slider
-    default: 32
-    format: px
-    min: 18
-    max: 40
-    step: 2 
+    default: 1.98
+    format: em
+    min: 1
+    max: 3
+    step: .1 
   -
     title: Heading 1 Size Editor
     id: s-header-1-ed
     type: variable-number-slider
-    default: 32
-    format: px
-    min: 18
-    max: 40
-    step: 2
+    default: 1.98
+    format: em
+    min: 1
+    max: 3
+    step: .2
   -
     title: Heading 2 Size Preview
     id: s-header-2-pre
     type: variable-number-slider
-    default: 29
-    format: px
-    min: 18
-    max: 40
-    step: 2
+    default: 1.88
+    format: em
+    min: 1
+    max: 3
+    step: .2
   -
     title: Heading 2 Size Editor
     id: s-header-2-ed
     type: variable-number-slider
-    default: 29
-    format: px
-    min: 18
-    max: 40
-    step: 2
+    default: 1.88
+    format: em
+    min: 1
+    max: 3
+    step: .2
   -
     title: Heading 3 Size Preview
     id: s-header-3-pre
     type: variable-number-slider
-    default: 26
-    format: px
-    min: 18
-    max: 40
-    step: 2
+    default: 1.68
+    format: em
+    min: 1
+    max: 3
+    step: .2
   -
     title: Heading 3 Size Editor
     id: s-header-3-ed
     type: variable-number-slider
-    default: 26
-    format: px
-    min: 18
-    max: 40
-    step: 2
+    default: 1.68
+    format: em
+    min: 1
+    max: 3
+    step: .2
   -
     title: Heading 4 Size Preview
     id: s-header-4-pre
     type: variable-number-slider
-    default: 23
-    format: px
-    min: 18
-    max: 40
-    step: 2
+    default: 1.48
+    format: em
+    min: 1
+    max: 3
+    step: .2
   -
     title: Heading 4 Size Editor
     id: s-header-4-ed
     type: variable-number-slider
-    default: 23
-    format: px
-    min: 18
-    max: 40
-    step: 2
+    default: 1.48
+    format: em
+    min: 1
+    max: 3
+    step: .2
   -
     title: Heading 5 Size Preview
     id: s-header-5-pre
     type: variable-number-slider
-    default: 20
-    format: px
-    min: 18
-    max: 40
-    step: 2
+    default: 1.28
+    format: em
+    min: 1
+    max: 3
+    step: .2
   -
     title: Heading 5 Size Editor
     id: s-header-5-ed
     type: variable-number-slider
-    default: 20
-    format: px
-    min: 18
-    max: 40
-    step: 2 
+    default: 1.28
+    format: em
+    min: 1
+    max: 3
+    step: .2
   -
     title: Heading 6 Size Preview
     id: s-header-6-pre
     type: variable-number-slider
-    default: 18
-    format: px
-    min: 18
-    max: 40
-    step: 2 
+    default: 1.08
+    format: em
+    min: 1
+    max: 3
+    step: .2
   -
     title: Heading 6 Size Editor
     id: s-header-6-ed
     type: variable-number-slider
-    default: 18
-    format: px
-    min: 18
-    max: 40
-    step: 2
+    default: 1.08
+    format: em
+    min: 1
+    max: 3
+    step: .2
   -
     title: Heading Color
     id: spec-size-head
@@ -642,18 +642,18 @@ settings:
   --strong-color: hsl(var(--boldpink));
   --em-color: var(--paleblue);
 
-  --s-header-1-pre: 32px;
-  --s-header-2-pre: 29px;
-  --s-header-3-pre: 26px;
-  --s-header-4-pre: 23px;
-  --s-header-5-pre: 20px;
-  --s-header-6-pre: 18px;
-  --s-header-1-ed: 32px;
-  --s-header-2-ed: 29px;
-  --s-header-3-ed: 26px;
-  --s-header-4-ed: 23px;
-  --s-header-5-ed: 20px;
-  --s-header-6-ed: 18px;
+  --s-header-1-pre: 1.98em;
+  --s-header-2-pre: 1.88em;
+  --s-header-3-pre: 1.68em;
+  --s-header-4-pre: 1.48em;
+  --s-header-5-pre: 1.28em;
+  --s-header-6-pre: 1.08em;
+  --s-header-1-ed: 1.98rem;
+  --s-header-2-ed: 1.88rem;
+  --s-header-3-ed: 1.68rem;
+  --s-header-4-ed: 1.48rem;
+  --s-header-5-ed: 1.28rem;
+  --s-header-6-ed: 1.08rem;
 
   --f-header-1-pre: var(--default-font); 
   --f-header-2-pre: var(--default-font);
@@ -1564,7 +1564,6 @@ font-family: var(--header-font-ed);
 font-family: var(--header-font-pre);
 }
 
-.CodeMirror .CodeMirror-line.HyperMD-header-1,
 .cm-s-obsidian .cm-header.cm-header-1,
 .markdown-preview-section h1{
   line-height: 1.2em;
@@ -1573,7 +1572,10 @@ font-family: var(--header-font-pre);
   color: var(--text-normal);
 }
 
-.CodeMirror .CodeMirror-line.HyperMD-header-2,
+.CodeMirror .CodeMirror-line.HyperMD-header-1{
+  font-weight: 750;
+}
+
 .cm-s-obsidian .cm-header.cm-header-2,
 .markdown-preview-section h2{
   line-height: 1.2em;
@@ -1582,7 +1584,10 @@ font-family: var(--header-font-pre);
   color: var(--text-normal);
 }
 
-.CodeMirror .CodeMirror-line.HyperMD-header-3,
+.CodeMirror .CodeMirror-line.HyperMD-header-2{
+  font-weight: 700;
+}
+
 .cm-s-obsidian .cm-header.cm-header-3,
 .markdown-preview-section h3{
   line-height: 1.2em;
@@ -1591,7 +1596,10 @@ font-family: var(--header-font-pre);
   color: var(--text-normal);
 }
 
-.CodeMirror .CodeMirror-line.HyperMD-header-4,
+.CodeMirror .CodeMirror-line.HyperMD-header-3{
+  font-weight: 650;
+}
+
 .cm-s-obsidian .cm-header.cm-header-4,
 .markdown-preview-section h4{
   font-weight: 650;
@@ -1599,7 +1607,10 @@ font-family: var(--header-font-pre);
   color: var(--text-normal);
 }
 
-.CodeMirror .CodeMirror-line.HyperMD-header-5,
+.CodeMirror .CodeMirror-line.HyperMD-header-4{
+  font-weight: 650;
+}
+
 .cm-s-obsidian .cm-header.cm-header-5,
 .markdown-preview-section h5{
   line-height: 1.2em;
@@ -1608,12 +1619,19 @@ font-family: var(--header-font-pre);
   color: var(--text-normal);
 }
 
-.CodeMirror .CodeMirror-line.HyperMD-header-6,
+.CodeMirror .CodeMirror-line.HyperMD-header-5{
+  font-weight: 650;
+}
+
 .cm-s-obsidian .cm-header.cm-header-6,
 .markdown-preview-section h6{
   font-weight: 600;
   font-size: var(--s-header-6-pre);
   color: var(--text-normal);
+}
+
+.CodeMirror .CodeMirror-line.HyperMD-header-6{
+  font-weight: 600;
 }
 
 /*----------------------------------------------------------------
@@ -3018,13 +3036,13 @@ list-style-type: "□   ";
 TASK LISTS
 ----------------------------------------------------------------*/
 
-input[type="checkbox"],
+input[type="checkbox"], 
 .markdown-preview-view .task-list-item-checkbox {
   cursor: pointer;
-  width: 1.35em;
-  height: 1.35em;
+  width: 1.2em;
+  height: 1.2em;
+  position: inherit;
   position: relative;
-  top: 1.5px;
   line-height: 0;
   -webkit-appearance: none;
   appearance: none;
@@ -3046,8 +3064,8 @@ input[type="checkbox"]:checked:before {
   font-family: "boxicons";
   line-height: 1;
   position: absolute;
-  top: -1px;
-  left: -1px;
+  top: -2px;
+  left: -2px;
   font-size: 1.35em;
   content: "\e9a4";
   color: white;
@@ -6851,9 +6869,8 @@ font-size: var(--small-font-size);
 }
 
 .kanban-plugin__lane-grip[aria-label^="Move list"]:after{
- line-height: 1.75;
  content: "\ea60";
- font-size: var(--large-font-size);
+ line-height: 1.75em;
 }
 
 .kanban-plugin__icon[data-icon="pencil"]:after{
@@ -6884,6 +6901,19 @@ body .kanban-plugin{
 background: var(--background-primary) !important;
 }
 
+.kanban-plugin .tag{
+  padding: 0;
+  border: 0;
+  background-color: inherit !important;
+  color: var(--interactive-accent);
+  border-radius: .5em;
+}
+
+.kanban-plugin .tag:hover{
+  background-color: inherit !important;
+  color: var(--interactive-accent) !important;
+}
+
 .theme-light .kanban-plugin__lane{
   background: var(--background-primary-alt) !important;
 }
@@ -6892,9 +6922,17 @@ background: var(--background-primary) !important;
   padding: .2em .2em;
 }
 
+.kanban-plugin__item-prefix-button-wrapper input[type="checkbox"]{
+  margin: 3px 7px 3px 0px !important;
+}
+
+.kanban-plugin .markdown-preview-view.kanban-plugin__item-markdown p{
+  line-height: 1.5em;
+}
+
 .kanban-plugin__item-content-wrapper{
-  padding: .5em .8em .5em .8em !important;
-  border-radius: 4px !important;
+  padding: .3em .3em .3em .3em !important;
+  border-radius: .025em !important;
   background: var(--background-primary) !important;
 }
 
@@ -6914,7 +6952,6 @@ display: inline-block;
 .kanban-plugin__lane button.kanban-plugin__lane-settings-button{
 box-shadow: none;
 border: none !important;
-padding: 4px !important;
 line-height: 1em;
 }
 
