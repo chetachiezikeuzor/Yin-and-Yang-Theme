@@ -6729,7 +6729,7 @@ CHECKLIST PLUGIN
 ----------------------------------------------------------------*/
 
 .checklist-plugin-main{
-  margin-left: 5px;
+margin-left: 5px;
 }
 
 header.svelte-yzsyxo {
@@ -6756,7 +6756,7 @@ color: var(--text-muted) !important;
 
 .count.svelte-yzsyxo{
 color: var(--text-muted) !important;
-border: .025em solid var(--background-modifier-border) !important;
+background-color: transparent !important;
 padding: var(--todoList-countPadding) !important;
 }
 
@@ -6815,7 +6815,7 @@ li.svelte-1q8cjhd.svelte-1q8cjhd:before{
 --todoList-listItemMargin: 0 0px 12px !important;
 --todoList-buttonPadding: 3.5px 4px !important;
 --todoList-countPadding: 0px 5px !important;
---todoList-countFontSize: 10px !important;
+--todoList-countFontSize: 12px !important;
 --todoList-listItemBackground: var(--background-primary-alt) !important;
 --todoList-listItemBackground--hover: var(--interactive-accent) !important;
 --todoList-groupMargin: 8px !important;
