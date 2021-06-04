@@ -3824,7 +3824,7 @@ TAG PILLS
 
 .tag {
 background-color: var(--tag-base);
-border: .025em solid hsl(var(--boldlightpink));
+border: .025em solid var(--interactive-accent);
 color: var(--text-normal);
 font-weight: 500;
 padding-left: 10px;
@@ -3834,14 +3834,7 @@ text-decoration: none !important;
 display: inline-block;
 cursor: pointer;
 border-radius: 8px;
-transition: .5s ease-in-out;
-}
-
-.tag:hover {
-color: var(--dark5) !important;
-text-decoration: none !important;
-transition: .1s ease-in-out;
-background-color: hsl(var(--boldlightpink)) !important;
+transition: .2s ease-in-out;
 }
 
 /*----------------------------------------------------------------
@@ -4188,7 +4181,7 @@ margin: 1px 0;
 
 .frontmatter-container .tag {
 background-color: var(--tag-base);
-border: .025em solid hsl(var(--boldlightpink));
+border: .025em solid var(--interactive-accent);
 font-weight: 500;
 padding: 5px 12px !important;
 text-align: center;
@@ -4196,7 +4189,7 @@ text-decoration: none !important;
 display: inline-block;
 cursor: pointer;
 border-radius: 8px;
-transition: .1s ease-in-out;
+transition: .2s ease-in-out;
 }
 
 .frontmatter-container .tag[href^="#❗️"] {
@@ -4220,9 +4213,9 @@ border: 1px solid var(--palegreen);
 }
 
 .frontmatter-container .tag:hover {
-background-color: var(--tag-base) !important;
-border: 1px solid hsl(var(--boldlightpink));
-color: hsl(var(--boldlightpink)) !important;
+background-color: var(--tag-base);
+border: 1px solid var(--interactive-accent);
+color: var(--interactive-accent);
 transition: .1s ease-in-out;
 }
 
