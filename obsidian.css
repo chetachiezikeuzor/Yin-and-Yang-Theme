@@ -6809,7 +6809,7 @@ li.svelte-1q8cjhd.svelte-1q8cjhd:before{
 --todoList-headerFontWeight: 500 !important;
 --todoList-headerGap: 5px !important;
 --todoList-headerFontSize: 15px !important;
---todoList-contentPadding: 3px 8px 3px 8px !important;
+--todoList-contentPadding: 5px 8px 5px 8px !important;
 --todoList-checkboxSize: 18px !important; 
 --todoList-checkboxCheckedSize: 14px !important;
 --todoList-listItemMargin: 0 0px 12px !important;
