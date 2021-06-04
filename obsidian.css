@@ -237,7 +237,7 @@ settings:
     format: em
     min: 1
     max: 3
-    step: .1 
+    step: .15 
   -
     title: Heading 1 Size Editor
     id: s-header-1-ed
@@ -246,7 +246,7 @@ settings:
     format: em
     min: 1
     max: 3
-    step: .2
+    step: .15
   -
     title: Heading 2 Size Preview
     id: s-header-2-pre
@@ -255,7 +255,7 @@ settings:
     format: em
     min: 1
     max: 3
-    step: .2
+    step: .15
   -
     title: Heading 2 Size Editor
     id: s-header-2-ed
@@ -264,7 +264,7 @@ settings:
     format: em
     min: 1
     max: 3
-    step: .2
+    step: .15
   -
     title: Heading 3 Size Preview
     id: s-header-3-pre
@@ -273,7 +273,7 @@ settings:
     format: em
     min: 1
     max: 3
-    step: .2
+    step: .15
   -
     title: Heading 3 Size Editor
     id: s-header-3-ed
@@ -282,7 +282,7 @@ settings:
     format: em
     min: 1
     max: 3
-    step: .2
+    step: .15
   -
     title: Heading 4 Size Preview
     id: s-header-4-pre
@@ -291,7 +291,7 @@ settings:
     format: em
     min: 1
     max: 3
-    step: .2
+    step: .15
   -
     title: Heading 4 Size Editor
     id: s-header-4-ed
@@ -300,7 +300,7 @@ settings:
     format: em
     min: 1
     max: 3
-    step: .2
+    step: .15
   -
     title: Heading 5 Size Preview
     id: s-header-5-pre
@@ -309,7 +309,7 @@ settings:
     format: em
     min: 1
     max: 3
-    step: .2
+    step: .15
   -
     title: Heading 5 Size Editor
     id: s-header-5-ed
@@ -318,7 +318,7 @@ settings:
     format: em
     min: 1
     max: 3
-    step: .2
+    step: .15
   -
     title: Heading 6 Size Preview
     id: s-header-6-pre
@@ -327,7 +327,7 @@ settings:
     format: em
     min: 1
     max: 3
-    step: .2
+    step: .15
   -
     title: Heading 6 Size Editor
     id: s-header-6-ed
@@ -336,7 +336,7 @@ settings:
     format: em
     min: 1
     max: 3
-    step: .2
+    step: .15
   -
     title: Heading Color
     id: spec-size-head
