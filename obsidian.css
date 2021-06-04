@@ -926,18 +926,22 @@ settings:
 TITLEBAR
 ----------------------------------------------------------------*/
 
-.titlebar-text {
-display: none;
-color: var(--text-faint);
-}
-
 body:not(.hider-frameless):not(.is-fullscreen) {
 padding-top: var(--titlebar-height) !important;
+}
+
+.is-mobile .titlebar {
+  --titlebar-height: 30px;
 }
 
 .titlebar {
 background: var(--background-secondary-alt);
 height: var(--titlebar-height) !important;
+}
+
+.titlebar-text {
+display: none;
+color: var(--text-faint);
 }
 
 .titlebar-button-container {
@@ -3604,10 +3608,6 @@ color: inherit;
 background-color: var(--background-secondary);
 }
 
- .mod-root > .workspace-leaf{
-  border-right: 1px solid var(--background-modifier-border) !important; 
-}
-
 .workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed{
 border-right-color: var(--background-primary-alt); 
 }
@@ -4001,6 +4001,10 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
 background-color: var(--background-primary);
 border-right: 1px solid var(--background-modifier-border) !important; 
 border-left: 1px solid var(--background-modifier-border) !important; 
+}
+
+body.plugin-sliding-panes-rotate-header .mod-root > .workspace-leaf{
+  border-right: 1px solid var(--background-modifier-border) !important; 
 }
 
 body.plugin-sliding-panes .app-container::before {
@@ -7193,3 +7197,4 @@ margin-right: -5px !important;
   font-family: boxicons;
   margin-right: -5px !important;
 }
+
