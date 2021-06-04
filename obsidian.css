@@ -6669,8 +6669,6 @@ DAILY PLANNER PLUGIN
 }
 
 .theme-light .event_item.svelte-e43ld1.svelte-e43ld1{
-padding-top: 15px !important;
-padding-bottom: 45px !important;
 background-color: transparent !important;
 border-bottom: 2px solid var(--background-modifier-border) !important;
 transition: 200ms !important;
@@ -6683,8 +6681,6 @@ box-shadow: none !important;
 }
 
 .theme-dark .event_item.svelte-e43ld1.svelte-e43ld1{
-padding-top: 15px !important;
-padding-bottom: 45px !important;
 background-color: transparent !important;
 border-bottom: 2px solid var(--background-modifier-border) !important;
 transition: 200ms !important;
@@ -6697,23 +6693,12 @@ box-shadow: none !important;
 }
 
 .aside__line.svelte-e43ld1.svelte-e43ld1 {
-  position: absolute;
-  left: 65px;
-  transform: translateX(-50%);
   width: 2px !important;
-  height: 100%;
   background: var(--background-modifier-border) !important;
 }
 
 .ei_Dot.svelte-e43ld1.svelte-e43ld1{
-border-radius: 3px !important;
-background-color: var(--background-secondary) !important;
-border: .025em solid var(--interactive-accent) !important;
-}
-
-.dot_active.svelte-e43ld1.svelte-e43ld1 {
-  background-color: var(--interactive-accent) !important;
-  border: 3px solid var(--interactive-accent) !important;
+border-radius: 2px !important;
 }
 
 #now-line.svelte-e43ld1.svelte-e43ld1 {
@@ -6740,12 +6725,9 @@ width: 19% !important;
 }
 
 #scroll-controls.svelte-e43ld1 .toggle.svelte-e43ld1:before {
-width: 17px !important;
-height: 16px !important;
 border-radius: 3px !important;
 font-size: 10px !important;
 font-family: var(--font-monospace) !important;
-box-shadow: none !important;
 }
 
 .day-planner-status-card{
