@@ -2557,12 +2557,11 @@ font-family: var(--default-font) !important;
 }
 
 button{
-font-weight: 600 !important;
-padding: 0.7em 1em 0.7em 1em; 
+padding: 0.65em 1em 0.65em 1em; 
 letter-spacing: 0px;
 font-family: var(--default-font) !important;
 text-transform: capitalize !important;
-font-size: 80% !important;
+font-size: .875em !important;
 transition: 100ms;
 border: .025em solid var(--background-modifier-border) !important;
 }
@@ -2576,7 +2575,8 @@ border: .025em solid var(--background-modifier-border) !important;
 }
 
 button.mod-cta {
-padding: 0.7em 1em 0.7em 1em;
+font-size: .875em;
+padding: 0.65em 1em 0.65em 1em; 
 }
 
 button#send-button,
@@ -2682,6 +2682,10 @@ padding-bottom: 8px;
 
 .modal.mod-settings a > button {
 margin-right: 8px;
+}
+
+.modal-container button.mod-cta a{
+  font-weight: 400;
 }
 
 .modal.mod-settings .vertical-tab-content-container {
@@ -4247,7 +4251,7 @@ transition: .1s ease-in-out;
   background-repeat: no-repeat, repeat;
   background-position: right 0.6em top 50%, 0 0;
   background-size: 1em auto, 100%;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05), inset 0px 1px 1px rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 1px 1px rgba(255, 255, 255, 0.2);
   transition: 100ms;
   cursor: pointer;
 }
@@ -4364,7 +4368,7 @@ input.document-replace-input:focus {
 }
 
 .document-search-button:hover {
-  background-color: var(--background-secondary);
+  background-color: var(--mod-button);
 }
 
 .document-search-buttons,
@@ -7232,7 +7236,6 @@ font-size: .875em;
   border-radius: 4px;
   background-color: var(--background-primary);
   padding: 0.5em 0em; 
-
 }
 
 .results.svelte-99gopl.svelte-99gopl{
