@@ -7115,14 +7115,36 @@ background: var(--background-primary) !important;
   margin: 3px 7px 3px 0px !important;
 }
 
-.kanban-plugin .markdown-preview-view.kanban-plugin__item-markdown p{
+.is-dragging .markdown-preview-view.kanban-plugin__lane-title-text p,
+.is-dragging .markdown-preview-view.kanban-plugin__item-markdown p,
+.kanban-plugin .markdown-preview-view p{
   line-height: 1.5em;
+}
+
+.kanban-plugin .markdown-preview-view ::-webkit-scrollbar{
+  display: none;
+}
+
+.kanban-plugin .markdown-preview-view p:after{
+    background-color: pink !important;
+  border: pink !important;
+  margin: 0em !important;
 }
 
 .kanban-plugin__item-content-wrapper{
   padding: .3em .3em .3em .3em !important;
   border-radius: .025em !important;
   background: var(--background-primary) !important;
+}
+
+.kanban-plugin__item.is-dragging {
+  border-color: var(--interactive-accent) !important;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2),
+    0 0 0 2px var(--interactive-accent) !important;
+}
+
+.kanban-plugin__lane-items.is-dragging-over {
+  background-color: hsl(var(--accent-hsl), .75) !important;
 }
 
 .kanban-plugin__item-markdown img{
