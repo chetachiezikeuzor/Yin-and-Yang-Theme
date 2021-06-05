@@ -741,10 +741,10 @@ settings:
   --accent-hsl: var(--d-accent-h), var(--d-accent-s), var(--d-accent-l);
 
   --opacity-translucency: 0.7;
-  --background-primary:hsl(var(--base-h),var(--base-s),var(--base-d));
-  --background-primary-alt:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 6%));
-  --background-secondary:hsl(var(--base-h),var(--base-s),calc(var(--base-d) - 5%));
-  --background-secondary-alt:hsl(var(--base-h),var(--base-s),calc(var(--base-d) - 10%));
+  --background-primary: hsl(var(--base-h),var(--base-s),var(--base-d));
+  --background-primary-alt: hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 6%));
+  --background-secondary: hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 3%));
+  --background-secondary-alt: hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 3%));
   --background-modifier-error: #e60026;
   --background-modifier-error-hover: red;
   --background-modifier-border:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 18%));
