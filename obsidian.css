@@ -3950,10 +3950,6 @@ line-height: 1.75 !important;
 font-family: var(--font-monospace) !important;
 }
 
-foreignObject{
-border: .025em solid var(--background-modifier-border);
-}
-
 #m84d0faf0b4897293 .activeText0, 
 #m84d0faf0b4897293 .activeText1, 
 #m84d0faf0b4897293 .activeText2, 
@@ -4660,7 +4656,7 @@ margin: 0 0px !important;
 
 .status-bar,
 .is-translucent .status-bar {
-border: 1px solid var(--background-modifier-border);
+border: .025em solid var(--background-modifier-border);
 background-color: var(--background-secondary);
 position: absolute;
 margin: auto;
@@ -4674,7 +4670,7 @@ max-height: unset;
 }
 
 .is-translucent .status-bar{
-border: 1px solid transparent;
+border: .025em solid var(--background-modifier-border);
 }
 
 .is-translucent .status-bar:hover{
@@ -4734,6 +4730,8 @@ body .lt-status-bar-btn svg {
 .persistent-sb .is-translucent .status-bar,
 .persistent-sb .is-translucent .status-bar:hover{
 opacity: 1;
+border: .025em solid var(--background-modifier-morder);
+background-color: var(--background-secondary);
 }
 
 /* ICONS*/
