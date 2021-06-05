@@ -2672,7 +2672,7 @@ padding: 1.2em 1em 1.2em 1em;
 }
 
 .modal-container p{
-  line-height: 2.25em;
+  line-height: var(--editor-line-height);
   margin-bottom: 0px;
 }
 
@@ -4868,6 +4868,7 @@ margin-left: 5px;
 .workspace-tab-header-inner-icon:after,
 .workspace-tab-header[aria-label^="Todo List"]
 .workspace-tab-header-inner-icon:after,
+.side-dock-ribbon-action[aria-label="Shuffle Plugin"]:after,
 .side-dock-ribbon-action[aria-label="Open quick switcher"]:after,
 .side-dock-ribbon-action[aria-label="Open graph view"]:after,
 .side-dock-ribbon-action[aria-label="Advanced Tables Toolbar"]:after,
@@ -5004,6 +5005,7 @@ content: none;
 .nav-action-button[aria-label="Collapse results"] > svg,
 .nav-action-button[aria-label="Show more context"] > svg,
 .nav-action-button[aria-label="Copy search results"] > svg,
+.side-dock-ribbon-action[aria-label="Shuffle Plugin"] > svg,
 .side-dock-ribbon-action[aria-label="Toggle Privacy Glasses"] > svg,
 .side-dock-ribbon-action[aria-label="Create a new drawing in Excalidraw"] > svg,
 .side-dock-ribbon-action[aria-label="Open quick switcher"] > svg,
@@ -5110,6 +5112,7 @@ display: none;
 .nav-action-button[aria-label="Collapse results"]:after,
 .nav-action-button[aria-label="Show more context"]:after,
 .nav-action-button[aria-label="Copy search results"]:after,
+.side-dock-ribbon-action[aria-label="Shuffle Plugin"]:after,
 .side-dock-ribbon-action[aria-label="Toggle Privacy Glasses"]:after,
 .side-dock-ribbon-action[aria-label="Create a new drawing in Excalidraw"]:after,
 .side-dock-ribbon-action[aria-label="Open quick switcher"]:after,
@@ -5526,6 +5529,10 @@ content: "\eb03";
 
 .side-dock-ribbon-action[aria-label="Open random note"]:after {
 content: "\ea02";
+}
+
+.side-dock-ribbon-action[aria-label="Shuffle Plugin"]:after{
+  content: "\ea00";
 }
 
 .side-dock-ribbon-action[aria-label="Start/stop recording"]:after{
