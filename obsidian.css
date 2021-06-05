@@ -4788,6 +4788,12 @@ cursor: pointer;
 
 /*FILE EXPLORER ICONS*/
 
+.nav-folder-title .collapse-icon{
+  font-weight: 400;
+  font-family: boxicons;
+  color: var(--text-muted);
+}
+
 /*File icon for notes (fixes recent files pane)*/
 .nav-folder-children .nav-file-title-content:first-child::before{
 content: "\ea37"; 
