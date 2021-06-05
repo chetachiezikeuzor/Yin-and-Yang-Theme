@@ -777,7 +777,7 @@ settings:
   --text-faint: hsla(var(--base-h),var(--base-s), calc(var(--base-d) + 25%), .95);
 
   --interactive-accent: hsl(var(--d-accent-h), var(--d-accent-s), var(--d-accent-l));
-  --interactive-accent-hover: hsl(var(--d-accent-h), var(--d-accent-s), calc(var(--d-accent-l) - 10%));
+  --interactive-accent-hover: hsl(var(--d-accent-h), var(--d-accent-s), calc(var(--d-accent-l) - 5%));
 
   --mod-button: var(--dark4);
   --mod-button-hover: var(--darkbrown);
