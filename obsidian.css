@@ -1305,9 +1305,9 @@ font-size: 14px;
 }
 
 .graph-controls.is-close .graph-controls-button {
-padding-top: 9px !important;
-box-shadow: 0px 0px 0px .5px inset var(--background-modifier-border);
-padding: 8px 8px;
+  padding-top: 8.5px !important;
+  box-shadow: 0px 0px 0px .5px inset var(--background-modifier-border);
+  padding: 8.5px 8.5px;
 }
 
 .graph-controls-button{
