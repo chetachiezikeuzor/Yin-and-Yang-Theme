@@ -795,7 +795,7 @@ settings:
   --d-blockquote-l: 86%;
 
   --blockquote-border: var(--d-blockquote-h), var(--d-blockquote-s), var(--d-blockquote-l);
-  --blockquote-bg: hsla(var(--blockquote-border), .025);
+  --blockquote-bg: hsla(var(--blockquote-border), .05);
 
   --checkbox-base: var(--darkbrown);
   --checkbox-after: var(--interactive-accent);
@@ -887,7 +887,7 @@ settings:
   --l-blockquote-l: 66%;
 
   --blockquote-border: var(--l-blockquote-h), var(--l-blockquote-s), var(--l-blockquote-l);
-  --blockquote-bg: hsla(var(--blockquote-border), .025);
+  --blockquote-bg: hsla(var(--blockquote-border), .05);
 
   --checkbox-base: var(--light2);
   --checkbox-after: var(--interactive-accent);
