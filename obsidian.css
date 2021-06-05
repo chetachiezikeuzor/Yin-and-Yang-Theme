@@ -630,7 +630,7 @@ settings:
   --small-font-size: 15px;
   --titlebar-height: 24px;
   --line-width: 47rem;
-  --max-width: 85%;
+  --max-width: 97%;
   --font-size-notes: 0.875rem;
   --normal-weight: 400;
   --bold-weight: 600;
@@ -2950,6 +2950,19 @@ CUSTOM/READABLE LINE WIDTH
 }
 
 .markdown-embed.is-readable-line-width .markdown-preview-section > div {
+  margin: 0;
+  width: auto;
+  max-width: none;
+}
+
+.is-readable-line-width .markdown-preview-section > div {
+  margin: 0 auto 0 auto;
+  width: var(--line-width);
+  max-width: var(--max-width);
+}
+
+.markdown-embed .markdown-preview-section > div {
+  padding: 0;
   margin: 0;
   width: auto;
   max-width: none;
