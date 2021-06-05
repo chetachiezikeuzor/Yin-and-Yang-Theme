@@ -2557,10 +2557,10 @@ font-family: var(--default-font) !important;
 }
 
 button{
-padding: 0.65em 1em 0.65em 1em; 
-letter-spacing: 0px;
+padding: 0.6em 1em 0.6em 1em; 
 font-family: var(--default-font) !important;
 text-transform: capitalize !important;
+line-height: 1.25em;
 font-size: .875em !important;
 transition: 100ms;
 border: .025em solid var(--background-modifier-border) !important;
@@ -2575,8 +2575,9 @@ border: .025em solid var(--background-modifier-border) !important;
 }
 
 button.mod-cta {
-font-size: .875em;
-padding: 0.65em 1em 0.65em 1em; 
+line-height: 1.25em;
+font-size: .875em !important;
+padding: 0.6em 1em 0.6em 1em; 
 }
 
 button#send-button,
