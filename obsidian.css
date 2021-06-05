@@ -3969,7 +3969,11 @@ body:not(.plugin-sliding-panes-rotate-header) .workspace-leaf .workspace-leaf-co
 
 body:not(.plugin-sliding-panes-rotate-header) .workspace-leaf-content > .view-header .view-action,
 .workspace-leaf-content > .view-header .view-action{
-  margin: 1px 4px;
+  margin: 1px 8px;
+}
+
+body.plugin-sliding-panes.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header .view-action > svg{
+  margin: 0px -2px;
 }
 
 body:not(.plugin-sliding-panes-rotate-header) .workspace-leaf-content > .view-header .view-header-icon{
@@ -4591,10 +4595,10 @@ padding-left: 10px;
 
 /*tag pane*/
 .tree-item-self.is-clickable:hover .tree-item-flair,
-.tree-item:hover .tree-item-flair{ /*comeback*/
+.tree-item:hover .tree-item-flair{
 background-color: var(--background-primary-alt);
 color:  var(--text-muted);
-border: 1px solid var(--background-modifier-border);
+border: .025em solid var(--interactive-accent);
 transition: 150ms ease-in-out;
 }
 
