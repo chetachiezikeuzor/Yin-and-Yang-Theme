@@ -4877,6 +4877,10 @@ margin-left: 5px;
 .workspace-tab-header-inner-icon:after,
 .workspace-tab-header[aria-label^="Todo List"]
 .workspace-tab-header-inner-icon:after,
+.nav-action-button[title="Group by folder containing notes with dangling links"]:after,
+.nav-action-button[title="Group by note containing dangling link"]:after,
+.nav-action-button[title="Group by dangling link"]:after,
+.nav-action-button[title="Change sort order"]:after,
 .side-dock-ribbon-action[aria-label="Open Markdown Formatting Assistant"]:after,
 .side-dock-ribbon-action[aria-label="Show dangling links panel"]:after,
 .side-dock-ribbon-action[aria-label="Create a new drawing in Excalidraw"]:after,
@@ -5005,6 +5009,10 @@ content: none;
 .workspace-tab-header[aria-label^="Graph view"]
 .workspace-tab-header-inner-icon
 > svg,
+.nav-action-button[title="Group by folder containing notes with dangling links"] > svg,
+.nav-action-button[title="Group by note containing dangling link"] > svg,
+.nav-action-button[title="Group by dangling link"] > svg,
+.nav-action-button[title="Change sort order"] > svg,
 .nav-action-button[aria-label="New note"] > svg,
 .nav-action-button[aria-label="New folder"] > svg,
 .nav-action-button[aria-label="Change sort order"] > svg,
@@ -5123,6 +5131,10 @@ display: none;
 .nav-action-button[aria-label="Collapse results"]:after,
 .nav-action-button[aria-label="Show more context"]:after,
 .nav-action-button[aria-label="Copy search results"]:after,
+.nav-action-button[title="Group by folder containing notes with dangling links"]:after,
+.nav-action-button[title="Group by note containing dangling link"]:after,
+.nav-action-button[title="Group by dangling link"]:after,
+.nav-action-button[title="Change sort order"]:after,
 .side-dock-ribbon-action[aria-label="Shuffle Plugin"]:after,
 .side-dock-ribbon-action[aria-label="Toggle Privacy Glasses"]:after,
 .side-dock-ribbon-action[aria-label="Create a new drawing in Excalidraw"]:after,
@@ -5437,6 +5449,26 @@ content: "\edaa";
 }
 
 /*nav action button icons*/
+
+.nav-action-button[title="Group by folder containing notes with dangling links"]:after{
+content: "\F0256";
+font-family: 'Material Design Icons';
+}
+
+.nav-action-button[title="Group by note containing dangling link"]:after{
+content: "\ea38";
+font-family: boxicons;
+}
+
+.nav-action-button[title="Group by dangling link"]:after{
+  content: "\eeb2";
+font-family: remixicon;
+}
+
+.nav-action-button[title="Change sort order"]:after{
+content: "\ea74";
+font-family: remixicon;
+}
 
 .nav-action-button[aria-label="New note"]:after {
 content: "\ea38";
@@ -7373,12 +7405,8 @@ DICTIONARY PLUGIN
 font-size: .875em;
 }
 
-.nn.svelte-1cj9ty2.svelte-1cj9ty2{
+.nn.svelte-1cj9ty2{
   cursor: pointer;
-  border: .025em solid var(--background-modifier-border);
-  border-radius: 4px;
-  background-color: var(--background-primary);
-  padding: 0.5em 0em; 
 }
 
 .results.svelte-99gopl.svelte-99gopl{
@@ -7442,3 +7470,4 @@ margin-right: -5px !important;
   font-family: boxicons;
   margin-right: -5px !important;
 }
+
