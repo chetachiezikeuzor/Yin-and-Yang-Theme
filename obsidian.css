@@ -4667,7 +4667,7 @@ margin: 0 0px !important;
 
 .status-bar,
 .is-translucent .status-bar {
-border: .025em solid var(--background-modifier-border);
+border: .025em solid var(--background-modifier-border) !important;
 background-color: var(--background-secondary);
 position: absolute;
 margin: auto;
@@ -4675,7 +4675,7 @@ right: 0;
 bottom: 0;
 border-top-left-radius: 8px;
 line-height: 1;
-padding: 8px 12px 8px 0;
+padding: 8px 12px 4px 12px;
 color: var(--text-normal);
 max-height: unset;
 }
@@ -4734,7 +4734,7 @@ body .lt-status-bar-btn svg {
 }
 
 .progress-pie.day-planner{
-  margin: -3px 0 !important;
+  margin: -2px 4px !important;
 }
 
 .persistent-sb .status-bar,
@@ -4745,7 +4745,7 @@ border: .025em solid var(--background-modifier-morder);
 background-color: var(--background-secondary);
 }
 
-/* ICONS*/
+/*ICONS*/
 
 /*ICONS colors*/
 
@@ -5196,7 +5196,7 @@ content: "\eafd";
 }
 
 .workspace-leaf-content[data-type="excalidraw"] .view-header .view-header-icon:after{
-content: "\eb0a";
+content: "\e9d5";
 }
 
 .workspace-leaf-content[data-type="markdown"] .view-header .view-header-icon:after{
@@ -5367,7 +5367,7 @@ content: "\eb83";
 .workspace-tab-header[aria-label^="Markdown-Autocomplete"]
 .workspace-tab-header-inner-icon:after{
   content: "\eea2";
-  font-size: calc(var(--large-font-size) + .015em);
+  font-size: 18px;
 }
 
 .workspace-tab-header[aria-label^="Backlinks for"]
@@ -5495,7 +5495,8 @@ content: "\ea59";
 }
 
 .side-dock-ribbon-action[aria-label="Create a new drawing in Excalidraw"]:after{
-content: "\eb0a"; /*\e9d5 \ec45 \eb09 \eb0a*/
+content: "\e9d5"; /*\e9d5 \ec45 \eb09 \eb0a*/
+font-size: 19px;
 }
 
 .side-dock-ribbon-action[aria-label="Open quick switcher"]:after {
@@ -5504,7 +5505,7 @@ content: "\ea39";
 
 .side-dock-ribbon-action[aria-label="Extract Highlights"]:after {
 content: "\ea71";
-font-size: calc(var(--editor-font-size) + 0.075em);
+font-size: 19px;
 }
 
 .side-dock-ribbon-action[aria-label="Open graph view"]:after {
@@ -5513,6 +5514,11 @@ content: "\edaa";
 
 .side-dock-ribbon-action[aria-label="Open Markdown importer"]:after {
 content: "\ea81";
+}
+
+.side-dock-ribbon-action[aria-label="Mochi Cards Exporter"] > svg{
+  height: 16px;
+  width: 16px;
 }
 
 .side-dock-ribbon-action[aria-label="Add to Ledger"] > svg{
@@ -5575,14 +5581,10 @@ content: "\ea6f";
 content: "\e9d0";
 }
 
-.stackedCards{
-  width: 18px;
-  height: 17px;
-}
-
 .side-dock-ribbon-action[aria-label^="Toggle Focus Mode "]:after{
-content: "\e919";
-font-size: calc(var(--editor-font-size) + 0.075em);
+content: "\eaaf";
+margin-left: -5px;
+font-size: 19px;
 }
 
 /*workspace collapse icons*/
@@ -7008,7 +7010,7 @@ transition: 200ms !important;
 
 .theme-light .event_item.svelte-e43ld1.svelte-e43ld1:hover{
 transition: 200ms !important;
-background-color: var(--background-primary-alt) !important;
+background-color: transparent !important;
 box-shadow: none !important;
 }
 
@@ -7020,7 +7022,7 @@ transition: 200ms !important;
 
 .theme-dark .event_item.svelte-e43ld1.svelte-e43ld1:hover{
 transition: 200ms !important;
-background-color: var(--background-primary-alt) !important;
+background-color: transparent !important;
 box-shadow: none !important;
 }
 
