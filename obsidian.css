@@ -3978,11 +3978,11 @@ body:not(.plugin-sliding-panes-rotate-header) .workspace-leaf-content > .view-he
 }
 
 body:not(.plugin-sliding-panes-rotate-header) .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header .view-header-icon{
-  margin: 3px 0px;
+  margin: 2.5px 0px;
 }
 
 body.plugin-sliding-panes.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header .view-action > svg{
-  margin: 0px -2px;
+  margin: 1px -1px;
 }
 
 body:not(.plugin-sliding-panes-rotate-header) .workspace-leaf-content > .view-header .view-header-icon{
@@ -4002,7 +4002,7 @@ body.plugin-sliding-panes-rotate-header.plugin-sliding-panes-header-alt .workspa
 }
 
 body.plugin-sliding-panes.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header .view-header-icon{
-  top: 5px;
+  top: 8px;
 }
 
 body.plugin-sliding-panes.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header {
@@ -4884,19 +4884,24 @@ margin-left: 5px;
 .workspace-tab-header-inner-icon:after,
 .workspace-tab-header[aria-label^="Todo List"]
 .workspace-tab-header-inner-icon:after,
+.side-dock-ribbon-action[aria-label="Open Markdown Formatting Assistant"]:after,
+.side-dock-ribbon-action[aria-label="Templater"]:after,
+.side-dock-ribbon-action[aria-label="Show dangling links panel"]:after,
+.side-dock-ribbon-action[aria-label="Create a new drawing in Excalidraw"]:after,
 .side-dock-ribbon-action[aria-label="Shuffle Plugin"]:after,
 .side-dock-ribbon-action[aria-label="Open quick switcher"]:after,
 .side-dock-ribbon-action[aria-label="Open graph view"]:after,
 .side-dock-ribbon-action[aria-label="Advanced Tables Toolbar"]:after,
 .side-dock-ribbon-action[aria-label="Open Markdown importer"]:after,
 .side-dock-ribbon-action[aria-label="Open today's daily note"]:after,
+.side-dock-ribbon-action[aria-label="Add to Ledger"]:after,
 .side-dock-ribbon-action[aria-label="Open random note"]:after,
 .side-dock-ribbon-action[aria-label="Manage workspaces"]:after,
-.side-dock-ribbon-action[aria-label="Templater"]:after,
 .side-dock-ribbon-action[aria-label="Open command palette"]:after,
 .side-dock-ribbon-action[aria-label="Open another vault"]:after,
 .side-dock-ribbon-action[aria-label="Start/stop recording"]:after,
 .side-dock-ribbon-action[aria-label^="Toggle Focus Mode "]:after,
+.side-dock-ribbon-action[aria-label^="Extract Highlights"]:after,
 .side-dock-ribbon-action[aria-label="Help"]:after,
 .side-dock-ribbon-action[aria-label="Settings"]:after {
 font-size: 17px;
@@ -5034,6 +5039,7 @@ content: none;
 .side-dock-ribbon-action[aria-label="Open today's daily note"] > svg,
 .side-dock-ribbon-action[aria-label="Create new Zettelkasten note"] > svg,
 .side-dock-ribbon-action[aria-label="Open random note"] > svg,
+.side-dock-ribbon-action[aria-label="Add to Ledger"] > svg,
 .side-dock-ribbon-action[aria-label="Manage workspaces"] > svg,
 .side-dock-ribbon-action[aria-label="Templater"] > svg,
 .side-dock-ribbon-action[aria-label="Open command palette"] > svg,
@@ -5142,6 +5148,7 @@ display: none;
 .side-dock-ribbon-action[aria-label="Open random note"]:after,
 .side-dock-ribbon-action[aria-label="Start/stop recording"]:after,
 .side-dock-ribbon-action[aria-label="Templater"]:after,
+.side-dock-ribbon-action[aria-label="Add to Ledger"]:after,
 .side-dock-ribbon-action[aria-label="Advanced Tables Toolbar"]:after,
 .side-dock-ribbon-action[aria-label="Manage workspaces"]:after,
 .side-dock-ribbon-action[aria-label^="Toggle Focus Mode "]:after,
@@ -5373,7 +5380,7 @@ content: "\eb83";
 .workspace-tab-header[aria-label^="Markdown-Autocomplete"]
 .workspace-tab-header-inner-icon:after{
   content: "\eea2";
-  font-size: var(--large-font-size);
+  font-size: calc(var(--large-font-size) + .025em);
 }
 
 .workspace-tab-header[aria-label^="Backlinks for"]
@@ -5505,6 +5512,7 @@ content: "\ea39";
 
 .side-dock-ribbon-action[aria-label="Extract Highlights"]:after {
 content: "\ea71";
+font-size: calc(var(--editor-font-size) + 0.075em);
 }
 
 .side-dock-ribbon-action[aria-label="Open graph view"]:after {
@@ -5513,6 +5521,11 @@ content: "\edaa";
 
 .side-dock-ribbon-action[aria-label="Open Markdown importer"]:after {
 content: "\ea81";
+}
+
+.side-dock-ribbon-action[aria-label="Add to Ledger"]:after{
+  content: "\e9e9";
+  font-size: calc(var(--editor-font-size) + 0.05em);
 }
 
 .side-dock-ribbon-action[aria-label="Show dangling links panel"]:after{
@@ -5579,7 +5592,8 @@ content: "\e9d0";
 
 .side-dock-ribbon-action[aria-label^="Toggle Focus Mode "]:after{
 content: "\eaaf";
-margin-left: -2px;
+margin-left: -4px;
+font-size: calc(var(--editor-font-size) + 0.075em);
 }
 
 /*workspace collapse icons*/
@@ -5658,7 +5672,36 @@ SIDE RIBBON
 ----------------------------------------------------------------*/
 
 .workspace-ribbon-collapse-btn{
-  padding: 8px 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.workspace-ribbon .workspace-ribbon-collapse-btn, .workspace-ribbon.mod-left .workspace-ribbon-collapse-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: unset;
+    width: unset;
+    top: unset;
+    line-height: 0;
+    padding: 8px 6px;
+    bottom: 28px;
+    z-index: 9;
+}
+
+body:not(.hider-ribbon):not(.hider-frameless) .workspace-ribbon.mod-right.is-collapsed,
+body:not(.hider-ribbon):not(.hider-frameless) .workspace-ribbon.mod-left.is-collapsed{
+    padding-right: 3px;
+}
+
+.workspace-ribbon.mod-right,
+.workspace-ribbon.mod-left {
+    padding: 0 0 0 3px;
+    position: relative;
+    flex-basis: unset;
+    flex-shrink: 0;
+    flex-grow: 0;
 }
 
 .hider-ribbon .side-dock-actions,
@@ -5679,8 +5722,16 @@ line-height: 1;
 display: flex;
 align-items: center;
 justify-content: center;
-padding: 1px 6px; 
+padding: 1px 6px;
 margin-bottom: 10px;
+}
+
+.side-dock-ribbon {
+    border-left: 0;
+}
+
+.workspace-ribbon {
+    width: unset;
 }
 
 .side-dock-settings {
