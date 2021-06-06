@@ -2945,8 +2945,8 @@ CUSTOM/READABLE LINE WIDTH
 .markdown-preview-view:not(.is-readable-line-width)
   .markdown-embed
   .markdown-preview-sizer{
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .markdown-embed.is-readable-line-width .markdown-preview-section > div {
@@ -2962,8 +2962,6 @@ CUSTOM/READABLE LINE WIDTH
 }
 
 .markdown-embed .markdown-preview-section > div {
-  padding: 0;
-  margin: 0;
   width: auto;
   max-width: none;
 }
@@ -3271,11 +3269,6 @@ EMBEDS
   margin: 1rem 0 1rem 0;
   padding-left: 0;
   padding-right: 0;
-}
-
-.markdown-preview-view .markdown-embed .markdown-preview-sizer {
-  padding-top: .25rem;
-  padding-bottom: .25rem;
 }
 
 .markdown-preview-view .markdown-embed-content > .markdown-preview-view {
