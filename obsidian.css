@@ -1145,7 +1145,7 @@ font-family: var(--default-font) !important;
 font-size: 100%; /*INPUT TEXT SIZE*/
 color: var(--text-muted);
 border-radius: 4px;
-background-color: var(--discord-dark) !important;
+background-color: transparent !important;
 }
 
 input.prompt-input,
@@ -7373,7 +7373,7 @@ DICTIONARY PLUGIN
 font-size: .875em;
 }
 
-.nn.svelte-99gopl.svelte-99gopl{
+.nn.svelte-1cj9ty2.svelte-1cj9ty2{
   cursor: pointer;
   border: .025em solid var(--background-modifier-border);
   border-radius: 4px;
@@ -7385,6 +7385,7 @@ font-size: .875em;
 margin: 0em .75em;
 }
 
+.container.svelte-1cj9ty2.svelte-1cj9ty2,
 .container.svelte-14wlot0.svelte-14wlot0,
 .main.svelte-nmuzfy.svelte-nmuzfy.svelte-nmuzfy,
 .main.svelte-jpkc8o.svelte-jpkc8o.svelte-jpkc8o{
@@ -7441,4 +7442,3 @@ margin-right: -5px !important;
   font-family: boxicons;
   margin-right: -5px !important;
 }
-
