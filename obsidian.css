@@ -4764,6 +4764,11 @@ box-shadow: 0px 0px 0px 1px inset var(--background-modifier-border);
 color: var(--text-normal);
 }
 
+.view-header-icon > svg.document{
+  width: 18px;
+  height: 18px;
+}
+
 .view-header-icon > svg, .view-header-icon,
 .nav-action-button{
 color: var(--text-muted);
