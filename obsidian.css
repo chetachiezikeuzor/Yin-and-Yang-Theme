@@ -2962,6 +2962,10 @@ CUSTOM/READABLE LINE WIDTH
   max-width: none;
 }
 
+.markdown-embed .markdown-preview-view{
+  padding: 20px 20px 20px 20px;
+}
+
 /* ----------------------------------------------------------------
 LISTS  
 ----------------------------------------------------------------*/
@@ -3273,11 +3277,6 @@ EMBEDS
 
 .markdown-embed-content .markdown-preview-section {
   min-height: unset !important;
-}
-
-.markdown-preview-view .markdown-embed-content{
-    overflow-y: scroll;
-    overflow-x: scroll;
 }
 
 .markdown-embed-content .markdown-preview-section > div {
