@@ -628,7 +628,7 @@ settings:
   --normal-font-size: 17px;
   --medium-font-size: 16px;
   --small-font-size: 15px;
-  --titlebar-height: 24px;
+  --titlebar-height: 28px;
   --line-width: 47rem;
   --max-width: 97%;
   --font-size-notes: 0.875rem;
@@ -928,10 +928,6 @@ TITLEBAR
 
 body:not(.hider-frameless):not(.is-fullscreen) {
 padding-top: var(--titlebar-height) !important;
-}
-
-.is-mobile .titlebar {
-  --titlebar-height: 30px;
 }
 
 .titlebar {
@@ -2749,7 +2745,7 @@ background-color: var(--background-primary-alt);
 
 .notice{
 color: var(--text-on-accent);
-background-color: var(--interactive-accent);
+background-color: var(--interactive-accent-hover);
 border-radius: 4px;
 }
 
@@ -3598,7 +3594,12 @@ WORKSPACE
 
 .workspace-leaf.is-highlighted:before {
 background-color: var(--interactive-accent);
-opacity: .1;
+opacity: .15;
+}
+
+.view-header.is-highlighted::after {
+background-color: var(--interactive-accent);
+opacity: .15;
 }
 
 .markdown-preview-view .mod-highlighted {
@@ -3763,7 +3764,7 @@ body:not(.plugin-sliding-panes-rotate-header)
 body:not(.plugin-sliding-panes-rotate-header)
 .workspace-leaf-content[data-type="markdown"]
 .view-header {
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08);
+box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
 position: relative;
 z-index: 10;
 }
@@ -3774,7 +3775,7 @@ body.theme-dark:not(.plugin-sliding-panes-rotate-header)
 body.theme-dark:not(.plugin-sliding-panes-rotate-header)
 .workspace-leaf-content[data-type="markdown"]
 .view-header {
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 body .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header > .view-header-title-container::after,
@@ -4841,6 +4842,7 @@ margin-left: 5px;
 .setting-item-control button[aria-label="Delete"]:before,
 .setting-editor-extra-setting-button[aria-label="Edit"]:before,
 .setting-editor-extra-setting-button[aria-label="Delete"]:before,
+.setting-editor-extra-setting-button[aria-label^="Reset "]:before,
 .view-action[aria-label="Preview (Ctrl/Cmd+Click to open in new pane)"]:after,
 .view-action[aria-label="Edit (Ctrl/Cmd+Click to edit in new pane)"]:after,
 .view-action.mod-close-leaf:after,
@@ -4929,6 +4931,7 @@ content: none;
 .markdown-embed-link > svg,
 .setting-item-control button[aria-label="Edit"] > svg,
 .setting-item-control button[aria-label="Delete"] > svg,
+.setting-editor-extra-setting-button[aria-label^="Reset "] > svg,
 .setting-editor-extra-setting-button[aria-label="Edit"] > svg,
 .setting-editor-extra-setting-button[aria-label="Delete"] > svg,
 .setting-editor-extra-setting-button[aria-label^="Restore "] > svg,
@@ -5054,6 +5057,7 @@ display: none;
 .tag-pane-tag-text:before,
 .setting-item-control button[aria-label="Edit"]:before,
 .setting-item-control button[aria-label="Delete"]:before,
+.setting-editor-extra-setting-button[aria-label^="Reset "]:before,
 .setting-editor-extra-setting-button[aria-label="Edit"]:before,
 .setting-editor-extra-setting-button[aria-label="Delete"]:before,
 .setting-editor-extra-setting-button[aria-label^="Restore "]:before,
@@ -5243,6 +5247,11 @@ transition: 100ms;
 }
 
 /*settings modal icons*/
+
+.setting-editor-extra-setting-button[aria-label^="Reset "]:before{
+  content: "\eb3d";
+  font-size: 16px;
+}
 
 .setting-editor-extra-setting-button[aria-label="Edit"]:before,
 .setting-item-control button[aria-label="Edit"]:before{
@@ -7417,7 +7426,7 @@ margin: 0em .75em;
 .container.svelte-14wlot0.svelte-14wlot0,
 .main.svelte-nmuzfy.svelte-nmuzfy.svelte-nmuzfy,
 .main.svelte-jpkc8o.svelte-jpkc8o.svelte-jpkc8o{
-border: 1px solid var(--background-modifier-border);
+border: .025em solid var(--background-modifier-border);
 }
 
 .svelte-jpkc8o summary,
