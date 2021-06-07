@@ -4787,12 +4787,18 @@ cursor: pointer;
   cursor: pointer;
 }
 
+.side-dock-ribbon-action svg{
+  height: 18px;
+  width: 18px;
+}
+
 .titlebar-button:hover,
 .view-header-icon,
 .view-header-icon > svg:hover,
 .nav-action-button:hover,
 .workspace-tab-header:hover,
 .side-dock-ribbon-action:hover,
+.side-dock-ribbon-action > svg:hover,
 .side-dock-ribbon-tab > svg:hover,
 .side-dock-ribbon-tab:hover,
 .view-header-icon:hover,
@@ -4800,6 +4806,8 @@ cursor: pointer;
 .side-dock-ribbon-action .is-active:hover,
 .side-dock-collapse-btn:hover{
   color: var(--interactive-accent);
+  fill: var(--interactive-accent);
+  stroke: var(--interactive-accent);
 }
 
 /*FILE EXPLORER ICONS*/
@@ -5305,8 +5313,8 @@ font-family: 'Material Design Icons';
 }
 
 .clickable-icon[aria-label^="Reload "]:before {
-content: "\eb3f"; /*\eb3f \eb37*/
-font-size: 15.5px;
+content: "\eb37"; /*\eb3f \eb37*/
+font-size: 18px;
 }
 
 /*"close" icons*/
