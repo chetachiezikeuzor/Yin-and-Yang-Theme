@@ -4670,7 +4670,7 @@ right: 0;
 bottom: 0;
 border-top-left-radius: 8px;
 line-height: 1;
-padding: 8px 12px 4px 12px;
+padding: 8px 12px 8px 12px;
 color: var(--text-normal);
 max-height: unset;
 }
@@ -4715,7 +4715,8 @@ body .lt-title:not(:empty) {
 }
 
 body .lt-status-bar-btn {
-  margin: -3.0px 0;
+  margin-top: -2px;
+  margin-bottom: -8px;
 }
 
 body .lt-status-bar-btn svg {
@@ -7511,4 +7512,3 @@ margin-right: -5px !important;
   font-family: boxicons;
   margin-right: -5px !important;
 }
-
