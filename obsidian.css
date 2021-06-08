@@ -2439,6 +2439,7 @@ background: var(--background-modifier-border);
 
 .tree-item-flair{
 border: 1px solid transparent;
+padding: 1px;
 background-color: var(--background-primary-alt);
 }
 
@@ -4528,7 +4529,6 @@ padding: 0px 10px 0 10px;
 }
 
 /*BACKLINK PANE*/
-
 .backlink-pane .search-result-file-title {
 vertical-align: middle;
 padding-left: 25px; 
@@ -4540,6 +4540,14 @@ font-weight: 500;
 .backlink-pane {
 overflow-x: hidden;
 padding-left: 15px; 
+padding-right: 5px;
+line-height: 1.75;
+}
+
+/*OUTGOING LINK PANE*/
+.outgoing-link-pane{
+overflow-x: hidden;
+padding-left: 10px; 
 padding-right: 5px;
 line-height: 1.75;
 }
@@ -4853,6 +4861,8 @@ margin-left: 5px;
 .workspace-tab-header-inner-icon:after,
 .workspace-tab-header[aria-label^="Backlinks for"]
 .workspace-tab-header-inner-icon:after,
+.workspace-tab-header[aria-label^="Outgoing links"]
+.workspace-tab-header-inner-icon:after,
 .workspace-tab-header[aria-label^="Dual"]
 .workspace-tab-header-inner-icon:after,
 .workspace-tab-header[aria-label^="Daily Stats"]
@@ -4980,6 +4990,9 @@ content: none;
 .workspace-tab-header[aria-label^="Backlinks for"]
 .workspace-tab-header-inner-icon
 > svg,
+.workspace-tab-header[aria-label^="Outgoing links"]
+.workspace-tab-header-inner-icon
+> svg,
 .workspace-tab-header[aria-label^="Dual"]
 .workspace-tab-header-inner-icon
 > svg,
@@ -5098,6 +5111,8 @@ display: none;
 .workspace-tab-header[aria-label^="Markdown-Autocomplete"]
 .workspace-tab-header-inner-icon:after,
 .workspace-tab-header[aria-label^="Backlinks for"]
+.workspace-tab-header-inner-icon:after,
+.workspace-tab-header[aria-label^="Outgoing links"]
 .workspace-tab-header-inner-icon:after,
 .workspace-tab-header[aria-label^="Dual"]
 .workspace-tab-header-inner-icon:after,
@@ -5395,6 +5410,11 @@ content: "\eb83";
 font-family: remixicon;
 }
 
+.workspace-tab-header[aria-label^="Outgoing links"]
+.workspace-tab-header-inner-icon:after{
+  content: "\eaa0";
+}
+
 .workspace-tab-header[aria-label^="Dual"]
 .workspace-tab-header-inner-icon:after{
   content:  "\e95d";
@@ -5686,7 +5706,7 @@ margin-left: -5px;
 }
 
 .tag-pane-tag > div.collapse-icon{
-top: 2px;
+top: 4px;
 position: relative;
 margin-left: -5px !important;
 }
@@ -6232,6 +6252,19 @@ transition: 250ms ease-in-out;
 .is-collapsed .collapse-icon:after,
 .graph-controls .is-collapsed .collapse-icon, .backlink-pane .is-collapsed .collapse-icon, .search-result-file-title .collapse-icon .is-collapsed, .search-result-container .is-collapsed .collapse-icon, .outline .tree-item-self .is-collapsed .collapse-icon, .outline .is-collapsed .collapse-icon, .tag-pane-tag .collapse-icon{
 content: "\e9b2" !important;
+}
+
+.tree-item-self .tree-item-icon {
+    color: var(--text-muted);
+    margin-right: 5px;
+}
+
+.collapse-icon:after{
+    display: inline-block;
+    font-family: "boxicons";
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
 }
 
 .collapse-icon:after {
