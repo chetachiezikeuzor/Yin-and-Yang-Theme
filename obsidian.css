@@ -4429,6 +4429,10 @@ text-overflow: ellipsis;
 
 /*ATTACHMENTS IN FILE EXPLORER*/
 
+.oz-nav-file-title{
+  flex-direction: row-reverse;
+}
+
 .workspace-leaf-content[data-type="file-explorer"] .nav-file-title {
 margin-right: 10px;
 flex-direction: row-reverse;
@@ -4811,6 +4815,20 @@ cursor: pointer;
   font-weight: 400;
   font-family: boxicons;
   color: var(--text-muted);
+}
+
+.nav-file-title-content:before {
+  content: "\ea38";
+}
+
+[data-type="starred"] .nav-file-title-content:before {
+  content: none;
+}
+
+.nav-file-title-content:only-child:before,
+.search-result-collapse-indicator + span:before,
+.nav-file-icon:before {
+  content: "\ea37";
 }
 
 /*File icon for notes (fixes recent files pane)*/
@@ -7512,3 +7530,4 @@ margin-right: -5px !important;
   font-family: boxicons;
   margin-right: -5px !important;
 }
+
