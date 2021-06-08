@@ -5518,11 +5518,11 @@ font-family: remixicon;
 }
 
 .nav-action-button[aria-label="New note"]:after {
-content: "\ea38";
+content: "\eb22";
 }
 
 .nav-action-button[aria-label="New folder"]:after {
-content: "\ea41";
+content: "\ea44";
 }
 
 .nav-action-button[aria-label="Show nested tags"]:after {
