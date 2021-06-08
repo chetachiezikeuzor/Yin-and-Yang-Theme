@@ -2150,6 +2150,37 @@ bottom: 0.35rem;
 }
 
 /*----------------------------------------------------------------
+HIGHLIGHTING (MARK)
+----------------------------------------------------------------*/
+
+mark > strong {
+color: var(--text-highlight-color) !important;
+font-weight: 900;
+}
+
+mark > em {
+color: var(--text-highlight-color) !important;
+font-weight: 500;
+}
+
+mark{
+color: var(--text-highlight-color) !important;
+background-color: var(--text-highlight-rgb) !important;
+}
+
+.markdown-preview-view mark {
+  color: var(--text-highlight-color);
+  font-weight: inherit;
+  background-color: var(--text-highlight-rgb);
+}
+
+.cm-s-obsidian span.cm-highlight {
+  color: var(--text-highlight-color);
+  font-weight: inherit;
+  background-color: var(--text-highlight-rgb);
+}
+
+/*----------------------------------------------------------------
 REALISTIC HIGHLIGHT
 ----------------------------------------------------------------*/
 
