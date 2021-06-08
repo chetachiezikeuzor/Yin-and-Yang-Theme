@@ -2108,8 +2108,9 @@ PREVIEW SECTION
 
 pre[class*='language-']:hover::after {
 content: attr(class);
+color: var(--text-muted);
 transition: 200ms;
-animation: pop-pop 200ms ease-in-out;
+animation: pop-pop 250ms ease-in-out;
 cursor: pointer;
 position: absolute;
 right: .75rem;
@@ -2125,6 +2126,10 @@ bottom: 0.35rem;
   font-family: var(--font-monospace) !important;
   border: 1px solid var(--code-block-border);
   white-space: pre-wrap;
+}
+
+pre code{ 
+  white-space: pre-wrap !important; 
 }
 
 .markdown-preview-section pre code,
@@ -3957,10 +3962,6 @@ body:not(.plugin-sliding-panes-rotate-header) .workspace-leaf-content > .view-he
   margin: 2px 6px;
 }
 
-body:not(.plugin-sliding-panes-rotate-header) .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header .view-header-icon{
-  margin: 2.5px 0px;
-}
-
 body.plugin-sliding-panes.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header .view-action > svg{
   margin: 1px -1px;
 }
@@ -4714,12 +4715,12 @@ body .lt-title:not(:empty) {
 }
 
 body .lt-status-bar-btn {
-  margin: -3.5px 0;
+  margin: -3.0px 0;
 }
 
 body .lt-status-bar-btn svg {
-  width: 13px;
-  height: 13px;
+  width: 12px;
+  height: 12px;
 }
 
 .day-planner-progress-bar{
