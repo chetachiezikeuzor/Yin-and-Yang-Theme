@@ -4719,7 +4719,7 @@ body .lt-title:not(:empty) {
 }
 
 body .lt-status-bar-btn {
-  margin-top: -1px;
+  margin-top: -1.5px;
   margin-bottom: -8px;
 }
 
