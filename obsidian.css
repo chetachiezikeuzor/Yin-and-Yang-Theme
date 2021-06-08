@@ -2150,37 +2150,6 @@ bottom: 0.35rem;
 }
 
 /*----------------------------------------------------------------
-HIGHLIGHTING (MARK)
-----------------------------------------------------------------*/
-
-mark > strong {
-color: var(--text-highlight-color) !important;
-font-weight: 900;
-}
-
-mark > em {
-color: var(--text-highlight-color) !important;
-font-weight: 500;
-}
-
-mark{
-color: var(--text-highlight-color) !important;
-background-color: var(--text-highlight-rgb) !important;
-}
-
-.markdown-preview-view mark {
-  color: var(--text-highlight-color);
-  font-weight: inherit;
-  background-color: var(--text-highlight-rgb);
-}
-
-.cm-s-obsidian span.cm-highlight {
-  color: var(--text-highlight-color);
-  font-weight: inherit;
-  background-color: var(--text-highlight-rgb);
-}
-
-/*----------------------------------------------------------------
 REALISTIC HIGHLIGHT
 ----------------------------------------------------------------*/
 
@@ -2197,7 +2166,7 @@ mark.purple{ --text-highlight-rgb: var(--purple-highlighter);  }
 
 .markdown-preview-view mark {
 margin: 0 -0.1em; 
-padding: 0.15em 0.15em;
+padding: 0.125em 0.15em;
 border-radius: .2em;
 /*border-radius: 0.8em 0.3em;  /* REALISTIC*/
 background: transparent;
@@ -2215,7 +2184,7 @@ box-decoration-break: clone;
 }
 
 .cm-s-obsidian span.cm-highlight {
-padding: 0.15em 0.15em;
+padding: 0.125em 0.15em;
 background: var(--text-highlight-rgb);
 -webkit-box-decoration-break: clone;
 box-decoration-break: clone;
@@ -2223,7 +2192,7 @@ box-decoration-break: clone;
 
 .cm-s-obsidian span.cm-formatting-highlight{
 /*margin: 0 0 0 -0.4em;*/
-padding: 0.15em 0.25em;
+padding: 0.125em 0.25em;
 background: var(--text-highlight-rgb);
 background-image: linear-gradient(105deg,
   transparent 0,
@@ -2235,7 +2204,7 @@ box-decoration-break: clone;
 }
 .cm-s-obsidian .cm-highlight+span.cm-formatting-highlight {
 margin: 0 0em 0 0;
-padding: 0.15em 0.15em;
+padding: 0.125em 0.15em;
 background: var(--text-highlight-rgb);
 background-image: linear-gradient(105deg,
   rgba(var(--text-highlight-rgb), 0.4) calc(100% - 1.4em),
