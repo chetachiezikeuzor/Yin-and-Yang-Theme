@@ -782,7 +782,7 @@ settings:
   --mod-button: var(--dark4);
   --mod-button-hover: var(--darkbrown);
   --text-highlight-color: var(--darkbrown);
-  --text-selection: hsl(var(--d-accent-h), calc(var(--d-accent-s) - 50%), 15%);
+  --text-selection: hsl(var(--d-accent-h), calc(var(--d-accent-s) - 50%), 20%);
   --tag-base: var(--background-primary-alt);
   --pre-code: hsla(var(--base-h),var(--base-s),calc(var(--base-d) + 8%), .8);
   --inline-code: var(--light-cornflower-blue); 
@@ -3926,7 +3926,7 @@ color: var(--graph-circle-fill-highlight);
 }
 
 .empty-state-container:hover{
-  background-color: var(--background-secondary-alt);
+  background-color: hsla(var(--accent-hsl), .15);
   border: 5px solid var(--interactive-accent);
   border-radius: 6px;
 }
