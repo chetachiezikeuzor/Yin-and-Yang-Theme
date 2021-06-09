@@ -1255,6 +1255,10 @@ display: inline-block;
 
 /*GRAPH SETTINGS*/
 
+.graph-controls .search-input-container{
+  width: 100%;
+}
+
 .graph-controls.is-close {
 border-radius: 4px;
 background: var(--background-primary);
