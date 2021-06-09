@@ -782,7 +782,7 @@ settings:
   --mod-button: var(--dark4);
   --mod-button-hover: var(--darkbrown);
   --text-highlight-color: var(--darkbrown);
-  --text-selection: hsl(var(--d-accent-h), calc(var(--d-accent-s) - 50%), 18%);
+  --text-selection: hsl(var(--d-accent-h), calc(var(--d-accent-s) - 50%), 15%);
   --tag-base: var(--background-primary-alt);
   --pre-code: var(--background-primary-alt);
   --inline-code: var(--light-cornflower-blue); 
@@ -874,7 +874,7 @@ settings:
   --mod-button-hover:  hsl(218, 27%, calc(92% - 3%));
 
   --text-highlight-color: var(--dark0);
-  --text-selection: hsl(var(--l-accent-h), var(--l-accent-s), 92%);
+  --text-selection: hsl(var(--l-accent-h), var(--l-accent-s), 93%);
   --tag-base: var(--background-primary-alt);
   --pre-code: var(--light5); 
   --inline-code: var(--royalblue);
