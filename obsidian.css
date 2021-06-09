@@ -773,8 +773,8 @@ settings:
   --text-on-accent: white;
 
   --text-normal: hsla(var(--base-h),calc(var(--base-s) + 45%), calc(var(--base-d) + 95%), .8);
-  --text-muted: hsla(var(--base-h),var(--base-s), calc(var(--base-d) + 55%), .9);
-  --text-faint: hsla(var(--base-h),var(--base-s), calc(var(--base-d) + 25%), .95);
+  --text-muted: hsla(var(--base-h),var(--base-s), calc(var(--base-d) + 65%), .95);
+  --text-faint: hsla(var(--base-h),var(--base-s), calc(var(--base-d) + 35%), .95);
 
   --interactive-accent: hsl(var(--d-accent-h), var(--d-accent-s), var(--d-accent-l));
   --interactive-accent-hover: hsl(var(--d-accent-h), var(--d-accent-s), calc(var(--d-accent-l) - 5%));
@@ -2650,6 +2650,10 @@ SETTINGS MODAL
 .setting-item-control input{
 font-size: .875em;
 padding: 1.2em 1em 1.2em 1em;
+}
+
+.setting-item-name{
+  color: var(--text-normal);
 }
 
 .modal-container p{
