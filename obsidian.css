@@ -772,7 +772,7 @@ settings:
   --text-accent:hsl(var(--d-accent-h),var(--d-accent-s),var(--d-accent-l));
   --text-on-accent: white;
 
-  --text-normal: hsla(var(--base-h),calc(var(--base-s) + 45%), calc(var(--base-d) + 95%), .8);
+  --text-normal: hsla(var(--base-h),calc(var(--base-s) + 45%), calc(var(--base-d) + 95%), .9);
   --text-muted: hsla(var(--base-h),var(--base-s), calc(var(--base-d) + 65%), .95);
   --text-faint: hsla(var(--base-h),var(--base-s), calc(var(--base-d) + 35%), .95);
 
@@ -1194,6 +1194,14 @@ input.document-search-input:focus,
 input.document-replace-input:focus {
 transition: all 0.1s ease-in-out;
 border: .025em solid var(--interactive-accent);
+}
+
+textarea:focus{
+  border-color: hsla(var(--accent-hsl), 1) !important;
+}
+
+textarea {
+  padding: 10px 10px;
 }
 
 /*----------------------------------------------------------------
@@ -2437,6 +2445,10 @@ background: var(--background-modifier-border);
 
 .tree-item-self .tree-item-inner .search-result-file-matched-text {
 background: var(--background-modifier-border);
+}
+
+.tree-item-self{
+  border-radius: 5px;
 }
 
 .tree-item-flair{
@@ -5572,7 +5584,7 @@ content: "\eafb";
 }
 
 .nav-action-button[aria-label="Copy search results"]:after {
-content: "\e9e6";
+content: "\e9e7";
 }
 
 /*side dock ribbon icons*/
