@@ -870,7 +870,7 @@ settings:
 
   --interactive-accent: hsl(var(--l-accent-h),var(--l-accent-s),var(--l-accent-l));
   --interactive-accent-hover: hsl(var(--l-accent-h), var(--l-accent-s), calc(var(--l-accent-l) + 3%));
-  --mod-button: hsl(218, 27%, 92%);
+  --mod-button: hsl(218, 27%, 96%);
   --mod-button-hover:  hsl(218, 27%, calc(92% - 3%));
 
   --text-highlight-color: var(--dark0);
