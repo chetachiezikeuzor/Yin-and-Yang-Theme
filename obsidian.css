@@ -784,7 +784,7 @@ settings:
   --text-highlight-color: var(--darkbrown);
   --text-selection: hsl(var(--d-accent-h), calc(var(--d-accent-s) - 50%), 15%);
   --tag-base: var(--background-primary-alt);
-  --pre-code: var(--background-primary-alt);
+  --pre-code: hsla(var(--base-h),var(--base-s),calc(var(--base-d) + 8%), .8);
   --inline-code: var(--light-cornflower-blue); 
   --code-block: var(--paleblue);
   --code-block-border: var(--light0);
@@ -876,7 +876,7 @@ settings:
   --text-highlight-color: var(--dark0);
   --text-selection: hsl(var(--l-accent-h), var(--l-accent-s), 93%);
   --tag-base: var(--background-primary-alt);
-  --pre-code: var(--light5); 
+  --pre-code: hsla(220, 23%, 95%, .7); 
   --inline-code: var(--royalblue);
   --code-block: var(--frost2);
   --code-block-border: var(--light2);
@@ -1801,43 +1801,43 @@ Inline code in headers to match header size
 
 .cm-s-obsidian span.cm-inline-code.cm-header-1:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
 .cm-s-obsidian span.cm-inline-code.cm-header-1 {
-font-size: var(--s-header-1-pre) !important;
+font-size: inherit !important;
 font-family: var(--header-font) !important;
-background-color: transparent !important;
+background-color: var(--pre-code) !important;
 font-weight: 750;
 }
 
 .cm-s-obsidian span.cm-inline-code.cm-header-2:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
 .cm-s-obsidian span.cm-inline-code.cm-header-2 {
-font-size: var(--s-header-2-pre) !important;
+font-size: inherit !important;
 font-family: var(--header-font) !important;
 background-color: transparent !important;
 }
 
 .cm-s-obsidian span.cm-inline-code.cm-header-3:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
 .cm-s-obsidian span.cm-inline-code.cm-header-3 {
-font-size: var(--s-header-3-pre) !important;
+font-size: inherit !important;
 font-family: var(--header-font) !important;
 background-color: transparent !important;
 }
 
 .cm-s-obsidian span.cm-inline-code.cm-header-4:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
 .cm-s-obsidian span.cm-inline-code.cm-header-4{
-font-size: var(--s-header-4-pre) !important;
+font-size: inherit !important;
 font-family: var(--header-font) !important;
 background-color: transparent !important;
 }
 
 .cm-s-obsidian span.cm-inline-code.cm-header-5:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
 .cm-s-obsidian span.cm-inline-code.cm-header-5 {
-font-size: var(--s-header-5-pre) !important;
+font-size: inherit !important;
 font-family: var(--header-font) !important;
 background-color: transparent !important;
 }
 
 .cm-s-obsidian span.cm-inline-code.cm-header-6:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
 .cm-s-obsidian span.cm-inline-code.cm-header-6 {
-font-size: var(--s-header-6-pre) !important;
+font-size: inherit !important;
 font-family: var(--header-font) !important;
 background-color: transparent !important;
 }
