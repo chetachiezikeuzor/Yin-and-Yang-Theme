@@ -2869,7 +2869,7 @@ font-weight: 700;
 cursor: pointer;
 transition: 150ms;
 border-radius: 3px;
-background: var(--background-primary-alt);
+background: hsl(var(--accent-hsl), .2);
 color: var(--text-normal);
 }
 
