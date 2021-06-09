@@ -4048,6 +4048,7 @@ border-top: 1px solid var(--background-modifer-border);
 }
 
 /*remove border in sliding panes (not rotated headers)*/
+body:not(.plugin-sliding-panes-rotate-header) .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header,
 body.plugin-sliding-panes:not(.plugin-sliding-panes-rotate-header) .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header,
 body.plugin-sliding-panes:not(.plugin-sliding-panes-rotate-header) .workspace > .mod-root > .workspace-leaf.mod-active > .workspace-leaf-content > .view-header {
 background-color: var(--background-primary);
@@ -5921,11 +5922,11 @@ background: url('https://api.iconify.design/bx:bx-slideshow.svg?color=SlateGrey'
 }
 
 .menu-item-icon svg.create-new {
-background: url('https://api.iconify.design/bx:bx-file-blank.svg?color=SlateGrey');
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="SlateGrey" viewBox="0 0 24 24"><path d="M13 7L11 7 11 11 7 11 7 13 11 13 11 17 13 17 13 13 17 13 17 11 13 11z"></path><path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10c5.514,0,10-4.486,10-10S17.514,2,12,2z M12,20c-4.411,0-8-3.589-8-8 s3.589-8,8-8s8,3.589,8,8S16.411,20,12,20z"></path></svg>');
 }
 
 .theme-dark .menu-item-icon svg.create-new {
-background: url('https://api.iconify.design/bx:bx-file-blank.svg?color=SlateGrey');
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="SlateGrey" viewBox="0 0 24 24"><path d="M13 7L11 7 11 11 7 11 7 13 11 13 11 17 13 17 13 13 17 13 17 11 13 11z"></path><path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10c5.514,0,10-4.486,10-10S17.514,2,12,2z M12,20c-4.411,0-8-3.589-8-8 s3.589-8,8-8s8,3.589,8,8S16.411,20,12,20z"></path></svg>');
 }
 
 .menu-item-icon svg.plus-with-circle {
@@ -6480,6 +6481,10 @@ padding: calc(var(--h6)/10);
   display: none !important;
 } 
 
+.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task{
+ display: inline !important;
+}
+
 /* except numbered list */
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-list {
  display: inline !important;
@@ -6491,7 +6496,7 @@ padding-bottom: 0.75rem;
 
 /* and task checkboxes */
 .wys-enhanced span.cm-formatting-task { 
-display: inline !important; font-family: monospace; 
+display: inline !important; 
 }
 
 /* highlight (==) not visible anymore if not active line */
@@ -6808,9 +6813,11 @@ ZOOM PLUGIN
 ----------------------------------------------------------------*/
 
 body .zoom-plugin-header {
-  border-bottom: 1px solid var(--background-primary-alt);
-  padding: 7px 15px;
-  font-size: 14px;
+  border-bottom: .025em solid var(--background-modifier-border);
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 15px;
 }
 
 body .zoom-plugin-title {
@@ -7557,3 +7564,4 @@ margin-right: -5px !important;
   font-family: boxicons;
   margin-right: -5px !important;
 }
+
