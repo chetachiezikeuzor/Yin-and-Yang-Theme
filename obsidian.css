@@ -3565,7 +3565,7 @@ SCROLLBARS
 
 .CodeMirror-vscrollbar, .CodeMirror-hscrollbar, 
 .CodeMirror-scrollbar-filler{
-z-index: 1;
+z-index: 0;
 }
 
 .mod-root .CodeMirror-gutter.CodeMirror-linenumbers,
@@ -3834,25 +3834,29 @@ border-radius: 8px;
 transition: .2s ease-in-out;
 }
 
+.tag:hover{
+  color: var(--interactive-accent);
+}
+
 /*----------------------------------------------------------------
 TAG REF STYLING
 ----------------------------------------------------------------*/
 
 .tag[href^="#❗️"], .tag[href^="#important❗️"] {
 background-color: var(--tag-base);
-border: 1px solid var(--boldred); 
+border: .025em solid var(--boldred); 
 }
 
 .tag[href^="#📓"], .tag[href^="#journal📓"] {
 background-color: var(--tag-base);
-border: 1px solid var(--purple); 
+border: .025em solid var(--purple); 
 }
 
 .tag[href^="#🌱"], .tag[href^="#seedling🌱"],
 .tag[href^="#🌿"], .tag[href^="#budding🌿"],
 .tag[href^="#🌳"], .tag[href^="#evergreen🌳"] {
   background-color: var(--tag-base);
-border: 1px solid var(--boldgreen); 
+border: .025em solid var(--boldgreen); 
 }
 
 /*----------------------------------------------------------------
@@ -6548,12 +6552,14 @@ display: inline-block;
 /* Tag pills in edit mode */
 .wys-enhanced div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:before {
  content: '#';
+ font-size: .875em;
 }
 
 .wys-enhanced div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end {
 background-color: var(--tag-base);
-border: 1px solid hsl(var(--boldlightpink));
+border: .025em solid var(--interactive-accent);
 color: var(--text-normal);
+font-size: .875em;
 font-weight: 500;
 padding-left: 10px;
 padding-right: 10px;
@@ -6566,10 +6572,9 @@ transition: .1s ease-in-out;
 }
 
 .wys-enhanced div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover {
-color: var(--dark5) !important;
+color: var(--interactive-accent);
 text-decoration: none !important;
 transition: .1s ease-in-out;
-background-color: var(--boldlightpink) !important;
 }
 
 /*RAINBOW HEADERS*/
@@ -6797,6 +6802,41 @@ bottom: 0;
 /*----------------------------------------------------------------
 PLUGINS!!!
 ----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------
+ZOOM PLUGIN
+----------------------------------------------------------------*/
+
+body .zoom-plugin-header {
+  border-bottom: 1px solid var(--background-primary-alt);
+  padding: 7px 15px;
+  font-size: 14px;
+}
+
+body .zoom-plugin-title {
+  text-decoration: none;
+  z-index: 10;
+}
+
+body .zoom-plugin-header > span {
+  color: transparent;
+  font-size: 0;
+}
+
+body .zoom-plugin-header > span:before {
+  font-size: 16px;
+  display: inline-block;
+  color: var(--text-normal);
+  font-family: "boxicons";
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  content: "\e9b2";
+  padding: 0 2px;
+  position: relative;
+  top: 2px;
+}
 
 /*---------------------------------------------------------------- 
 OBSIDIAN-CALENDAR-PLUGIN 
@@ -7517,3 +7557,4 @@ margin-right: -5px !important;
   font-family: boxicons;
   margin-right: -5px !important;
 }
+
