@@ -4621,10 +4621,16 @@ margin-left: 10px;
 line-height: 1.5em;
 }
 
+.tree-item-self:hover,
 .tag-container .tree-item-self:hover,
 .outline .tree-item-self:hover{
 transition: 0.3s ease-in-out;
 background-color: var(--background-primary-alt);
+color: var(--text-normal) !important;
+}
+
+.tree-item-self:hover .tree-item-icon{
+color: var(--text-normal) !important;
 }
 
 .tag-container .tree-item-self
