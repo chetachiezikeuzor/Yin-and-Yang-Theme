@@ -2441,7 +2441,9 @@ background: var(--background-modifier-border);
 
 .tree-item-flair{
 border: 1px solid transparent;
-padding: 1px;
+padding: 0px;
+padding-left: 3px;
+padding-right: 3px;
 background-color: var(--background-primary-alt);
 }
 
@@ -4616,7 +4618,7 @@ padding-left: 10px;
 .tree-item:hover .tree-item-flair{
 background-color: var(--background-primary-alt);
 color:  var(--text-muted);
-border: .025em solid var(--background-modifier-border);
+border: .025em solid var(--interactive-accent);
 transition: 150ms ease-in-out;
 }
 
