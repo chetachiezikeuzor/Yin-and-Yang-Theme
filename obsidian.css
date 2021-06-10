@@ -146,7 +146,7 @@ settings:
     default-dark: '#F2B3CF'
     default-light: '#FFF3A3'
   -
-    title: Specific Mode Heading Changes
+    title: Heading Changes
     id: heading-specific
     description: Editing headings individually.
     type: heading
@@ -787,7 +787,7 @@ settings:
   --mod-button: var(--dark4);
   --mod-button-hover: var(--darkbrown);
   --text-highlight-color: var(--darkbrown);
-  --text-selection: hsl(var(--d-accent-h), calc(var(--d-accent-s) - 50%), 20%);
+  --text-selection: hsl(var(--d-accent-h), calc(var(--d-accent-s) - 50%), 18%);
   --tag-base: var(--background-primary-alt);
   --pre-code: hsla(var(--base-h),var(--base-s),calc(var(--base-d) + 8%), .8);
   --inline-code: var(--light-cornflower-blue); 
@@ -879,7 +879,7 @@ settings:
   --mod-button-hover:  hsl(218, 27%, calc(92% - 3%));
 
   --text-highlight-color: var(--dark0);
-  --text-selection: hsl(var(--l-accent-h), var(--l-accent-s), 93%);
+  --text-selection: hsl(var(--l-accent-h), var(--l-accent-s), 96.5%);
   --tag-base: var(--background-primary-alt);
   --pre-code: hsla(220, 23%, 95%, .7); 
   --inline-code: var(--royalblue);
@@ -1192,7 +1192,15 @@ transition: all 0.1s ease-in-out;
 }
 
 .dropdown:focus {
-border-color: var(--interactive-accent-hover);
+border-color: var(--interactive-accent);
+}
+
+textarea:focus,
+.dropdown:focus,
+input:not(input[type=range]):focus,
+.search-result-file-match:not(.search-info-more-matches):hover{
+  box-shadow: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1),
+    0 0 0 3px hsla(var(--accent-hsl), 0.15);
 }
 
 input.document-search-input:focus,
@@ -1274,9 +1282,8 @@ display: inline-block;
 
 .graph-controls.is-close {
 border-radius: 4px;
-background: var(--background-primary);
-border: 1px solid var(--background-modifier-border);
-box-shadow: 0px 0px 0px .5px inset var(--background-modifier-border);
+border: 1px solid var(--background-secondary);
+box-shadow: 0px 0px 0px .1px inset var(--background-modifier-border), 0px 0px 1px 1px inset var(--background-tertiary);
 padding: 0;
 line-height: 1;
 }
@@ -1303,7 +1310,6 @@ display: flex;
 
 .graph-controls-button:hover {
 color: var(--text-normal);
-background-color: var(--background-primary-alt);
 border-radius: 4px;
 }
 
@@ -1314,9 +1320,9 @@ font-size: 14px;
 }
 
 .graph-controls.is-close .graph-controls-button {
-padding-top: 8.5px !important;
-box-shadow: 0px 0px 0px .5px inset var(--background-modifier-border);
-padding: 8.5px 8.5px;
+padding-top: 9px !important;
+box-shadow: 0px 0px 0px .5px  var(--background-modifier-border);
+padding: 9px 9px;
 }
 
 .graph-controls-button{
@@ -1863,16 +1869,22 @@ padding-bottom: 0;
 a,
 a.internal-link,
 span.cm-hmd-internal-link {
-font-weight: 600;
 transition-duration: ease 500ms;
 color: var(--text-accent);
-text-decoration: underline;
+text-decoration: none;
 }
 
-.cm-s-obsidian span.cm-url:hover,
-.cm-s-obsidian span.cm-url{
-font-weight: 600;
-color: var(--interactive-accent);
+a.internal-link,
+.cm-hmd-internal-link{
+  font-weight: 600;
+}
+
+.cm-s-obsidian span.cm-url:hover{
+  color: var(--text-muted);
+}
+
+.cm-s-obsidian span.cm-url.cm-string:not(.cm-hmd-footnote-url){
+  color: var(--text-faint);
 }
 
 a:hover,
@@ -2681,6 +2693,7 @@ padding: 1.2em 1em 1.2em 1em;
 }
 
 .setting-item-name{
+  font-weight: 500;
   color: var(--text-normal);
 }
 
@@ -2734,12 +2747,13 @@ padding-top: 5px;
 
 .vertical-tab-nav-item:hover,
 .vertical-tab-nav-item.is-active {
-transition: 0.3s ease-in-out;
+transition: 0.1s ease-in-out;
 color: var(--text-normal);
 background-color: var(--background-primary-alt);
 }
 
 .vertical-tab-nav-item{
+  font-weight: 500;
 transition: 0.3s ease-in-out;
 }
 
@@ -2798,7 +2812,7 @@ text-transform: capitalize;
 font-size: 15px;
 padding: 5px 15px 5px 15px;
 margin-left: 4px;
-font-weight: 900;
+font-weight: 700;
 }
 
 .vertical-tab-nav-item {
@@ -2899,7 +2913,7 @@ font-weight: 700;
 .suggestion-item.is-selected,
 .menu-item:hover {
 cursor: pointer;
-transition: 150ms;
+transition: 3ms ease-in-out;
 border-radius: 3px;
 background: hsl(var(--accent-hsl), .25);
 color: var(--text-normal);
@@ -2949,6 +2963,16 @@ CUSTOM/READABLE LINE WIDTH
   margin: 0 auto 0 auto;
   width: var(--line-width);
   max-width: var(--max-width);
+}
+
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+    max-width: var(--max-width);
+    width: var(--line-width);
 }
 
 .markdown-embed-content .markdown-preview-sizer {
@@ -3989,7 +4013,8 @@ ANDY'S MODE SLIDING PANES v3.2.1 (death_au's plugin)
 ----------------------------------------------------------------*/
 
 body:not(.plugin-sliding-panes-rotate-header) .workspace-leaf .workspace-leaf-content .view-header-title-container {
-  top: 2px;
+  top: 1.5px;
+  line-height: 1em;
 }
 
 body:not(.plugin-sliding-panes-rotate-header) .workspace-leaf-content > .view-header .view-action,
@@ -4002,12 +4027,22 @@ body.plugin-sliding-panes.plugin-sliding-panes-rotate-header .workspace > .mod-r
 }
 
 body:not(.plugin-sliding-panes-rotate-header) .workspace-leaf-content > .view-header .view-header-icon{
-  margin: 2px 3px;
+  /*margin: 1px 3px;
+  padding: 6px 10px;
+  padding-right: 5px;
+  line-height: 1em;*/
+  top: 2px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: relative;
+  margin: 1px 6px;
+  margin-right: 0px;
 }
 
 body.plugin-sliding-panes-rotate-header .workspace > .mod-root .view-header-title-container {
   padding: 3px 0;
   margin-left: 6px !important;
+  line-height: 1;
 }
 
 /*sliding panes swap rotate header direction*/
@@ -4640,7 +4675,6 @@ padding-left: 10px;
 .tree-item:hover .tree-item-flair{
 background-color: var(--background-primary-alt);
 color:  var(--text-muted);
-border: .025em solid var(--interactive-accent);
 transition: 150ms ease-in-out;
 }
 
@@ -7602,3 +7636,4 @@ margin-right: -5px !important;
   font-family: boxicons;
   margin-right: -5px !important;
 }
+
