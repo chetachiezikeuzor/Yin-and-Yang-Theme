@@ -2085,12 +2085,15 @@ background-color: var(--background-secondary-alt) !important;
 EDITOR SECTION
 ----------------------------------------------------------------*/
 
-.theme-dark code[class*="language-"],
 .theme-dark pre[class*="language-"],
-.theme-light code[class*="language-"],
 .theme-light pre[class*="language-"]{
   text-shadow: none;
   background-color: var(--pre-code);
+}
+
+.theme-dark code[class*="language-"],
+.theme-light code[class*="language-"]{
+  text-shadow: none;
 }
 
 .cm-inline-code{
@@ -7636,4 +7639,3 @@ margin-right: -5px !important;
   font-family: boxicons;
   margin-right: -5px !important;
 }
-
