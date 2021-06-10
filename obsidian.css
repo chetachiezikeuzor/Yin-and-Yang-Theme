@@ -747,7 +747,7 @@ settings:
 
   --opacity-translucency: 0.7;
   --background-primary: hsl(var(--base-h),var(--base-s),var(--base-d));
-  --background-primary-alt: hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 6%));
+  --background-primary-alt: hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 7%));
   --background-secondary: hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 3%));
   --background-secondary-alt: hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 3%));
   --background-modifier-error: #e60026;
@@ -880,6 +880,7 @@ settings:
 
   --text-highlight-color: var(--dark0);
   --text-selection: hsl(var(--l-accent-h), var(--l-accent-s), 96.5%);
+
   --tag-base: var(--background-primary-alt);
   --pre-code: hsla(220, 23%, 95%, .7); 
   --inline-code: var(--royalblue);
@@ -1289,7 +1290,7 @@ line-height: 1;
 }
 
 .theme-dark .graph-controls.is-close{
-box-shadow: 0px 0px 0px .05px inset var(--background-modifier-border);
+box-shadow: 0px 0px 0px 1px inset var(--background-modifier-border), 0px 0px 1px 1px inset var(--background-tertiary);
 }
 
 .graph-controls .tree-item-collapse {
@@ -7111,6 +7112,8 @@ ul.svelte-yzsyxo li.svelte-1q8cjhd.svelte-1q8cjhd
 
 li.svelte-1q8cjhd.svelte-1q8cjhd:hover{
   border: .025em solid var(--todoList-listItemBackground--hover) !important;
+  box-shadow: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1),
+    0 0 0 3px hsla(var(--accent-hsl), 0.15);
   background-color: var(--todoList-listItemBackground) !important;
 }
 
@@ -7159,6 +7162,10 @@ border-bottom: 2px solid var(--background-modifier-border);
 
 .nav-header{
  padding: 5px 20px 5px 20px !important;
+}
+
+#conversationDiv{
+    background-color: transparent !important;
 }
 
 #conversationDiv.nav-header{
@@ -7639,3 +7646,4 @@ margin-right: -5px !important;
   font-family: boxicons;
   margin-right: -5px !important;
 }
+
