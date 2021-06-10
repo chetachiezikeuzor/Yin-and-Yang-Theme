@@ -107,7 +107,12 @@ settings:
     type: variable-number
     default: 1.756666  
   -
-    id: l-blockquote
+    id: naked-bq
+    title: Empty Blockquote
+    type: class-toggle
+    description: This will remove the quote icon in blockquotes
+  -
+    id: l-blockquote 
     title: Light Mode Block Quote Color
     type: variable-color
     format: hsl-split
@@ -1987,6 +1992,11 @@ line-height: 0.1em;
 vertical-align: -0.3em;
 }
 
+.naked-bq .markdown-preview-view blockquote:before {
+content: "";
+margin-right: 0em;
+}
+
 blockquote p {
 color: hsl(var(--blockquote-border));
 display: inline;
@@ -2891,7 +2901,7 @@ font-weight: 700;
 cursor: pointer;
 transition: 150ms;
 border-radius: 3px;
-background: hsl(var(--accent-hsl), .2);
+background: hsl(var(--accent-hsl), .25);
 color: var(--text-normal);
 }
 
@@ -7592,4 +7602,3 @@ margin-right: -5px !important;
   font-family: boxicons;
   margin-right: -5px !important;
 }
-
