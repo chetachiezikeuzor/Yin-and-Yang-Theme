@@ -7571,6 +7571,12 @@ DICTIONARY PLUGIN
 font-size: .875em;
 }
 
+body .workspace-leaf-content[data-type="dictionary-view"] .searchbox > button {
+    padding: 0 12px;
+    color: var(--text-muted);
+    background: var(--background-primary-alt);
+}
+
 .nn.svelte-1cj9ty2{
   cursor: pointer;
 }
