@@ -1045,7 +1045,7 @@ button,
 .CodeMirror-gutters, .CodeMirror-linenumber {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-variant-ligatures: no-common-ligatures;
+  font-variant-ligatures: common-ligatures;
 }
 
 .workspace-tab-header-inner-icon{
@@ -1283,7 +1283,7 @@ display: inline-block;
 
 .graph-controls.is-close {
 border-radius: 4px;
-border: 1px solid var(--background-secondary);
+border: 0px solid var(--background-secondary);
 box-shadow: 0px 0px 0px .1px inset var(--background-modifier-border), 0px 0px 1px 1px inset var(--background-tertiary);
 padding: 0;
 line-height: 1;
@@ -1931,7 +1931,7 @@ position: relative;
 float: right;
 border: .025em solid var(--background-modifier-border) !important;
 color: var(--text-normal);
-box-shadow: 8px 8px var(--text-faint);
+box-shadow: 8px 8px var(--background-modifier-border);
 }
 
 aside > p {
@@ -4265,7 +4265,7 @@ margin: 1px 0;
 background-color: var(--tag-base);
 border: .025em solid var(--interactive-accent);
 font-weight: 500;
-padding: 5px 12px !important;
+padding: 4px 12px !important;
 text-align: center;
 text-decoration: none !important;
 display: inline-block;
@@ -6276,14 +6276,6 @@ margin-top: 5px;
 .markdown-preview-view ul.contains-task-list li .collapse-indicator::before {
 margin-left: -20px;
 margin-top: 5;
-}
-
-.vidcontainer {
-display: flex;
-}
-
-.viditem + .viditem {
-margin-left: 5%;
 }
 
 /*collapse icon in <summary> tag*/
