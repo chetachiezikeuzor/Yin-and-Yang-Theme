@@ -3329,14 +3329,6 @@ EMBEDS
   padding-right: 0;
 }
 
-.markdown-preview-view .markdown-embed-content > .markdown-preview-view {
-  max-height: none !important;
-}
-
-.markdown-embed-content .markdown-preview-section {
-  min-height: unset !important;
-}
-
 .markdown-embed-content .markdown-preview-section > div {
   padding-left: 0;
   padding-right: 0;
