@@ -1048,20 +1048,6 @@ button,
   font-variant-ligatures: common-ligatures;
 }
 
-.workspace-tab-header-inner-icon{
-  stroke-width: 1;
-}
-
-.view-action:after,
-.view-header-icon,
-.view-header-icon:after,
-.nav-action-button:after,
-.side-dock-ribbon-action:after,
-.workspace-tab-header-inner-icon:after{
--webkit-font-smoothing: auto;
--moz-osx-font-smoothing: auto;
-}
-
 /* PRIMARY FONT SIZING & STYLING */
 
 /*FONT SIZE*/
@@ -2720,7 +2706,7 @@ margin-right: 8px;
 }
 
 .modal.mod-settings .vertical-tab-content-container {
-border-left: var(--border-width) solid var(--background-modifier-border);
+border-left: .025em solid var(--background-modifier-border);
 padding-bottom: 0;
 padding-right: 0;
 }
@@ -5570,11 +5556,6 @@ content: "\ea67";
 content: "\eb00";
 }
 
-svg.templater-icon path{
-  stroke-width: 1;
-  stroke: currentColor;
-}
-
 .workspace-tab-header[aria-label^="Graph view"]
 .workspace-tab-header-inner-icon:after {
 content: "\edaa"; 
@@ -7655,3 +7636,4 @@ margin-right: -5px !important;
   font-family: boxicons;
   margin-right: -5px !important;
 }
+
