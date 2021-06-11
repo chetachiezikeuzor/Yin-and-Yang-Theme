@@ -4501,10 +4501,6 @@ text-overflow: ellipsis;
 
 /*ATTACHMENTS IN FILE EXPLORER*/
 
-.oz-nav-file-title{
-  flex-direction: row-reverse;
-}
-
 .workspace-leaf-content[data-type="file-explorer"] .nav-file-title {
 margin-right: 10px;
 flex-direction: row-reverse;
@@ -6869,6 +6865,37 @@ PLUGINS!!!
 ----------------------------------------------------------------*/
 
 /*----------------------------------------------------------------
+FILE TREE ALTERNATIVE PLUGIN
+----------------------------------------------------------------*/
+
+div.treeview > span,
+.oz-nav-file-title,
+.oz-file-tree-header{
+  font-size: var(--small-font-size);
+}
+
+div.treeview svg.toggle{
+  width: 14px !important;
+  height: 14px !important;
+}
+
+.oz-nav-file-title{
+  flex-direction: row-reverse;
+}
+
+.oz-nav-action-button {
+    padding: 0px !important;
+}
+
+.oz-nav-action-button .fa-lg{
+  font-size: 1.15em;
+}
+
+.oz-file-tree-header{
+  color: var(--text-muted) !important;
+}
+
+/*----------------------------------------------------------------
 ZOOM PLUGIN
 ----------------------------------------------------------------*/
 
@@ -7632,4 +7659,3 @@ margin-right: -5px !important;
   font-family: boxicons;
   margin-right: -5px !important;
 }
-
