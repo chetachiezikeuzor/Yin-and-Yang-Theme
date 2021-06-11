@@ -1059,12 +1059,10 @@ button,
 .frontmatter-container .tag,
 h1 .tag, h2 .tag, h3 .tag, 
 h4 .tag, h5 .tag, h6 .tag,
-ul .tag,
-p .tag,
+ul .tag, p .tag,
 .cm-s-obsidian .cm-hmd-frontmatter,
 .cm-s-obsidian pre.HyperMD-footnote,
-.tree-item-self,
-.tooltip,
+.tree-item-self, .tooltip,
 .outline .pane-empty,
 .document-search-button,
 .cm-s-obsidian pre.HyperMD-footnote {
@@ -1186,7 +1184,7 @@ textarea:focus,
 .dropdown:focus,
 input:not(input[type=range]):focus,
 .search-result-file-match:not(.search-info-more-matches):hover{
-  box-shadow: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1),
+  box-shadow: 0 0 0 0.1px rgba(0, 0, 0, 0.1),
     0 0 0 3px hsla(var(--accent-hsl), 0.15);
 }
 
@@ -2451,12 +2449,8 @@ padding: 10px;
 .search-result-file-matched-text {
 padding-left: 2px;
 padding-right: 2px;
-border-radius: 5px;
-background: var(--background-modifier-border);
-}
-
-.tree-item-self .tree-item-inner .search-result-file-matched-text {
-background: var(--background-modifier-border);
+border-radius: 2px;
+background: hsl(var(--accent-hsl), .5);
 }
 
 .tree-item-self{
@@ -4645,7 +4639,7 @@ width: 100%;
 text-align: center;
 font-size: 15px;
 border: 1px solid var(--background-modifier-border);
-color: var(--text-normal);
+color: var(--text-on-accent);
 padding: 7.5px 12px;
 }
 
@@ -7393,12 +7387,6 @@ background: var(--background-primary) !important;
   display: none;
 }
 
-.kanban-plugin .markdown-preview-view p:after{
-    background-color: pink !important;
-  border: pink !important;
-  margin: 0em !important;
-}
-
 .kanban-plugin__item-content-wrapper{
   padding: .3em .3em .3em .3em !important;
   border-radius: .025em !important;
@@ -7413,6 +7401,8 @@ background: var(--background-primary) !important;
 
 .kanban-plugin__lane-items.is-dragging-over {
   background-color: hsl(var(--accent-hsl), .75) !important;
+   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2),
+    0 0 0 1px hsl(var(--accent-hsl), .75) !important;
 }
 
 .kanban-plugin__item-markdown img{
