@@ -778,7 +778,7 @@ settings:
   --text-on-accent: white;
 
   --text-normal: hsla(var(--base-h),calc(var(--base-s) + 45%), calc(var(--base-d) + 95%), .9);
-  --text-muted: hsla(var(--base-h),var(--base-s), calc(var(--base-d) + 65%), .95);
+  --text-muted: hsla(var(--base-h),var(--base-s), calc(var(--base-d) + 63%), .95);
   --text-faint: hsla(var(--base-h),var(--base-s), calc(var(--base-d) + 35%), .95);
 
   --interactive-accent: hsl(var(--d-accent-h), var(--d-accent-s), var(--d-accent-l));
@@ -1511,7 +1511,7 @@ left: 0;
 border-radius: 2px;
 transition: transform 0.15s ease-in-out, width 0.1s ease-in-out, left 0.1s ease-in-out, -webkit-transform 0.15s ease-in-out;
 transform: translate3d(1px, 0, 0);
-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1), inset 0 1px 1px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.03);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), inset 0 1px 1px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.03);
 }
 
 .checkbox-container.is-enabled:after {
@@ -2917,9 +2917,9 @@ font-weight: 700;
 .suggestion-item.is-selected,
 .menu-item:hover {
 cursor: pointer;
-transition: 3ms ease-in-out;
-border-radius: 3px;
-background: hsl(var(--accent-hsl), .25);
+transition: 200ms ease-in-out;
+border-radius: 4px;
+background: hsl(var(--accent-hsl), .5);
 color: var(--text-normal);
 }
 
@@ -3000,6 +3000,19 @@ CUSTOM/READABLE LINE WIDTH
   margin: 0 auto 0 auto;
   width: var(--line-width);
   max-width: var(--max-width);
+}
+
+.markdown-preview-section > div{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.markdown-preview-section{
+    padding-top: .5rem;
+}
+
+html .CodeMirror-lines {
+  padding-top: 3rem;
 }
 
 .markdown-embed .markdown-preview-section > div {
@@ -3974,11 +3987,18 @@ color: var(--graph-circle-fill-highlight);
 }
 
 .empty-state-container{
+  margin-left:  calc(var(--header-width) * 1.3);
+}
+
+.empty-state-container{
   padding: .5em 2em;  
+  transition: box-shadow 300ms ease-in-out;
 }
 
 .empty-state-container:hover{
   background-color: hsla(var(--accent-hsl), .15);
+  box-shadow: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1),
+    0 0 0 3px hsla(var(--accent-hsl), 0.15);
   border: 5px solid var(--interactive-accent);
   border-radius: 6px;
 }
@@ -4516,7 +4536,7 @@ flex-direction: row-reverse;
 .nav-file-tag{
   text-align: center;
   font-family: var(--font-monospace);
-  background-color: var(--background-secondary);
+  background-color: var(--background-primary-alt);
   border: 1px solid var(--background-modifier-accent);
   color: var(--background-modifier-accent);
   font-weight: 900;
