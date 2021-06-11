@@ -2582,7 +2582,7 @@ border: .025em solid var(--background-modifier-border) !important;
 }
 
 .theme-dark button{
- box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(255, 255, 255, 0.2);
+ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.02), inset 0px 1px 2px rgba(255, 255, 255, 0.2);
 }
 
 button.mod-cta {
@@ -4326,7 +4326,7 @@ transition: .1s ease-in-out;
   background-repeat: no-repeat, repeat;
   background-position: right 0.6em top 50%, 0 0;
   background-size: 1em auto, 100%;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 1px 1px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.02), inset 0px 1px 3px rgba(255, 255, 255, 0.2);
   transition: 100ms;
   cursor: pointer;
 }
