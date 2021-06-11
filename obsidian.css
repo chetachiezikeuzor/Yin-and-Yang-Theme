@@ -3002,7 +3002,8 @@ CUSTOM/READABLE LINE WIDTH
   max-width: var(--max-width);
 }
 
-.markdown-preview-section > div{
+.markdown-preview-view .markdown-preview-sizer,
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer{
     padding-left: 1em;
     padding-right: 1em;
 }
@@ -3329,6 +3330,10 @@ EMBEDS
   padding-right: 0;
 }
 
+.markdown-preview-view .markdown-embed-content > .markdown-preview-view{
+  max-height: 400px;
+}
+
 .markdown-embed-content .markdown-preview-section > div {
   padding-left: 0;
   padding-right: 0;
@@ -3577,7 +3582,7 @@ div.popover.hover-popover .markdown-preview-view {
 font-size: calc(var(--editor-font-size) - .1em);
 padding-bottom: 2.5rem;
 padding-top: 1.5rem !important;
-padding: 2.5rem;
+padding: 1.5rem;
 }
 
 .popover.hover-popover .markdown-embed {
@@ -7650,4 +7655,3 @@ margin-right: -5px !important;
   font-family: boxicons;
   margin-right: -5px !important;
 }
-
