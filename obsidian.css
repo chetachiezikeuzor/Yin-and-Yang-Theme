@@ -4178,7 +4178,7 @@ background-color: var(--background-modifier-border);
 
 .hider-frameless .workspace-split.mod-right-split > .workspace-tabs,
 .hider-frameless .workspace-split.mod-root .view-header {
-  padding-top: 2px;
+  padding-top: 18px;
 }
 
 body.plugin-sliding-panes-rotate-header.plugin-sliding-panes-header-alt
