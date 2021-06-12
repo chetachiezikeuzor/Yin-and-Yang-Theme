@@ -2889,12 +2889,10 @@ SUGGESTIONS
 
 .suggestion-container{
 background-color: var(--background-primary);
-border-radius: 3px;
 }
 
 .suggestion-item,
 .suggestion-empty {
-border-radius: 3px;
 font-size: 100%;
 text-align: left;
 line-height: 1.4em;
@@ -2908,8 +2906,7 @@ font-weight: 700;
 .menu-item:hover {
 cursor: pointer;
 transition: 200ms ease-in-out;
-border-radius: 4px;
-background: hsl(var(--accent-hsl), .5);
+background-color: hsl(var(--accent-hsl), .5);
 color: var(--text-normal);
 }
 
@@ -5356,6 +5353,10 @@ margin-left: 2px;
 transition: 100ms;
 }
 
+.external-link:hover:after{
+  color: var(--interactive-accent-hover);
+}
+
 /*settings modal icons*/
 
 .setting-editor-extra-setting-button[aria-label^="Reset "]:before{
@@ -7459,7 +7460,7 @@ background: var(--background-primary) !important;
 
 .kanban-plugin__lane-items.is-dragging-over {
   background-color: hsl(var(--accent-hsl), .75) !important;
-   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2),
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2),
     0 0 0 1px hsl(var(--accent-hsl), .75) !important;
 }
 
@@ -7491,13 +7492,9 @@ color: var(--text-muted) !important;
   color: var(--text-faint) !important;
 }
 
-.kanban-plugin__item-input-wrapper{
-  font-size: 15px;
-  padding: .5em .6em .5em .6em !important;
-}
-
 .kanban-plugin__item-input{
-  padding: .5em .8em .5em .8em;
+  line-height: 1.75em !important;
+  padding: .5em .8em .5em .8em !important;
 }
 
 .kanban-plugin__autocomplete{
@@ -7562,26 +7559,21 @@ transform: rotate(-90deg);
   font-weight: normal;
   font-style: normal;
   font-variant: normal;
+  font-size: 17px;
   line-height: 1;
 }
 
 .view-action[aria-label="Export as SVG"]:after{
-  content: "\F102B";
-  font-size: 17px;
-  font-family: "Material Design Icons";
-  vertical-align: .05em;
+  content: "\e9cc";
 }
 
 .view-action[aria-label="Export as PNG"]:after{
-  content: "\F0EB0";
-  font-family: "Material Design Icons";
-  vertical-align: .05em;
+  content: "\ea7d";
 }
 
 .view-action[aria-label^="Force-save "]:after,
 .view-action[aria-label="Save drawing"]:after{
   content: "\eb51";
-  vertical-align: 0em;
 }
 
 /*----------------------------------------------------------------
