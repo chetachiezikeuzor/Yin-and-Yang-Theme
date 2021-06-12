@@ -6543,7 +6543,6 @@ padding: calc(var(--h6)/10);
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url,
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-link,
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-link:not(.cm-link),
-.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment,
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-barelink,
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag {
   display: none !important;
@@ -7682,4 +7681,3 @@ margin-right: -5px !important;
   font-family: boxicons;
   margin-right: -5px !important;
 }
-
