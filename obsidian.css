@@ -4168,6 +4168,19 @@ background-color: var(--background-modifier-border);
   background-color: var(--background-primary) !important;
 }
 
+.hider-frameless .workspace-ribbon.mod-left .workspace-ribbon-collapse-btn {
+  margin-top: 32px;
+}
+
+.hider-frameless.plugin-sliding-panes-rotate-header .view-header-icon {
+  padding-top: 8px !important;
+}
+
+.hider-frameless .workspace-split.mod-right-split > .workspace-tabs,
+.hider-frameless .workspace-split.mod-root .view-header {
+  padding-top: 2px;
+}
+
 body.plugin-sliding-panes-rotate-header.plugin-sliding-panes-header-alt
   .workspace
   > .mod-root
@@ -7677,3 +7690,4 @@ margin-right: -5px !important;
   font-family: boxicons;
   margin-right: -5px !important;
 }
+
