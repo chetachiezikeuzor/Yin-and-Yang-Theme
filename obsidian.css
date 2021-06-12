@@ -4182,10 +4182,6 @@ body.plugin-sliding-panes-rotate-header.plugin-sliding-panes-header-alt
   margin-left: 10px !important;
 }
 
-body.plugin-sliding-panes.hider-frameless .mod-left-split.is-collapsed + div.mod-root .workspace-leaf:first-of-type .view-header {
-padding-left: 0 !important;
-}
-
 body.plugin-sliding-panes-rotate-header .workspace > .mod-root .view-header-title-container,
 body.plugin-sliding-panes-rotate-header.plugin-sliding-panes-header-alt .workspace > .mod-root .view-header-title {
 margin-top: 0;
