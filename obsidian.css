@@ -4254,6 +4254,7 @@ line-height: 1.4em;
 .frontmatter-container{ 
 background-color: var(--background-primary); 
 transition: 350ms;
+margin-bottom: 1.5em;
 }
 
 .frontmatter-container,
