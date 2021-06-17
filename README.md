@@ -34,4 +34,4 @@ If you have any issues and/or suggestions, please submit and issue or raise a PR
 ## Credits
 I owe a huge thanks to @mgmeyers and the [California Coast Obsidian Theme](https://github.com/mgmeyers/obsidian-california-coast-theme) for inspiration! 
 
-<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="chetachi" data-color="#e3e7ef" data-emoji=""  data-font="Inter" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#FFDD00" ></script>
+<a href="https://www.buymeacoffee.com/chetachi" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
