@@ -4022,8 +4022,26 @@ filter: invert(50%);
 }
 
 /*----------------------------------------------------------------
-ANDY'S MODE SLIDING PANES v3.2.1 (death_au's plugin)
+STYLING FOR PLUGIN MODES (SLIDING PANES/FOCUS MODE/HIDER)
 ----------------------------------------------------------------*/
+
+.view-header {
+  height: unset;
+  padding: 3px 10px 0px 10px !important;
+}
+
+.focus-mode .cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line {
+    opacity: 0.75 !important;
+    color: var(--text-muted);
+    filter: saturate(1) !important;
+}
+
+body.plugin-sliding-panes.plugin-sliding-panes-rotate-header.hider-ribbon .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header {
+  height: unset;
+  display: flex;
+  align-items: center;
+  padding: 2px 7px 2px 5px  !important;
+}
 
 body:not(.plugin-sliding-panes-rotate-header) .workspace-leaf .workspace-leaf-content .view-header-title-container {
   top: 1.5px;
@@ -4032,18 +4050,14 @@ body:not(.plugin-sliding-panes-rotate-header) .workspace-leaf .workspace-leaf-co
 
 body:not(.plugin-sliding-panes-rotate-header) .workspace-leaf-content > .view-header .view-action,
 .workspace-leaf-content > .view-header .view-action{
-  margin: 2px 6px;
+  margin: 1px 6px;
 }
 
 body.plugin-sliding-panes.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header .view-action > svg{
-  margin: 1px -1px;
+  margin: 0px -1.5px;
 }
 
 body:not(.plugin-sliding-panes-rotate-header) .workspace-leaf-content > .view-header .view-header-icon{
-  /*margin: 1px 3px;
-  padding: 6px 10px;
-  padding-right: 5px;
-  line-height: 1em;*/
   top: 2px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -4147,12 +4161,23 @@ background-color: var(--background-modifier-border);
 .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
 .workspace-split.mod-left-split > .workspace-leaf-resize-handle,
 .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
-  width: 3px;
+  width: 2px;
   background-color: transparent;
+}
+
+.workspace-split.mod-root.mod-vertical .workspace-leaf-resize-handle{
+  background-color: var(--background-modifier-border);
+  width: 2px !important;
+  z-index: 11;
+  opacity: .25 !important;
 }
 
 .theme-light .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
   opacity: .5;
+}
+
+body:not(.plugin-sliding-panes-rotate-header) .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle{
+  height: 2px;
 }
 
 .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
@@ -4172,17 +4197,38 @@ background-color: var(--background-modifier-border);
   background-color: var(--background-primary) !important;
 }
 
+.hider-frameless .workspace-ribbon.mod-right .workspace-ribbon-collapse-btn,
 .hider-frameless .workspace-ribbon.mod-left .workspace-ribbon-collapse-btn {
-  margin-top: 32px;
+  margin-top: 25px;
 }
 
 .hider-frameless.plugin-sliding-panes-rotate-header .view-header-icon {
   padding-top: 8px !important;
 }
 
-.hider-frameless .workspace-split.mod-right-split > .workspace-tabs,
-.hider-frameless .workspace-split.mod-root .view-header {
-  padding-top: 18px;
+.hider-frameless:not(.is-fullscreen) .workspace-split.mod-left-split > .workspace-tabs {
+  padding-top: 22px !important;
+}
+
+.hider-frameless.is-fullscreen .workspace-split.mod-left-split > .workspace-tabs,
+.hider-frameless.is-fullscreen .workspace-split.mod-right-split > .workspace-tabs{
+  padding-top: 2px;
+}
+
+.mod-macos.hider-frameless.hider-ribbon:not(.plugin-sliding-panes-rotate-header):not(.is-fullscreen)
+  .workspace-split.mod-left-split.is-collapsed
+  + .mod-root
+  .workspace-leaf:first-of-type
+  .view-header {
+  padding-left: 60px !important;
+}
+
+.mod-macos.hider-frameless:not(.plugin-sliding-panes-rotate-header):not(.is-fullscreen)
+  .workspace-split.mod-left-split.is-collapsed
+  + .mod-root
+  .workspace-leaf:first-of-type
+  .view-header {
+  padding-left: 34px !important;
 }
 
 body.plugin-sliding-panes-rotate-header.plugin-sliding-panes-header-alt
@@ -4254,7 +4300,6 @@ line-height: 1.4em;
 .frontmatter-container{ 
 background-color: var(--background-primary); 
 transition: 350ms;
-margin-bottom: 1.5em;
 }
 
 .frontmatter-container,
