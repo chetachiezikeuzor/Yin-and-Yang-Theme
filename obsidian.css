@@ -929,6 +929,35 @@ settings:
 }
 
 /*----------------------------------------------------------------
+FOR EXPORT
+----------------------------------------------------------------*/
+
+@media print {
+  p{
+    color: black !important;
+  }
+  ul > li::before,
+  ol > li::before{
+    border-left: 1px solid #ECEDF1;
+  }
+  code,
+  pre code,
+  code[class*="language-"],
+  pre code[class*="language-"]{
+    background-color: #FCFCFD !important;
+  }
+  .markdown-preview-view pre{
+    background-color: #FCFCFD;
+  }
+  .copy-code-button{
+    display: none;
+  }
+  .theme-dark{
+    --background-modifier-border: #ECEDF1;
+  }
+}
+
+/*----------------------------------------------------------------
 TITLEBAR
 ----------------------------------------------------------------*/
 
