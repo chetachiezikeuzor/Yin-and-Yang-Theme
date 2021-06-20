@@ -6636,6 +6636,10 @@ padding: calc(var(--h6)/10);
   display: none !important;
 } 
 
+.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-code-block.cm-hmd-codeblock{
+  display: inline !important;
+}
+
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task{
  display: inline !important;
 }
@@ -6702,7 +6706,7 @@ line-height: 1.75em;
 color: hsl(var(--blockquote-border));
 font-family: var(--default-font);
 border: none;
-border-left: 0.2rem solid hsl(var(--blockquote-border));
+border-left: 0.3rem solid hsl(var(--blockquote-border));
 background-color: var(--blockquote-bg);
 border-radius: 0px;
 padding-left: 2rem;
