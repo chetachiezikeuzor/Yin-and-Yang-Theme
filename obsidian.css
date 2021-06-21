@@ -2262,55 +2262,34 @@ mark.red{ --text-highlight-rgb: var(--red-highlighter);  }
 mark.purple{ --text-highlight-rgb: var(--purple-highlighter);  }
 
 .markdown-preview-view mark {
-margin: 0 -0.1em; 
-padding: 0.125em 0.15em;
-border-radius: .2em;
-/*border-radius: 0.8em 0.3em;  /* REALISTIC*/
-background: transparent;
-background-image: linear-gradient(105deg,
-  transparent 0,
-  transparent 0.3em,
-  rgba(var(--text-highlight-rgb), 0.7) 0.5em,
-  rgba(var(--text-highlight-rgb), 0.4) 1.6em,
-  rgba(var(--text-highlight-rgb), 0.4) calc(100% - 1.4em),
-  rgba(var(--text-highlight-rgb), 0.7) calc(100% - 0.5em),
-  transparent calc(100% - 0.3em),
-  transparent 100%);
--webkit-box-decoration-break: clone;
-box-decoration-break: clone;
-}
-
-.cm-s-obsidian span.cm-highlight {
-padding: 0.125em 0.15em;
-background: var(--text-highlight-rgb);
--webkit-box-decoration-break: clone;
-box-decoration-break: clone;
-}
-
-.cm-s-obsidian span.cm-formatting-highlight{
-/*margin: 0 0 0 -0.4em;*/
-padding: 0.125em 0.25em;
-background: var(--text-highlight-rgb);
-background-image: linear-gradient(105deg,
-  transparent 0,
-  transparent 0.3em,
-  rgba(var(--text-highlight-rgb), 0.7) 0.5em,
-  rgba(var(--text-highlight-rgb), 0.4) 1.6em);
--webkit-box-decoration-break: clone;
-box-decoration-break: clone;
-}
-.cm-s-obsidian .cm-highlight+span.cm-formatting-highlight {
-margin: 0 0em 0 0;
-padding: 0.125em 0.15em;
-background: var(--text-highlight-rgb);
-background-image: linear-gradient(105deg,
-  rgba(var(--text-highlight-rgb), 0.4) calc(100% - 1.4em),
-  rgba(var(--text-highlight-rgb), 0.7) calc(100% - 0.5em),
-  transparent calc(100% - 0.3em),
-  transparent 100%);
--webkit-box-decoration-break: clone;
-box-decoration-break: clone;
-}
+  margin: 0 -0.1em; 
+  padding: 0.125em 0.15em;
+  border-radius: .25em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  }
+  
+  span.cm-highlight {
+  padding: .1em 0.15em;
+  border-radius: .2em;
+  background: var(--text-highlight-rgb);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  }
+  
+  span.cm-formatting-highlight{
+  /*margin: 0 0 0 -0.4em;*/
+  background: var(--text-highlight-rgb);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  }
+  
+  .cm-highlight+span.cm-formatting-highlight {
+  margin: 0 0em 0 0;
+  background: var(--text-highlight-rgb);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  }
 
 /*----------------------------------------------------------------
 VIEW ACTIONS
