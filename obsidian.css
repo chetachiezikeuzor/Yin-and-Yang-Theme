@@ -2285,7 +2285,6 @@ mark.purple{ --text-highlight-rgb: var(--purple-highlighter);  }
   }
   
   .cm-highlight+span.cm-formatting-highlight {
-  margin: 0 0em 0 0;
   background: var(--text-highlight-rgb);
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
