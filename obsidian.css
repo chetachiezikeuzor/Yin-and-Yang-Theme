@@ -3720,6 +3720,74 @@ border-color: transparent;
 transition: border-color 0s ease-in-out 0.1s, background-color 0s ease-in-out 0.2s;
 }
 
+/*WORKSPACE RESIZE HANDLE*/
+
+.workspace-leaf-resize-handle {
+  z-index: 11;
+  transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out;
+}
+.workspace-split.mod-root.mod-horizontal .workspace-leaf-resize-handle,
+.workspace-split.mod-root.mod-vertical .workspace-leaf-resize-handle {
+  border-width: 0;
+  background-color: var(--background-primary-alt);
+}
+.theme-dark
+  .workspace-split.mod-root.mod-horizontal
+  .workspace-leaf-resize-handle,
+.theme-dark
+  .workspace-split.mod-root.mod-vertical
+  .workspace-leaf-resize-handle {
+  background-color: var(--background-primary-alt);
+}
+.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
+  height: 1px;
+  border-bottom: none;
+}
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+  width: 2px;
+}
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+  border-left: none;
+  background-color: var(--background-primary-alt);
+  width: 2px;
+  top: 0;
+}
+.theme-dark .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+  background-color: var(--background-primary-alt);
+}
+
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle {
+  background: transparent;
+  border-right: none;
+  width: 2px !important;
+  top: 0;
+}
+
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle:active,
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle:active,
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle:active {
+  border-width: 0;
+  background-color: hsla(var(--accent-hsl), 0.15) !important;
+  box-shadow: 1px 0 0 hsla(var(--accent-hsl), 0.15), -1px 0 0 hsla(var(--accent-hsl), 0.15);
+}
+
+.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle:active {
+  background-color: hsla(var(--accent-hsl), 0.15) !important;
+  box-shadow: 0 1px 0 hsla(var(--accent-hsl), 0.15), 0 -1px 0 hsla(var(--accent-hsl), 0.15);
+}
+
+.workspace-tabs .workspace-leaf-resize-handle{
+  background-color: var(--background-modifier-border);
+}
+
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+  height: 100%;
+}
+
 /*pretty cursor*/
 
 .CodeMirror-cursor, .cm-s-obsidian .cm-cursor {
@@ -4158,45 +4226,6 @@ border-bottom: 1px solid var(--background-primary-alt) !important;
 
 body.plugin-sliding-panes.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header{
 border-right: solid 1px var(--background-modifier-border) !important; 
-}
-
-.workspace-leaf-resize-handle:hover{
-opacity: .5;
-background-color: var(--background-modifier-border);
-}
-
-.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
-.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
-.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
-  width: 2px;
-  background-color: transparent;
-}
-
-.workspace-split.mod-root.mod-vertical .workspace-leaf-resize-handle{
-  background-color: var(--background-modifier-border);
-  width: 2px !important;
-  z-index: 11;
-  opacity: .25 !important;
-}
-
-.theme-light .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
-  opacity: .5;
-}
-
-body:not(.plugin-sliding-panes-rotate-header) .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle{
-  height: 2px;
-}
-
-.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
-  height: 2px;
-  border-bottom: none;
-  opacity: .5;
-  background-color: var(--background-modifier-border);
-}
-
-.is-translucent .workspace-leaf-resize-handle,
-.is-translucent .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle{
---opacity-translucency: .1;
 }
 
 .focus-mode .workspace,
@@ -6911,13 +6940,6 @@ bottom: 0;
 }
 
 /*Translucency*/
-
-.macOS-translucent.is-translucent .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
-.macOS-translucent.is-translucent .workspace-split.mod-left-split > .workspace-leaf-resize-handle,
-.macOS-translucent.is-translucent .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
-  width: 3px;
-  background-color: transparent;
-}
 
 .macOS-translucent.is-translucent .workspace-ribbon.mod-right.is-collapsed,
 .macOS-translucent.is-translucent .workspace-ribbon.mod-left.is-collapsed {
