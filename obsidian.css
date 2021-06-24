@@ -3740,7 +3740,7 @@ transition: border-color 0s ease-in-out 0.1s, background-color 0s ease-in-out 0.
   background-color: var(--background-primary-alt);
 }
 .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
-  height: 1px;
+  height: 2px;
   border-bottom: none;
 }
 .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
