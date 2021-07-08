@@ -25,7 +25,7 @@ https://user-images.githubusercontent.com/79069364/124992838-1cf3cf80-e009-11eb-
 ---
 
 ## How To Install
-The theme is currently under review. Soon you'll be able to find this theme in the Obsidian's community themes browser under `Settings` > `Appearance` > `Themes`.
+You can find Yin and Yang Obsidian's community themes browser under `Settings` > `Appearance` > `Themes`.
 
 Alternatively, download Yin and Yang.css to .obsidian/themes in your Vault folder and activate it under `Settings` > `Appearance`. (For older versions of Obsidian that do not support themes yet, rename Yin and Yang.css to obsidian.css and place it in the root of your Vault.)
 
