@@ -7,9 +7,10 @@ Welcome to the Yin and Yang Obsidian theme! This theme was created with both dar
 
 ## Showcase
 
-![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/screenshot.png)
+https://user-images.githubusercontent.com/79069364/124992838-1cf3cf80-e009-11eb-884b-611052f35228.mp4
 
-![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/dragdrop.mov)
+
+![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/screenshot.png)
 
 ![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/dark1.png)
 
