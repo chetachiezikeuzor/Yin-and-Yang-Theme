@@ -2,14 +2,15 @@
 Welcome to the Yin and Yang Obsidian theme! This theme was created with both dark mode and light mode in mind. Hopefully, you too will enjoy the stark contrast in colors.
 
 ## Plugins to Use
-- Style Settings: I've only added a few customizable features using this plugin but I will be sure to add more in the next few days.
-- Hider: This will allow you to hide various elements of the Obsidian UI.
+- Style Settings: I've added a ton of customizable features with the theme, including the ability to change base hue and saturation 🥳.
+- Hider: This will allow you to hide various elements of the Obsidian UI for a cleaner and more minimal workspace 🤗.
 
 ## Showcase
 
-![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/screenshot.png)
+https://user-images.githubusercontent.com/79069364/124992838-1cf3cf80-e009-11eb-884b-611052f35228.mp4
 
-![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/dragdrop.mov)
+
+![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/screenshot.png)
 
 ![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/dark1.png)
 
@@ -24,7 +25,7 @@ Welcome to the Yin and Yang Obsidian theme! This theme was created with both dar
 ---
 
 ## How To Install
-The theme is currently under review. Soon you'll be able to find this theme in the Obsidian's community themes browser under `Settings` > `Appearance` > `Themes`.
+You can find Yin and Yang Obsidian's community themes browser under `Settings` > `Appearance` > `Themes`.
 
 Alternatively, download Yin and Yang.css to .obsidian/themes in your Vault folder and activate it under `Settings` > `Appearance`. (For older versions of Obsidian that do not support themes yet, rename Yin and Yang.css to obsidian.css and place it in the root of your Vault.)
 
