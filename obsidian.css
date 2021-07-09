@@ -2098,6 +2098,10 @@ blockquote p {
 color: hsl(var(--blockquote-border));
 }
 
+blockquote p:first-child{
+ display: inline; 
+}
+
 .markdown-preview-view blockquote {
 line-height: var(--editor-line-height);
 color: hsl(var(--blockquote-border));
