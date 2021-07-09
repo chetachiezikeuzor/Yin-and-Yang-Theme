@@ -2096,7 +2096,6 @@ margin-right: 0em;
 
 blockquote p {
 color: hsl(var(--blockquote-border));
-display: inline;
 }
 
 .markdown-preview-view blockquote {
