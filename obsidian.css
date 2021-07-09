@@ -2329,7 +2329,7 @@ mark.purple{ --text-highlight-rgb: var(--purple-highlighter);  }
 .markdown-preview-view mark {
 margin: 0 -0.05em; 
 padding: 0.125em 0.15em;
-border-radius: .25em;
+border-radius: .2em;
 -webkit-box-decoration-break: clone;
 box-decoration-break: clone;
 }
