@@ -64,19 +64,19 @@ settings:
     title: UI Font
     description: Font used for the user interface
     type: variable-text
-    default: -apple-system, BlinkMacSystemFont, "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif
+    default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei Light", sans-serif
   - 
     id: preview-font
     title: Preview Font
     description: Font used for the preview view
     type: variable-text
-    default: -apple-system, BlinkMacSystemFont, "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif
+    default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei Light", sans-serif
   - 
     id: editor-font
     title: Editor Font
     description: Font used for the editor view
     type: variable-text
-    default: -apple-system, BlinkMacSystemFont, "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif
+    default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei Light", sans-serif
   - 
     id: font-monospace
     title: Monospace Font
@@ -179,62 +179,62 @@ settings:
     title: Heading 1 Font Preview
     id: f-header-1-pre
     type: variable-text
-    default: -apple-system, BlinkMacSystemFont, "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif
+    default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei Light", sans-serif
   - 
     title: Heading 1 Font Editor
     id: f-header-1-ed
     type: variable-text
-    default: -apple-system, BlinkMacSystemFont, "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif
+    default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei Light", sans-serif
   - 
     title: Heading 2 Font Preview
     id: f-header-2-pre
     type: variable-text
-    default: -apple-system, BlinkMacSystemFont, "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif
+    default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei Light", sans-serif
   - 
     title: Heading 2 Font Editor
     id: f-header-2-ed
     type: variable-text
-    default: -apple-system, BlinkMacSystemFont, "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif
+    default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei Light", sans-serif
   - 
     title: Heading 3 Font Preview
     id: f-header-3-pre
     type: variable-text
-    default: -apple-system, BlinkMacSystemFont, "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif
+    default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei Light", sans-serif
   - 
     title: Heading 3 Font Editor
     id: f-header-3-ed
     type: variable-text
-    default: -apple-system, BlinkMacSystemFont, "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif
+    default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei Light", sans-serif
   - 
     title: Heading 4 Font Preview
     id: f-header-4-pre
     type: variable-text
-    default: -apple-system, BlinkMacSystemFont, "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif
+    default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei Light", sans-serif
   - 
     title: Heading 4 Font Editor
     id: f-header-4-ed
     type: variable-text
-    default: -apple-system, BlinkMacSystemFont, "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif
+    default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei Light", sans-serif
   - 
     title: Heading 5 Font Preview
     id: f-header-5-pre
     type: variable-text
-    default: -apple-system, BlinkMacSystemFont, "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif
+    default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei Light", sans-serif
   - 
     title: Heading 5 Font Editor
     id: f-header-5-ed
     type: variable-text
-    default: -apple-system, BlinkMacSystemFont, "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif
+    default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei Light", sans-serif
   - 
     title: Heading 6 Font Preview
     id: f-header-6-pre
     type: variable-text
-    default: -apple-system, BlinkMacSystemFont, "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif
+    default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei Light", sans-serif
   - 
     title: Heading 6 Font Editor
     id: f-header-6-ed
     type: variable-text
-    default: -apple-system, BlinkMacSystemFont, "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif
+    default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei Light", sans-serif
   -
     title: Heading Size
     id: spec-size-head
@@ -625,7 +625,7 @@ settings:
 }
 
 :root{
-  --default-font: -apple-system, BlinkMacSystemFont, "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --default-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei Light", sans-serif;
   --font-monospace: SFMono-Regular, Consolas, "Roboto Mono", monospace;
   --preview-font: var(--default-font);
   --editor-font: var(--default-font);
@@ -861,7 +861,7 @@ settings:
   --accent-hsl: var(--l-accent-h), var(--l-accent-s), var(--l-accent-l);
 
   --background-primary: white;
-  --background-primary-alt: hsl(var(--base-h),var(--base-s),calc(var(--base-l) + 4%));
+  --background-primary-alt: hsl(var(--base-h),var(--base-s),calc(var(--base-l) + 2.75%));
   --background-secondary: hsl(var(--base-h),var(--base-s),var(--base-l));
   --background-secondary-alt: hsl(var(--base-h),var(--base-s),var(--base-l));
   --background-modifier-error: #e60026;
@@ -902,7 +902,7 @@ settings:
   --mod-button: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 2%));
   --mod-button-hover: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 3%));
 
-  --text-highlight-color: var(--dark0);
+  --text-highlight-color: var(--text-normal);
   --text-selection: hsl(var(--l-accent-h), var(--l-accent-s), 94.5%);
 
   --tag-base: var(--background-primary-alt);
@@ -4132,11 +4132,8 @@ padding: 1px 0;
 
 body:not(.plugin-sliding-panes-rotate-header) .view-header-title{
   padding: 1px 0;
-}
-
-body:not(.plugin-sliding-panes-rotate-header) .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header > .view-header-title-container > .view-header-title{
-margin-left: 7px;
-display: flex;
+  margin-left: 7px;
+  display: flex;
 }
 
 .view-header-title-container:after{
@@ -4332,8 +4329,7 @@ body:not(.is-mobile) .view-action{
 }
 
 .focus-mode .cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line {
-    opacity: 0.75 !important;
-    color: var(--text-muted);
+    opacity: 0.6 !important;
     filter: saturate(1) !important;
 }
 
@@ -4655,7 +4651,7 @@ transition: .1s ease-in-out;
 .dropdown { 
   font-size: .875em;
   color: var(--text-normal);
-  line-height: 1.3;
+  line-height: 1.4;
   padding: 0.6em 1.9em 0.6em 0.8em; 
   max-width: 100%;
   box-sizing: border-box;
