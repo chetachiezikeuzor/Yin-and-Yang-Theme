@@ -807,7 +807,7 @@ settings:
   --mod-button-hover: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 4%));
   --text-highlight-color: var(--text-normal);
   --text-selection: hsl(var(--d-accent-h), calc(var(--d-accent-s) - 15%), 15%);
-  --tag-base: var(--background-primary-alt);
+  --tag-base: var(--background-primary);
   --pre-code: hsl(var(--base-h), calc(var(--base-s) - 8%), calc(var(--base-d) + 4%));
   --inline-code: var(--light-cornflower-blue); 
   --code-block: var(--paleblue);
@@ -905,7 +905,7 @@ settings:
   --text-highlight-color: var(--text-normal);
   --text-selection: hsl(var(--l-accent-h), var(--l-accent-s), 94.5%);
 
-  --tag-base: var(--background-primary-alt);
+  --tag-base: var(--background-primary);
   --pre-code: hsl(var(--base-h), calc(var(--base-s) - 8%), calc(var(--base-l) + 3%));
   --inline-code: var(--royalblue);
   --code-block: var(--frost2);
