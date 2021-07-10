@@ -30,7 +30,7 @@ You can find Yin and Yang Obsidian's community themes browser under `Settings` >
 Alternatively, download Yin and Yang.css to .obsidian/themes in your Vault folder and activate it under `Settings` > `Appearance`. (For older versions of Obsidian that do not support themes yet, rename Yin and Yang.css to obsidian.css and place it in the root of your Vault.)
 
 ## Feedback
-If you have any issues and/or suggestions, please submit and issue or raise a PR. I will try my best to answer as quickly as possible! <3
+If you have any issues and/or suggestions, please submit an issue or raise a PR. I will try my best to answer as quickly as possible! <3
 
 ## Credits
 I owe a huge thanks to @mgmeyers and the [California Coast Obsidian Theme](https://github.com/mgmeyers/obsidian-california-coast-theme) for inspiration! 
