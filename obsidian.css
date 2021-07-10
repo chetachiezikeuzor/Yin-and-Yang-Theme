@@ -72,9 +72,21 @@ settings:
     type: variable-text
     default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei Light", sans-serif
   - 
+    id: header-font-pre
+    title: Headers in Preview Font
+    description: Font used for the headers in preview
+    type: variable-text
+    default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei Light", sans-serif
+  - 
     id: editor-font
     title: Editor Font
     description: Font used for the editor view
+    type: variable-text
+    default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei Light", sans-serif
+  - 
+    id: header-font-ed
+    title: Headers in Editor Font
+    description: Font used for the headers in editor
     type: variable-text
     default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei Light", sans-serif
   - 
@@ -629,6 +641,8 @@ settings:
   --font-monospace: SFMono-Regular, Consolas, "Roboto Mono", monospace;
   --preview-font: var(--default-font);
   --editor-font: var(--default-font);
+  --header-font-pre: var(--preview-font);
+  --header-font-ed: var(--editor-font);
   --mermaid-font: var(--font-monospace);
 
   --base-h: 220; 
@@ -1649,7 +1663,7 @@ HEADINGS
 .cm-s-obsidian .cm-header.cm-header-4,
 .cm-s-obsidian .cm-header.cm-header-5,
 .cm-s-obsidian .cm-header.cm-header-6{
-  font-family: var(--editor-font);
+  font-family: var(--header-font-ed);
   color: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -1663,7 +1677,7 @@ HEADINGS
 .markdown-preview-view h4,
 .markdown-preview-view h5,
 .markdown-preview-view h6{
-  font-family: var(--preview-font);
+  font-family: var(--header-font-pre);
 }
 
 body.is-mobile .HyperMD-header-1,
@@ -2040,6 +2054,13 @@ bottom: -0.25em;
 }
 
 /* TEXT MARKINGS*/
+
+/*STRIKETHROUGH*/
+del,
+.cm-strikethrough {
+  text-decoration-color: var(--text-muted);
+  text-decoration-thickness: 2px !important;
+}
 
 /* ITALICS */
 
@@ -4321,8 +4342,12 @@ filter: invert(50%);
 /*----------------------------------------------------------------
 STYLING FOR PLUGIN MODES (SLIDING PANES/FOCUS MODE/HIDER ETC.)
 ----------------------------------------------------------------*/
-body:not(.is-mobile) .view-action{
-  line-height: 1;
+
+.view-header {
+    height: unset;
+    display: flex;
+    align-items: center;
+    padding: 3px 10px;
 }
 
 .view-header-title-container {
@@ -4448,6 +4473,22 @@ border-bottom: 1px solid var(--background-secondary-alt);
 border-top: 1px solid var(--background-secondary-alt);
 }
 
+div.view-header{
+  background-color: var(--background-primary) !important;
+}
+
+.workspace-tabs div.view-header{
+  background-color: var(--background-secondary) !important;
+}
+
+.focus-mode div.view-header{
+  border-top: 1px solid var(--background-primary) !important;
+}
+
+.focus-mode.plugin-tabs div.view-header {
+    border-top: none !important;
+}
+
 /*remove border in sliding panes (not rotated headers)*/
 body:not(.plugin-sliding-panes-rotate-header) .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header,
 body.plugin-sliding-panes:not(.plugin-sliding-panes-rotate-header) .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header,
@@ -4520,7 +4561,7 @@ body.plugin-sliding-panes-rotate-header
   > .workspace-leaf-content
   > .view-header
   .view-actions {
-  line-height: 1em;
+  line-height: 1;
   align-items: center;
   justify-content: center;
 }
@@ -5364,7 +5405,7 @@ margin-left: 5px;
 .side-dock-ribbon-action[aria-label="Help"]:after,
 .side-dock-ribbon-action[aria-label="Settings"]:after {
 font-size: 17px;
-line-height: 1em;
+line-height: 1;
 }
 
 .plugin-sliding-panes-rotate-header .view-header-icon:after,
@@ -5378,7 +5419,7 @@ line-height: 1em;
 .plugin-sliding-panes-rotate-header
 .view-action[aria-label="Unlink pane"]:after,
 .view-action.mod-close-leaf:after {
-line-height: 1em;
+line-height: 1;
 transform: rotate(-90deg);
 }
 
@@ -6325,13 +6366,13 @@ svg.down-arrow-with-tail path, svg.up-arrow-with-tail path, svg.up-and-down-arro
 
 /**/
 
-.svg-replace svg.merge-files path{
-  d: path("M10.417 77.083C10.417 85.125 16.958 91.667 25 91.667s14.583 -6.542 14.583 -14.583c0 -6.583 -4.417 -12.096 -10.417 -13.904v-14.533c1.017 1.138 2.121 2.196 3.388 3.1c4.917 3.517 10.904 4.575 16.325 4.575c4.025 0 7.721 -0.583 10.442 -1.171a14.583 14.583 0 0 0 13.6 9.438c8.042 0 14.583 -6.542 14.583 -14.583s-6.542 -14.583 -14.583 -14.583a14.583 14.583 0 0 0 -14.183 11.325c-5.404 1.338 -15.267 2.567 -21.329 -1.775c-2.775 -1.988 -4.542 -5.163 -5.442 -9.317C36.479 33.167 39.583 28.421 39.583 22.917C39.583 14.875 33.042 8.333 25 8.333S10.417 14.875 10.417 22.917c0 6.583 4.417 12.096 10.417 13.904v26.358c-6 1.808 -10.417 7.321 -10.417 13.904zm62.5 -33.333c3.446 0 6.25 2.804 6.25 6.25s-2.804 6.25 -6.25 6.25S66.667 53.446 66.667 50s2.804 -6.25 6.25 -6.25zm-41.667 33.333c0 3.446 -2.804 6.25 -6.25 6.25s-6.25 -2.804 -6.25 -6.25S21.554 70.833 25 70.833s6.25 2.804 6.25 6.25zm-12.5 -54.167C18.75 19.471 21.554 16.667 25 16.667s6.25 2.804 6.25 6.25S28.446 29.167 25 29.167s-6.25 -2.804 -6.25 -6.25z");
-}
-
 /**/
 
 /*start*/
+
+.svg-replace svg.merge-files path{
+  d: path("M10.417 77.083C10.417 85.125 16.958 91.667 25 91.667s14.583 -6.542 14.583 -14.583c0 -6.583 -4.417 -12.096 -10.417 -13.904v-14.533c1.017 1.138 2.121 2.196 3.388 3.1c4.917 3.517 10.904 4.575 16.325 4.575c4.025 0 7.721 -0.583 10.442 -1.171a14.583 14.583 0 0 0 13.6 9.438c8.042 0 14.583 -6.542 14.583 -14.583s-6.542 -14.583 -14.583 -14.583a14.583 14.583 0 0 0 -14.183 11.325c-5.404 1.338 -15.267 2.567 -21.329 -1.775c-2.775 -1.988 -4.542 -5.163 -5.442 -9.317C36.479 33.167 39.583 28.421 39.583 22.917C39.583 14.875 33.042 8.333 25 8.333S10.417 14.875 10.417 22.917c0 6.583 4.417 12.096 10.417 13.904v26.358c-6 1.808 -10.417 7.321 -10.417 13.904zm62.5 -33.333c3.446 0 6.25 2.804 6.25 6.25s-2.804 6.25 -6.25 6.25S66.667 53.446 66.667 50s2.804 -6.25 6.25 -6.25zm-41.667 33.333c0 3.446 -2.804 6.25 -6.25 6.25s-6.25 -2.804 -6.25 -6.25S21.554 70.833 25 70.833s6.25 2.804 6.25 6.25zm-12.5 -54.167C18.75 19.471 21.554 16.667 25 16.667s6.25 2.804 6.25 6.25S28.446 29.167 25 29.167s-6.25 -2.804 -6.25 -6.25z");
+}
 
 .svg-replace svg.scissors path{
   d: path("M41.667 27.083C41.667 19.042 35.125 12.5 27.083 12.5S12.5 19.042 12.5 27.083S19.042 41.667 27.083 41.667a14.375 14.375 0 0 0 6.721 -1.721l9.821 10.533l-9.658 9.658A14.417 14.417 0 0 0 27.083 58.333C19.042 58.333 12.5 64.875 12.5 72.917S19.042 87.5 27.083 87.5s14.583 -6.542 14.583 -14.583c0 -2.504 -0.692 -4.825 -1.808 -6.883l9.454 -9.45L70.833 79.671a12.5 12.5 0 0 0 8.838 3.663H91.667L38.958 35.492c1.692 -2.383 2.708 -5.271 2.708 -8.408zM27.083 33.333C23.638 33.333 20.833 30.529 20.833 27.083S23.638 20.833 27.083 20.833S33.333 23.638 33.333 27.083S30.529 33.333 27.083 33.333zm0 45.833c-3.446 0 -6.25 -2.804 -6.25 -6.25S23.638 66.667 27.083 66.667s6.25 2.804 6.25 6.25S30.529 79.167 27.083 79.167z M70.833 20.329l-15.446 18.392l5.892 5.892L91.667 16.667h-11.996A12.5 12.5 0 0 0 70.833 20.329z");
