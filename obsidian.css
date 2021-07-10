@@ -861,7 +861,7 @@ settings:
   --accent-hsl: var(--l-accent-h), var(--l-accent-s), var(--l-accent-l);
 
   --background-primary: white;
-  --background-primary-alt: hsl(var(--base-h),var(--base-s),calc(var(--base-l) + 2.75%));
+  --background-primary-alt: hsl(var(--base-h),var(--base-s),calc(var(--base-l) + 3%));
   --background-secondary: hsl(var(--base-h),var(--base-s),var(--base-l));
   --background-secondary-alt: hsl(var(--base-h),var(--base-s),var(--base-l));
   --background-modifier-error: #e60026;
@@ -878,7 +878,7 @@ settings:
 
   --background-tertiary: hsl(var(--base-h),var(--base-s),calc(var(--base-l) - 5%));
   --background-transparent: hsla(var(--base-h),var(--base-s),var(--base-l), 0);
-  --background-translucent: hsla(var(--base-h),var(--base-s),var(--base-l), .7);
+  --background-translucent: hsla(var(--base-h),var(--base-s),calc(var(--base-l) + 5%), .7);
   --background-match-highlight: hsla(var(--l-accent-h), 40%, 62%, 0.2);
   --svg-faint: var(--text-faint);
   --text-title-h1: hsl(var(--boldlightpink));
@@ -3452,7 +3452,7 @@ EMBEDS
 ----------------------------------------------------------------*/
 
 .markdown-preview-view img:not(img.emoji):not([width]){
-  margin: 1.75em 0em;
+  margin: inherit auto;
 }
 
 .markdown-preview-view img:not(img.emoji):not([width]), 
@@ -4460,7 +4460,6 @@ body.plugin-sliding-panes.plugin-sliding-panes-rotate-header .workspace > .mod-r
 border-right: solid 1px var(--background-modifier-border) !important; 
 }
 
-.focus-mode .workspace,
 .focus-mode .workspace{
   background-color: var(--background-primary) !important;
 }
