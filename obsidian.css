@@ -986,6 +986,9 @@ FOR EXPORT
   pre code[class*="language-"]{
     background-color: #FCFCFD !important;
   }
+    .markdown-preview-view mark{
+    color: black !important;
+  }
   .markdown-preview-view pre{
     background-color: #FCFCFD;
   }
@@ -4347,7 +4350,7 @@ STYLING FOR PLUGIN MODES (SLIDING PANES/FOCUS MODE/HIDER ETC.)
     height: unset;
     display: flex;
     align-items: center;
-    padding: 3px 10px;
+    padding: 2px 10px;
 }
 
 .view-header-title-container {
@@ -5111,6 +5114,7 @@ transition: 0.3s ease-in-out;
 
 .status-bar-item {
 padding: 0 0 0 6px;
+color: var(--text-muted);
 font-size: .875em;
 }
 
@@ -5132,7 +5136,6 @@ cursor: pointer;
 
 .status-bar {
 background-color: var(--background-secondary-alt);
-color: var(--text-muted);
 margin: 0 0px !important;
 }
 
@@ -6306,6 +6309,10 @@ d: path("M82.929 35.775a4.154 4.154 0 0 0 -0.817 -1.221l-25 -25a4.154 4.154 0 0 
 /*----------------------------------------------------------------
 SVG REPLACEMENT
 ----------------------------------------------------------------*/
+.svg-replace .side-dock-ribbon-tab,
+.svg-replace .side-dock-ribbon-action {
+  stroke-width: 0px;
+}
 
 .nav-action-button > svg,
 .side-dock-ribbon-action > svg, .clickable-icon svg.switch,
@@ -6319,39 +6326,39 @@ SVG REPLACEMENT
   height: 17px;
 }
 
-svg.bullet-list path, svg.folder path,
-svg.link path, svg.links-going-out path,
-svg.document path, svg.image-file path,
-svg.any-key path svg.bullet-list-glyph path, 
-svg.paused path, svg.number-list-glyph path, 
-svg.scissors path, svg.two-blank-pages path,
-svg.paste-text path, svg.paste path, svg.select-all-text path,
-svg.filter-icon path, svg.info path, svg.folder path,
-svg.hashtag path, svg.dice-roll path, svg.dice path,
-svg.vault path, svg.open-vault path, svg.clock path,
-svg.links-coming-in path, svg.add-note-glyph path,
-svg.blocks path, svg.calendar-with-checkmark path,
-svg.pencil path, svg.trash path, svg.broken-link path,
-svg.run-command path, svg.right-chevron-glyph path,
-svg.left-chevron-glyph path, svg.magnifying-glass path,
-svg.highlight-glyph path, svg.three-horizontal-bars path, 
-svg.exit-fullscreen path, svg.fullscreen path, svg.reset path, 
-svg.bold-glyph path, svg.audio-file path, svg.link-glyph path,
-svg.clock path, svg.pin path, svg.filled-pin path, svg.gear path, 
-svg.unindent-glyph path, svg.quote-glyph path, svg.install path,
-svg.microphone path, svg.microphone-filled path, svg.star path,
-svg.left-arrow path, svg.sheets-in-box path, svg.documents path,
-svg.heading-glyph path, svg.check-in-circle path, svg.cloud path, 
-svg.pane-layout path, svg.stacked-levels path, svg.code-glyph path,
-svg.vertical-split path,svg.vertical-three-dots path, svg.switch path,
-svg.percent-sign-glyph path, svg.cross-in-box path, svg.indent-glyph path,
-svg.plus-with-circle path, svg.minus-with-circle path, svg.right-arrow path,
-svg.popup-open path, svg.enter path, svg.go-to-file path, svg.lines-of-text path,
-svg.expand-vertically path, svg.uppercase-lowercase-a path,svg.create-new path,
-svg.left-arrow-with-tail path, svg.right-arrow-with-tail path, svg.dot-network path, 
-svg.up-chevron-glyph path, svg.down-chevron-glyph path, svg.horizontal-split path,
-svg.crossed-star path, svg.paper-plane path, svg.search path, svg.presentation path, 
-svg.down-arrow-with-tail path, svg.up-arrow-with-tail path, svg.up-and-down-arrows path{
+.svg-replace svg.bullet-list path, .svg-replace svg.folder path,
+.svg-replace svg.link path, .svg-replace svg.links-going-out path,
+.svg-replace svg.document path, .svg-replace svg.image-file path,
+.svg-replace svg.any-key path, .svg-replace svg.bullet-list-glyph path, 
+.svg-replace svg.paused path, .svg-replace svg.number-list-glyph path, 
+.svg-replace svg.scissors path, .svg-replace svg.two-blank-pages path,
+.svg-replace svg.paste-text path, .svg-replace svg.paste path, .svg-replace svg.select-all-text path,
+.svg-replace svg.filter-icon path, .svg-replace svg.info path, .svg-replace svg.folder path,
+.svg-replace svg.hashtag path, .svg-replace svg.dice-roll path, .svg-replace svg.dice path,
+.svg-replace svg.vault path, .svg-replace svg.open-vault path, .svg-replace svg.clock path,
+.svg-replace svg.links-coming-in path, .svg-replace svg.add-note-glyph path,
+.svg-replace svg.blocks path, .svg-replace svg.calendar-with-checkmark path,
+.svg-replace svg.pencil path, .svg-replace svg.trash path, .svg-replace svg.broken-link path,
+.svg-replace svg.run-command path, .svg-replace svg.right-chevron-glyph path,
+.svg-replace svg.left-chevron-glyph path, .svg-replace svg.magnifying-glass path,
+.svg-replace svg.highlight-glyph path, .svg-replace svg.three-horizontal-bars path, 
+.svg-replace svg.exit-fullscreen path, .svg-replace svg.fullscreen path, .svg-replace svg.reset path, 
+.svg-replace svg.bold-glyph path, .svg-replace svg.audio-file path, .svg-replace svg.link-glyph path,
+.svg-replace svg.clock path, .svg-replace svg.pin path, .svg-replace svg.filled-pin path, .svg-replace svg.gear path, 
+.svg-replace svg.unindent-glyph path, .svg-replace svg.quote-glyph path, .svg-replace svg.install path,
+.svg-replace svg.microphone path, .svg-replace svg.microphone-filled path, .svg-replace svg.star path,
+.svg-replace svg.left-arrow path, .svg-replace svg.sheets-in-box path, .svg-replace svg.documents path,
+.svg-replace svg.heading-glyph path, .svg-replace svg.check-in-circle path, .svg-replace svg.cloud path, 
+.svg-replace svg.pane-layout path, .svg-replace svg.stacked-levels path, .svg-replace svg.code-glyph path,
+.svg-replace svg.vertical-split path, .svg-replace svg.vertical-three-dots path, .svg-replace svg.switch path,
+.svg-replace svg.percent-sign-glyph path, .svg-replace svg.cross-in-box path, .svg-replace svg.indent-glyph path,
+.svg-replace svg.plus-with-circle path, .svg-replace svg.minus-with-circle path, .svg-replace svg.right-arrow path,
+.svg-replace svg.popup-open path, .svg-replace svg.enter path, .svg-replace svg.go-to-file path, .svg-replace svg.lines-of-text path,
+.svg-replace svg.expand-vertically path, .svg-replace svg.uppercase-lowercase-a path, .svg-replace svg.create-new path,
+.svg-replace svg.left-arrow-with-tail path, .svg-replace svg.right-arrow-with-tail path, .svg-replace svg.dot-network path, 
+.svg-replace svg.up-chevron-glyph path, .svg-replace svg.down-chevron-glyph path, .svg-replace svg.horizontal-split path,
+.svg-replace svg.crossed-star path, .svg-replace svg.paper-plane path, .svg-replace svg.search path, .svg-replace svg.presentation path, 
+.svg-replace svg.down-arrow-with-tail path, .svg-replace svg.up-arrow-with-tail path, .svg-replace svg.up-and-down-arrows path{
   stroke-width: 0;
   fill: currentColor;
 }
