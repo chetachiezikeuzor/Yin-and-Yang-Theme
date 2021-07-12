@@ -820,7 +820,7 @@ settings:
   --mod-button: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 3%));
   --mod-button-hover: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 4%));
   --text-highlight-color: var(--text-normal);
-  --text-selection: hsl(var(--d-accent-h), calc(var(--d-accent-s) - 15%), 15%);
+  --text-selection: hsla(var(--d-accent-h), 72%, 38%, 32%);
   --tag-base: var(--background-primary);
   --pre-code: hsl(var(--base-h), calc(var(--base-s) - 8%), calc(var(--base-d) + 4%));
   --inline-code: var(--light-cornflower-blue); 
@@ -3158,6 +3158,7 @@ li::marker {
 ul li::marker {
   font-family: Karmilla;
 }
+
 /*
 li ul, li ol { /*comeback
   padding-left: var(--list-padding-left);
