@@ -21,7 +21,7 @@ settings:
     title: Light Mode Accent Color
     type: variable-color
     format: hsl-split
-    default: '#1862F7' 
+    default: '#DAAFFF' 
   - 
     id: d-accent
     title: Dark Mode Accent Color
