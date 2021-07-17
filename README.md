@@ -35,4 +35,4 @@ If you have any issues and/or suggestions, please submit an issue or raise a PR.
 ## Credits
 I owe a huge thanks to @mgmeyers and the [California Coast Obsidian Theme](https://github.com/mgmeyers/obsidian-california-coast-theme) for inspiration! 
 
-<a href="https://www.buymeacoffee.com/chetachi"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=chetachi&button_colour=e3e7ef&font_colour=000000&font_family=Inter&outline_colour=000000&coffee_colour=FFDD00"></a>
+<a href="https://www.buymeacoffee.com/chetachi"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&amp;emoji=&amp;slug=chetachi&amp;button_colour=e3e7ef&amp;font_colour=262626&amp;font_family=Inter&amp;outline_colour=262626&amp;coffee_colour=ff0000"></a>
