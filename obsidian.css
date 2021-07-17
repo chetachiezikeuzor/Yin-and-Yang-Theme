@@ -8012,18 +8012,24 @@ body:not(.is-mobile).wys-headings
 
 /* Unordered lists: turn into bullets as you type, as per Typora */
 .wys-enhanced span.cm-formatting-list-ul {
-  visibility: hidden !important;
+  color: transparent !important;
+  position: relative;
 }
 
-.wys-enhanced span.cm-formatting-list-ul:after {
-  content: "\ec9b""  ";
-  vertical-align: 0.5em;
-  font-family: boxicons;
-  font-size: 0.325em;
-  margin-left: -12px;
-  margin-right: 1px;
-  color: var(--text-normal);
-  visibility: visible !important;
+.wys-enhanced .cm-formatting-list-ul:before {
+  line-height: 0;
+  position: absolute;
+  top: 51%;
+  left: 3px;
+  display: block;
+  transform: translate(-56%, -50%);
+  width: 6px;
+  height: 6px;
+  content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0);"><path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z"></path></svg>');
+}
+
+.theme-dark.wys-enhanced .cm-formatting-list-ul:before {
+  content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" style="fill:rgba(204,204,204);"><path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z"></path></svg>');
 }
 
 /* Blockquote: in edit mode with left border rendered instead of > */
