@@ -8561,6 +8561,19 @@ OBSIDIAN-CALENDAR-PLUGIN
   --color-button: var(--interactive-accent);
 }
 
+#calendar-container {
+  font-size: 0.8em;
+}
+
+#calendar-container th {
+  padding: 2px;
+}
+
+#calendar-container .day,
+#calendar-container .week-num {
+  padding: 2px;
+}
+
 .workspace-leaf-content[data-type="calendar"] .view-content {
   padding: 5px 0 0 0;
 }
