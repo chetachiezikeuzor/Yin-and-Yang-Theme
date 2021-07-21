@@ -3987,12 +3987,6 @@ POP-OVER ANIMATION
 BIGGER POPOVERS
 ----------------------------------------------------------------*/
 
-.popover.hover-popover img {
-  max-height: auto;
-  min-width: 100%;
-  display: block !important;
-}
-
 div.popover.hover-popover {
   border-radius: 6px;
   animation: 300ms ease-in-out;
@@ -4018,12 +4012,6 @@ div.popover.hover-popover .markdown-preview-view {
 
 .popover.hover-popover .markdown-embed {
   height: 18rem;
-}
-
-.popover.hover-popover .markdown-embed img {
-  max-width: 100%;
-  height: auto;
-  margin: 0em;
 }
 
 /*----------------------------------------------------------------
