@@ -1591,7 +1591,7 @@ ul .task-list-item {
   padding-bottom: 0px;
   display: block;
   line-height: var(--editor-line-height);
-  padding-inline-start: var(--custom-line-indent) !important;
+  padding-inline-start: var(--custom-line-indent);
 }
 
 /*GRAPH HEADERS*/
