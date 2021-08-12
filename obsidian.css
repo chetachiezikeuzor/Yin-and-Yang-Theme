@@ -742,6 +742,10 @@ settings:
   --l-accent-s: 100%;
   --l-accent-l: 84%;
 
+  --custom-line-indent: 40px;
+  --custom-pre-line-thickness: 1px;
+  --custom-ed-line-thickness: 1px;
+
   --large-font-size: 18px;
   --normal-font-size: 17px;
   --medium-font-size: 16px;
@@ -4837,10 +4841,9 @@ STYLING FOR PLUGIN MODES (SLIDING PANES/FOCUS MODE/HIDER ETC.)
 ----------------------------------------------------------------*/
 
 .view-header {
-  height: unset;
-  display: flex;
+  height: 43px;
   align-items: center;
-  padding: 2px 10px;
+  padding: 6px 9px;
 }
 
 .view-header-title-container {
@@ -4890,13 +4893,6 @@ body:not(.plugin-sliding-panes-rotate-header):not(.is-mobile) .view-actions {
   padding: 0;
   display: flex;
   align-items: center;
-}
-
-.view-header {
-  height: unset;
-  display: flex;
-  align-items: center;
-  padding: 4px 9px !important;
 }
 
 body:not(.is-mobile) .view-action svg {
