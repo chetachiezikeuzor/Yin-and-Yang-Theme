@@ -1585,8 +1585,8 @@ ul .task-list-item {
 }
 
 /*line height for lists in preview*/
-ol,
-ul {
+.markdown-preview-view ol,
+.markdown-preview-view ul {
   padding-top: 0px;
   padding-bottom: 0px;
   display: block;
