@@ -3080,17 +3080,24 @@ button {
   text-transform: capitalize !important;
   line-height: 1.3em;
   font-size: 0.875em !important;
+}
+
+.theme-light .modal.mod-settings button:not(.mod-cta):not(.mod-warning),
+.setting-item-control button,
+.modal button,
+.modal button.mod-cta {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.02),
+    inset 0px 1px 3px rgba(255, 255, 255, 0.2);
   border: 1px solid var(--background-modifier-border);
 }
 
-.theme-light button {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.02),
-    inset 0px 1px 3px rgba(255, 255, 255, 0.2);
-}
-
-.theme-dark button {
+.theme-dark .modal.mod-settings button:not(.mod-cta):not(.mod-warning),
+.setting-item-control button,
+.modal button,
+.modal button.mod-cta {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.02),
     inset 0px 1px 2px rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--background-modifier-border);
 }
 
 button.mod-cta {
@@ -8403,6 +8410,19 @@ PLUGINS!!!
 ----------------------------------------------------------------*/
 
 /*----------------------------------------------------------------
+CHECKLIST
+----------------------------------------------------------------*/
+
+header.svelte-yzsyxo {
+  border: 0.025em solid var(--background-modifier-border) !important;
+  background-color: var(--background-primary-alt) !important;
+  padding: 7.5px 8px 7.5px 8px !important;
+  margin-bottom: 12px !important;
+  border-radius: 4px !important;
+  font-size: var(--todoList-headerFontSize) !important;
+}
+
+/*----------------------------------------------------------------
 LONGFORM
 ----------------------------------------------------------------*/
 
@@ -8702,111 +8722,6 @@ text.react-calendar-heatmap-month-label {
 
 #color-elem {
   color: var(--interactive-accent) !important;
-}
-
-/*----------------------------------------------------------------
-CHECKLIST PLUGIN 
-----------------------------------------------------------------*/
-
-.checklist-plugin-main {
-  margin-left: 5px;
-}
-
-header.svelte-yzsyxo {
-  border: 1px solid var(--background-modifier-border) !important;
-  background-color: var(--background-primary-alt) !important;
-  padding: 7.5px 8px 7.5px 8px !important;
-  margin-bottom: 12px !important;
-  border-radius: 4px !important;
-  font-size: var(--todoList-headerFontSize) !important;
-}
-
-button.svelte-yzsyxo {
-  box-shadow: none !important;
-  border: 0px solid transparent !important;
-}
-
-header.svelte-yzsyxo:hover {
-  background-color: transparent !important;
-}
-
-.title .svelte-yzsyxo {
-  color: var(--text-muted) !important;
-}
-
-.count.svelte-yzsyxo {
-  color: var(--text-muted) !important;
-  background-color: transparent !important;
-  padding: var(--todoList-countPadding) !important;
-}
-
-.checkbox.svelte-4g53y {
-  width: 18.5px !important;
-  border-radius: 15% !important;
-}
-
-.toggle.svelte-1q8cjhd.svelte-1q8cjhd {
-  border: none !important;
-  box-shadow: none !important;
-}
-
-.toggle.svelte-1q8cjhd.svelte-1q8cjhd:hover {
-  padding: var(--todoList-togglePadding);
-  background: transparent;
-}
-
-.checked.svelte-4g53y {
-  background-color: var(--checkbox-base) !important;
-  border-radius: 10% !important;
-  position: absolute;
-}
-
-ul.svelte-yzsyxo
-  li.svelte-1q8cjhd.svelte-1q8cjhd
-  .content.svelte-1q8cjhd.svelte-1q8cjhd
-  p {
-  line-height: 1.5em;
-  color: var(--text-muted) !important;
-}
-
-li.svelte-1q8cjhd.svelte-1q8cjhd:hover {
-  border: 1px solid var(--todoList-listItemBackground--hover) !important;
-  box-shadow: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1),
-    0 0 0 3px hsla(var(--accent-hsl), 0.15);
-  background-color: var(--todoList-listItemBackground) !important;
-}
-
-li.svelte-1q8cjhd.svelte-1q8cjhd {
-  font-size: 0.85em !important;
-  line-height: 1em;
-  border: 1px solid var(--background-modifier-border) !important;
-  border-radius: 4px !important;
-  padding: var(--todoList-contentPadding);
-}
-
-li.svelte-1q8cjhd.svelte-1q8cjhd:before {
-  display: none;
-}
-
-.checklist-plugin-main {
-  --todoList-iconSize: 17px !important;
-  --todoList-headerFontWeight: 500 !important;
-  --todoList-headerGap: 5px !important;
-  --todoList-headerFontSize: 15px !important;
-  --todoList-contentPadding: 5px 8px 5px 8px !important;
-  --todoList-checkboxSize: 18px !important;
-  --todoList-checkboxCheckedSize: 14px !important;
-  --todoList-listItemMargin: 0 0px 12px !important;
-  --todoList-buttonPadding: 3.5px 4px !important;
-  --todoList-countPadding: 0px 5px !important;
-  --todoList-countFontSize: 12px !important;
-  --todoList-listItemBackground: var(--background-primary-alt) !important;
-  --todoList-listItemBackground--hover: var(--interactive-accent) !important;
-  --todoList-groupMargin: 8px !important;
-  --todoList-checkboxBorder: 1px solid var(--background-modifier-border) !important;
-  --todoList-checkboxFill: var(--interactive-accent) !important;
-  --todoList-iconFill: var(--text-muted) !important;
-  --todoList-textChunkColor: var(--interactive-accent) !important;
 }
 
 /*----------------------------------------------------------------
