@@ -3462,8 +3462,8 @@ SUGGESTIONS
   background-color: hsl(var(--accent-hsl), 0.5);
 }
 
-.menu-item:hover {
-  background-color: var(--background-primary-alt);
+div.menu-item:hover {
+  background-color: var(--background-zero) !important;
 }
 
 .suggestion-item,
@@ -5566,7 +5566,7 @@ FILE EXPLORER
 .nav-folder-title,
 .nav-file-title {
   width: calc(100% - 30px);
-  border-radius: 6px !important;
+  border-radius: 5px !important;
 }
 
 /*Text Cut Off*/
