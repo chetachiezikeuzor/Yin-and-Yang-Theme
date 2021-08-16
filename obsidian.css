@@ -2987,6 +2987,10 @@ body:not(.no-svg-replace)
   color: var(--text-muted) !important;
 }
 
+.tree-item-self.is-clickable:hover {
+  background-color: unset;
+}
+
 .tree-item-self:hover .tree-item-flair {
   background-color: var(--background-primary);
 }
@@ -3736,8 +3740,8 @@ input[type="checkbox"],
   position: relative;
   line-height: 0;
   right: 5px;
-  margin-left: 5px;
-  margin-right: 8px !important;
+  margin-left: 3px;
+  margin-right: 5px !important;
   filter: none;
   margin-bottom: 0;
   top: 2px;
