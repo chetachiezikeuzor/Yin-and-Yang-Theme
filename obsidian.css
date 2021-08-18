@@ -1556,7 +1556,6 @@ SECONDARY FOUNDATIONS
 
 p,
 .CodeMirror pre.CodeMirror-line {
-  color: var(--text-normal);
   line-height: var(--editor-line-height);
   padding-top: 0px;
   padding-bottom: 0px;
@@ -2233,11 +2232,6 @@ span.cm-hmd-internal-link {
   text-decoration: none;
 }
 
-a.internal-link,
-.cm-hmd-internal-link {
-  font-weight: 500;
-}
-
 .cm-s-obsidian span.cm-url:hover {
   color: var(--text-muted);
 }
@@ -2280,7 +2274,7 @@ aside:before {
 }
 
 aside {
-  width: 48%;
+  max-width: 45%;
   line-height: var(--editor-line-height);
   padding: 1.25em;
   margin-left: 20px;
@@ -2500,7 +2494,7 @@ EDITOR SECTION
 .cm-inline-code {
   font-family: var(--font-monospace);
   color: var(--inline-code) !important;
-  background-color: var(--pre-code) !important;
+  background-color: var(--pre-code);
   padding: 1px;
 }
 
@@ -2553,7 +2547,6 @@ pre {
 
 body:not(.no-show-lang) pre[class*="language-"]::after {
   content: attr(class);
-  color: var(--text-faint);
   transition: 200ms;
   animation: pop-pop 250ms ease-in-out;
   font-size: 0.8em;
@@ -4311,7 +4304,6 @@ WORKSPACE
 .markdown-preview-view .mod-highlighted {
   transition: background-color 0.3s ease;
   background-color: var(--text-selection);
-  opacity: 0.5;
   color: inherit;
 }
 
@@ -6284,6 +6276,7 @@ body:not(.no-svg-replace) .markdown-embed-link svg.link {
 }
 
 body:not(.no-svg-replace) .external-link {
+  background-repeat: no-repeat;
   background-image: linear-gradient(transparent, transparent),
     url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="slategrey" d="M13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z"/><path fill="slategrey" d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"></path></svg>');
 }
@@ -8511,7 +8504,7 @@ div.oz-nav-file,
 .oz-folder-element,
 .oz-folder-element span {
   transition: 0.3s ease-in-out;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 .oz-folder-element:hover span {
@@ -8570,8 +8563,8 @@ OBSIDIAN-CALENDAR-PLUGIN
   padding: 5px 15px;
   font-size: var(--small-font-size);
   --color-background-day-empty: var(--background-secondary-alt);
-  --color-background-day-active: var(--background-tertiary);
-  --color-background-day-hover: var(--background-tertiary);
+  --color-background-day-active: var(--background-primary-alt);
+  --color-background-day-hover: var(--background-primary-alt);
   --color-dot: var(--interactive-accent);
   --color-text-title: var(--text-normal);
   --color-text-heading: var(--text-muted);
