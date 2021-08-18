@@ -3591,15 +3591,10 @@ li::marker {
   -webkit-font-smoothing: auto;
 }
 
-ul li::marker {
+body:not(.is-mobile) ul li::marker {
   font-family: Karmilla;
   font-weight: 900;
 }
-
-/*
-li ul, li ol { /*comeback
-  padding-left: var(--list-padding-left);
-}*/
 
 /*rule for all lists*/
 ul li p,
@@ -3667,53 +3662,66 @@ ol ol ol ol ol ol ol ol ol ol ol ol ol ol ol ol {
 UNORDERED LISTS STYLING
 ----------------------------------------------------------------*/
 
-ul {
+ul,
+.is-mobile ul ul ul,
+.is-mobile ol ul ul ul {
   list-style-type: disc;
 }
 ul ul,
-ol ul ul {
+ol ul ul,
+.is-mobile ul ul ul ul,
+.is-mobile ol ul ul ul ul {
   list-style-type: circle;
 }
-ul ul ul,
-ol ul ul ul {
+
+body:not(.is-mobile) ul ul ul,
+body:not(.is-mobile) ol ul ul ul {
   list-style-type: "▪   ";
 }
-ul ul ul ul,
-ol ul ul ul ul {
+body:not(.is-mobile) ul ul ul ul,
+body:not(.is-mobile) ol ul ul ul ul {
   list-style-type: "□   ";
 }
 
 ul ul ul ul ul,
-ol ul ul ul ul ul {
+ol ul ul ul ul ul,
+.is-mobile ul ul ul ul ul ul ul,
+.is-mobile ol ul ul ul ul ul ul ul {
   list-style-type: disc;
 }
 ul ul ul ul ul ul,
-ol ul ul ul ul ul ul {
+ol ul ul ul ul ul ul,
+.is-mobile ul ul ul ul ul ul ul ul,
+.is-mobile ol ul ul ul ul ul ul ul ul {
   list-style-type: circle;
 }
-ul ul ul ul ul ul ul,
-ol ul ul ul ul ul ul ul {
+body:not(.is-mobile) ul ul ul ul ul ul ul,
+body:not(.is-mobile) ol ul ul ul ul ul ul ul {
   list-style-type: "▪   ";
 }
-ul ul ul ul ul ul ul ul,
-ol ul ul ul ul ul ul ul ul {
+body:not(.is-mobile) ul ul ul ul ul ul ul ul,
+body:not(.is-mobile) ol ul ul ul ul ul ul ul ul {
   list-style-type: "□   ";
 }
 
 ul ul ul ul ul ul ul ul ul,
-ol ul ul ul ul ul ul ul ul ul {
+ol ul ul ul ul ul ul ul ul ul,
+.is-mobile ul ul ul ul ul ul ul ul ul ul ul,
+.is-mobile ol ul ul ul ul ul ul ul ul ul ul ul {
   list-style-type: disc;
 }
 ul ul ul ul ul ul ul ul ul ul,
-ol ul ul ul ul ul ul ul ul ul ul {
+ol ul ul ul ul ul ul ul ul ul ul,
+.is-mobile ul ul ul ul ul ul ul ul ul ul ul ul,
+.is-mobile ol ul ul ul ul ul ul ul ul ul ul ul ul {
   list-style-type: circle;
 }
-ul ul ul ul ul ul ul ul ul ul ul,
-ol ul ul ul ul ul ul ul ul ul ul ul {
+body:not(.is-mobile) ul ul ul ul ul ul ul ul ul ul ul,
+body:not(.is-mobile) ol ul ul ul ul ul ul ul ul ul ul ul {
   list-style-type: "▪   ";
 }
-ul ul ul ul ul ul ul ul ul ul ul ul,
-ol ul ul ul ul ul ul ul ul ul ul ul ul {
+body:not(.is-mobile) ul ul ul ul ul ul ul ul ul ul ul ul,
+body:not(.is-mobile) ol ul ul ul ul ul ul ul ul ul ul ul ul {
   list-style-type: "□   ";
 }
 
