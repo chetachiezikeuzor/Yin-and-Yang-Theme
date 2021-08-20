@@ -6285,6 +6285,7 @@ body:not(.no-svg-replace) .markdown-embed-link svg.link {
 
 body:not(.no-svg-replace) .external-link {
   background-image: none;
+  padding-right: 0;
 }
 
 body:not(.no-svg-replace) .external-link:after {
