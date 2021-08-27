@@ -1025,12 +1025,12 @@ settings:
 
   --graph-line: var(--background-modifier-border);
   --graph-line-highlight: var(--interactive-accent);
-  --graph-circle-outline: hsl(var(--boldlightpink));
+  --graph-circle-outline: var(--text-faint);
   --graph-fill-attachment: var(--royalblue);
-  --graph-circle-fill: var(--cornflower-blue);
+  --graph-circle-fill: var(--text-normal);
   --graph-circle-fill-highlight: var(--interactive-accent-hover);
-  --graph-circle-fill-unresolved: #ffa6e5;
-  --graph-fill-tag: var(--boldorange);
+  --graph-circle-fill-unresolved: hsl(var(--boldlightpink));
+  --graph-fill-tag: var(--background-modifier-accent);
   --graph-arrow: hsl(var(--boldpink));
 }
 
@@ -1057,7 +1057,7 @@ settings:
   --background-modifier-border: hsl(
     var(--base-h),
     var(--base-s),
-    calc(var(--base-l) - 3%)
+    calc(var(--base-l) - 4%)
   );
   --background-modifier-form-field: var(--background-primary);
   --background-modifier-form-field-hover: var(--background-primary);
@@ -1190,12 +1190,12 @@ settings:
 
   --graph-line: var(--text-muted);
   --graph-line-highlight: var(--interactive-accent);
-  --graph-circle-outline: hsl(var(--boldlightpink));
-  --graph-fill-attachment: var(--boldpurple);
-  --graph-circle-fill: var(--royalblue);
+  --graph-circle-outline: var(--text-faint);
+  --graph-fill-attachment: var(--royalblue);
+  --graph-circle-fill: var(--text-normal);
   --graph-circle-fill-highlight: var(--interactive-accent-hover);
-  --graph-circle-fill-unresolved: hsl(var(--boldpink));
-  --graph-fill-tag: var(--boldblue);
+  --graph-circle-fill-unresolved: var(--text-normal);
+  --graph-fill-tag: var(--background-modifier-accent);
   --graph-arrow: var(--boldpurple);
 }
 
@@ -2486,14 +2486,12 @@ EDITOR SECTION
   text-shadow: none;
 }
 
-.cm-inline-code {
-  font-size: var(--code-font-size);
-}
-
-.cm-inline-code {
-  font-family: var(--font-monospace);
+.cm-inline-code,
+.cm-s-obsidian span.cm-inline-code {
   color: var(--inline-code);
+  font-size: var(--code-font-size);
   background-color: var(--pre-code);
+  font-family: var(--font-monospace);
   padding: 1px;
 }
 
@@ -2509,7 +2507,8 @@ EDITOR SECTION
   line-height: var(--code-line-height);
 }
 
-.HyperMD-codeblock {
+.HyperMD-codeblock,
+.cm-s-obsidian .HyperMD-codeblock {
   font-family: var(--font-monospace);
   line-height: var(--code-line-height);
   color: var(--code-block);
@@ -3352,7 +3351,7 @@ MENU
 
 .menu {
   padding: 8px 16px;
-  background-color: var(--background-secondary-alt);
+  background-color: var(--background-secondary);
 }
 
 .menu-item {
@@ -3461,8 +3460,9 @@ SUGGESTIONS
   background-color: hsl(var(--accent-hsl), 0.5);
 }
 
-div.menu-item:hover {
-  background-color: var(--background-zero) !important;
+.menu-item.selected:not(.is-disabled):not(.is-label),
+.menu-item:hover {
+  background-color: var(--background-zero);
 }
 
 .suggestion-item,
@@ -4142,8 +4142,9 @@ IMAGE ZOOM */
   object-fit: contain;
   margin: -0.5px auto 0;
   text-align: center;
+  /*
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%);*/
   padding: 0;
   left: 0;
   right: 0;
@@ -4744,7 +4745,7 @@ GRAPH SETTINGS
 
 .graph-view.color-fill-unresolved {
   color: var(--graph-circle-fill-unresolved);
-  opacity: 0.85;
+  opacity: 0.3;
 }
 
 .graph-view.color-arrow {
@@ -4775,7 +4776,7 @@ GRAPH SETTINGS
 }
 
 .graph-view.color-circle {
-  color: var(--text-accent);
+  color: var(--graph-circle-outline);
 }
 
 .graph-view.color-fill {
@@ -8525,7 +8526,6 @@ div.oz-nav-file,
 .oz-folder-element,
 .oz-folder-element span {
   transition: 0.3s ease-in-out;
-  border-radius: 5px;
 }
 
 .oz-folder-element:hover span {
