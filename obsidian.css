@@ -3081,7 +3081,7 @@ button {
   text-transform: capitalize !important;
   line-height: 1.3em;
   font-size: 0.875em !important;
-  box-shadow: 0px 1px 8px rgb(10 15 73 / 1%), inset 0 -1px 2px rgb(10 15 73 / 15%);
+  box-shadow: 0px 1px 8px rgb(10 15 73 / 1%), inset 0 -1px 1px rgb(10 15 73 / 5%);
 }
 
 .theme-dark button{
