@@ -469,6 +469,17 @@ settings:
     description: This will disable all custom icons 
     type: class-toggle
   -
+    title: Clean Embeds
+    id: clean-embeds
+    type: heading
+    level: 4
+    collapsed: true
+  -
+    title: Minimalize Embedded Notes
+    id: min-clean-embed
+    description: This will minimalize the look of embed notes
+    type: class-toggle
+  -
     title: Code Blocks
     id: code-blocks-minimalize
     type: heading
@@ -1787,17 +1798,20 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 
 input[type="range"]::-webkit-slider-thumb {
-  background: hsla(var(--accent-hsl), 0.8);
-  height: 7px;
+  background: hsl(var(--accent-hsl));
+  height: 9px;
   border-radius: 1.5px;
   width: 20px;
-  margin-top: 0px;
-  cursor: pointer;
+  margin-top: -1px;
+  cursor: ew-resize;
+  box-shadow: 0px 3px 6px rgb(10 15 73 / 10%),
+    0 0 0 0.5px var(--background-modifier-border),
+    inset 0 -1px 2px rgb(10 15 73 / 8%);
 }
 
 input[type="range"]::-webkit-slider-thumb:hover,
 input[type="range"]::-webkit-slider-thumb:active {
-  background: hsla(var(--accent-hsl), 0.7);
+  background: var(--text-accent);
 }
 
 .graph-controls input[type="range"]::-webkit-slider-runnable-track {
@@ -1809,9 +1823,9 @@ input[type="range"]::-webkit-slider-thumb:active {
 .checkbox-container {
   cursor: pointer;
   background-color: var(--checkbox-base);
-  border-radius: 3px;
+  border-radius: 5px;
   display: inline-block;
-  height: 22px;
+  height: 23px;
   position: relative;
   user-select: none;
   width: 42px;
@@ -1830,12 +1844,12 @@ input[type="range"]::-webkit-slider-thumb:active {
   content: "";
   display: inline-block;
   position: absolute;
-  background-color: var(--background-primary) !important;
+  background-color: var(--background-primary);
   width: 15px;
-  height: 15px;
+  height: 16px;
   margin: 3px;
   left: 0;
-  border-radius: 2px;
+  border-radius: 3px;
   transition: transform 0.15s ease-in-out, width 0.1s ease-in-out,
     left 0.1s ease-in-out, -webkit-transform 0.15s ease-in-out;
   transform: translate3d(1px, 0, 0);
@@ -3072,6 +3086,13 @@ button {
   text-transform: capitalize !important;
   line-height: 1.3em;
   font-size: 0.875em !important;
+  box-shadow: 0px 1px 8px rgb(10 15 73 / 1%),
+    inset 0 -1px 2px rgb(10 15 73 / 15%);
+}
+
+.theme-dark button {
+  box-shadow: 0px 1px 8px rgb(10 15 73 / 1%),
+    inset 0 -1px 2px var(--background-modifier-border);
 }
 
 .theme-light .modal.mod-settings button:not(.mod-cta):not(.mod-warning),
@@ -4688,9 +4709,9 @@ TAG PILLS
   border: 1px solid var(--interactive-accent);
   color: var(--text-normal);
   font-weight: 500;
-  padding: 1.5px 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 1.5px 6px;
+  padding-left: 6px;
+  padding-right: 6px;
   text-align: center;
   text-decoration: none !important;
   display: inline-block;
@@ -5348,7 +5369,8 @@ body:not(.is-mobile) .frontmatter-container .frontmatter-section-label {
   background-color: var(--tag-base);
   border: 1px solid var(--interactive-accent);
   font-weight: 500;
-  padding: 4px 12px !important;
+  padding: 8px 6px !important;
+  line-height: 1em;
   text-align: center;
   text-decoration: none !important;
   display: inline-block;
@@ -5617,8 +5639,8 @@ FILE EXPLORER
   text-align: center;
   font-family: var(--font-monospace);
   letter-spacing: 1px;
-  background-color: hsl(var(--accent-hsl), 0.05);
-  border: 1px solid hsl(var(--accent-hsl), 0.25);
+  background-color: hsl(var(--accent-hsl), 0.25);
+  border: 1px solid transparent;
   color: var(--background-modifier-accent);
   font-weight: 600;
 }
@@ -7588,6 +7610,43 @@ span[title="Fold line"]:after,
 
 /*STYLE SETTINGS*/
 
+.min-clean-embed .markdown-preview-view .markdown-embed-content {
+  overflow: visible;
+}
+
+.min-clean-embed .markdown-embed-title {
+  display: none;
+}
+
+.min-clean-embed .internal-embed .markdown-embed {
+  border: none;
+  background-color: transparent;
+}
+
+.min-clean-embed .markdown-embed .markdown-preview-view,
+.min-clean-embed .markdown-embed .markdown-preview-view .markdown-preview-sizer,
+.min-clean-embed
+  .markdown-embed
+  .markdown-preview-view.is-readable-line-width
+  .markdown-preview-sizer {
+  padding: 0;
+  margin: 0;
+}
+
+.min-clean-embed .markdown-embed-link {
+  top: -5px;
+  right: -5px;
+  line-height: inherit;
+}
+
+.min-clean-embed .markdown-preview-view .markdown-embed-content,
+.min-clean-embed
+  .markdown-preview-view
+  .markdown-embed-content
+  > .markdown-preview-view {
+  max-height: none;
+}
+
 .no-fx-icons .nav-folder-title .collapse-icon {
   display: flex;
   margin-left: 6px;
@@ -7942,8 +8001,8 @@ body:not(.is-mobile).wys-headings
   color: var(--text-normal);
   font-size: 0.875em;
   font-weight: 500;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 6px;
+  padding-right: 6px;
   text-align: center;
   text-decoration: none !important;
   display: inline-block;
