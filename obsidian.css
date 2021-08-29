@@ -462,7 +462,6 @@ settings:
     id: custom-icons-minimalize
     type: heading
     level: 4
-    collapsed: true
   -
     title: Remove Custom Icons
     id: no-svg-replace
@@ -473,7 +472,6 @@ settings:
     id: clean-embeds
     type: heading
     level: 4
-    collapsed: true
   -
     title: Minimalize Embedded Notes
     id: min-clean-embed
@@ -484,7 +482,6 @@ settings:
     id: code-blocks-minimalize
     type: heading
     level: 4
-    collapsed: true
   -
     title: Remove Languages
     description: This will remove code languages from code blocks.
@@ -1034,7 +1031,7 @@ settings:
   --graph-fill-attachment: var(--royalblue);
   --graph-circle-fill: var(--text-normal);
   --graph-circle-fill-highlight: var(--interactive-accent-hover);
-  --graph-circle-fill-unresolved: hsl(var(--boldlightpink));
+  --graph-circle-fill-unresolved:  hsl(var(--boldlightpink));
   --graph-fill-tag: var(--background-modifier-accent);
   --graph-arrow: hsl(var(--boldpink));
 }
@@ -1804,14 +1801,12 @@ input[type="range"]::-webkit-slider-thumb {
   width: 20px;
   margin-top: -1px;
   cursor: ew-resize;
-  box-shadow: 0px 3px 6px rgb(10 15 73 / 10%),
-    0 0 0 0.5px var(--background-modifier-border),
-    inset 0 -1px 2px rgb(10 15 73 / 8%);
+  box-shadow: 0px 3px 6px rgb(10 15 73 / 10%), 0 0 0 .5px var(--background-modifier-border), inset 0 -1px 2px rgb(10 15 73 / 8%);
 }
 
 input[type="range"]::-webkit-slider-thumb:hover,
 input[type="range"]::-webkit-slider-thumb:active {
-  background: var(--text-accent);
+  background: var(--text-accent)
 }
 
 .graph-controls input[type="range"]::-webkit-slider-runnable-track {
@@ -2989,7 +2984,7 @@ body:not(.no-svg-replace)
   color: var(--text-muted) !important;
 }
 
-.tree-item-self.is-clickable:hover {
+.tree-item-self.is-clickable:hover{
   background-color: unset;
 }
 
@@ -3086,31 +3081,23 @@ button {
   text-transform: capitalize !important;
   line-height: 1.3em;
   font-size: 0.875em !important;
-  box-shadow: 0px 1px 8px rgb(10 15 73 / 1%),
-    inset 0 -1px 2px rgb(10 15 73 / 15%);
+  box-shadow: 0px 1px 8px rgb(10 15 73 / 1%), inset 0 -1px 2px rgb(10 15 73 / 15%);
 }
 
-.theme-dark button {
-  box-shadow: 0px 1px 8px rgb(10 15 73 / 1%),
-    inset 0 -1px 2px var(--background-modifier-border);
+.theme-dark button{
+  box-shadow: 0px 1px 8px rgb(10 15 73 / 1%), inset 0 -1px 2px var(--background-modifier-border);
 }
 
-.theme-light .modal.mod-settings button:not(.mod-cta):not(.mod-warning),
-.setting-item-control button,
-.modal button,
-.modal button.mod-cta {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.02),
+.theme-light .modal.mod-settings button:not(.mod-cta):not(.mod-warning), .setting-item-control button, .modal button, .modal button.mod-cta{
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.02),
     inset 0px 1px 3px rgba(255, 255, 255, 0.2);
-  border: 1px solid var(--background-modifier-border);
+border: 1px solid var(--background-modifier-border);
 }
 
-.theme-dark .modal.mod-settings button:not(.mod-cta):not(.mod-warning),
-.setting-item-control button,
-.modal button,
-.modal button.mod-cta {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.02),
+.theme-dark .modal.mod-settings button:not(.mod-cta):not(.mod-warning), .setting-item-control button, .modal button, .modal button.mod-cta{
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.02),
     inset 0px 1px 2px rgba(255, 255, 255, 0.2);
-  border: 1px solid var(--background-modifier-border);
+border: 1px solid var(--background-modifier-border);
 }
 
 button.mod-cta {
@@ -6305,7 +6292,7 @@ body:not(.no-svg-replace) .external-link {
   padding-right: 0;
 }
 
-body:not(.no-svg-replace) .external-link:after {
+body:not(.no-svg-replace) .external-link:after{
   content: "⎋";
   font-size: 15px;
   margin-left: 4px;
@@ -7105,7 +7092,7 @@ body:not(.no-svg-replace) svg.heading-glyph {
 body:not(.no-svg-replace) svg.go-to-file {
   -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100"><path fill="red" d="M57.113 9.554C56.333 8.771 55.275 8.333 54.167 8.333H25C20.404 8.333 16.667 12.071 16.667 16.667v66.667c0 4.596 3.738 8.333 8.333 8.333h50c4.596 0 8.333 -3.738 8.333 -8.333V37.5c0 -1.108 -0.438 -2.167 -1.221 -2.946L57.113 9.554zM25 16.667h27.442L75 39.225l0.008 38.225l-10.7 -10.7C65.767 64.271 66.667 61.413 66.667 58.333c0 -9.192 -7.475 -16.667 -16.667 -16.667s-16.667 7.475 -16.667 16.667s7.475 16.667 16.667 16.667c3.079 0 5.938 -0.9 8.417 -2.358L69.108 83.333H25V16.667zM50 66.667c-4.596 0 -8.333 -3.738 -8.333 -8.333s3.738 -8.333 8.333 -8.333s8.333 3.738 8.333 8.333S54.596 66.667 50 66.667z"></path></svg>');
 }
-body:not(.no-svg-replace) svg.help .widget-icon,
+body:not(.no-svg-replace) svg.help .widget-icon, 
 body:not(.no-svg-replace) svg.help {
   -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100"><path fill="red" d="M50 25C40.962 25 33.608 32.354 33.608 41.392h8.333C41.942 36.946 45.558 33.333 50 33.333s8.058 3.613 8.058 8.058c0 2.492 -2.004 4.3 -5.067 6.775 -1.063 0.863 -2.067 1.683 -2.879 2.496C45.954 54.817 45.833 59.229 45.833 59.721V62.5h8.333l-0.004 -2.638c0.004 -0.067 0.138 -1.608 1.838 -3.304 0.625 -0.625 1.413 -1.25 2.229 -1.908 3.246 -2.629 8.158 -6.6 8.158 -13.258C66.392 32.354 59.038 25 50 25zM45.833 66.667H54.167V75H45.833z M50 8.333C27.025 8.333 8.333 27.025 8.333 50s18.692 41.667 41.667 41.667s41.667 -18.692 41.667 -41.667S72.975 8.333 50 8.333zM50 83.333c-18.379 0 -33.333 -14.954 -33.333 -33.333s14.954 -33.333 33.333 -33.333s33.333 14.954 33.333 33.333S68.379 83.333 50 83.333z"></path></svg>');
 }
@@ -7611,39 +7598,32 @@ span[title="Fold line"]:after,
 /*STYLE SETTINGS*/
 
 .min-clean-embed .markdown-preview-view .markdown-embed-content {
-  overflow: visible;
+    overflow: visible;
 }
 
 .min-clean-embed .markdown-embed-title {
-  display: none;
+    display: none;
 }
 
 .min-clean-embed .internal-embed .markdown-embed {
-  border: none;
-  background-color: transparent;
+    border: none;
+    background-color: transparent;
 }
 
 .min-clean-embed .markdown-embed .markdown-preview-view,
-.min-clean-embed .markdown-embed .markdown-preview-view .markdown-preview-sizer,
-.min-clean-embed
-  .markdown-embed
-  .markdown-preview-view.is-readable-line-width
-  .markdown-preview-sizer {
-  padding: 0;
-  margin: 0;
+.min-clean-embed .markdown-embed .markdown-preview-view .markdown-preview-sizer, .min-clean-embed .markdown-embed .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+    padding: 0;
+    margin: 0;
 }
 
 .min-clean-embed .markdown-embed-link {
-  top: -5px;
-  right: -5px;
-  line-height: inherit;
+    top: -5px;
+    right: -5px;
+    line-height: inherit;
 }
 
 .min-clean-embed .markdown-preview-view .markdown-embed-content,
-.min-clean-embed
-  .markdown-preview-view
-  .markdown-embed-content
-  > .markdown-preview-view {
+.min-clean-embed .markdown-preview-view .markdown-embed-content > .markdown-preview-view{
   max-height: none;
 }
 
@@ -8839,7 +8819,7 @@ DUAL PLUGIN
   padding-left: 10px !important;
   padding-right: 10px !important;
   margin-bottom: 18px;
-  border: 1px solid var(--background-modifier-border) !important;
+  border: 1px solid var(--background-modifier-border)!important;
   background-color: var(--background-modifier-form-field) !important;
 }
 
@@ -8849,7 +8829,7 @@ input#dual-input-box {
   border: 1px solid var(--background-modifier-border);
 }
 
-button#send-button {
+button#send-button{
   border: 1px solid var(--background-modifier-border);
 }
 
