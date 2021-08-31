@@ -7568,7 +7568,7 @@ span[title="Unfold line"] {
   font-size: 0;
   color: transparent;
   display: flex;
-  height: 100%;
+  height: auto;
   align-items: center;
 }
 
@@ -7589,7 +7589,7 @@ span[title="Unfold line"]:after,
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: -5px;
+  margin-left: 0px;
   width: 1rem;
   height: 1rem;
 }
