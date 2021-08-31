@@ -7672,7 +7672,7 @@ span[title="Fold line"]:after,
 
 .min-clean-embed .markdown-embed .markdown-preview-view,
 .min-clean-embed .markdown-embed .markdown-preview-view .markdown-preview-sizer, .min-clean-embed .markdown-embed .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
-    padding: 0;
+    padding: 0 !important;
     margin: 0;
 }
 
