@@ -3806,6 +3806,11 @@ input[type="checkbox"],
   box-shadow: inset 0px 0.5px 1px rgba(24, 26, 26, 0.15);
 }
 
+.is-mobile input[type="checkbox"],
+.markdown-preview-view .task-list-item-checkbox {
+  margin-right: 7px !important;
+}
+
 .is-flashing input[type="checkbox"]:checked:before,
 input[type="checkbox"]:checked:before {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100"><path fill="white" stroke-width="2" stroke="white" d="M41.667 64.942l-13.721 -13.721l-5.892 5.892L41.667 76.725l40.446 -40.446l-5.892 -5.892z"></path></svg>');
@@ -7594,6 +7599,14 @@ span[title="Unfold line"]:after,
   height: 1rem;
 }
 
+body:not(.is-mobile) span[title="Fold line"]:after,
+body:not(.is-mobile) span[title="Unfold line"]:after,
+body:not(.is-mobile) .CodeMirror-foldgutter-open:after,
+body:not(.is-mobile) .CodeMirror-foldgutter-folded:after {
+  margin-top: 0.35rem;
+  margin-left: 2px;
+}
+
 body.is-mobile .ͼ1 .cm-lineNumbers .cm-gutterElement {
   padding: 0 3px 0 0px;
   min-width: 15px;
@@ -7629,8 +7642,12 @@ span[title="Fold line"]:after,
   background-color: currentColor;
   height: 12px;
   width: 12px;
-  transform: translateX(-2px) !important;
   -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"><path fill="red" stroke-width="2" stroke="currentColor" d="M16 22L6 12l1.4-1.4l8.6 8.6l8.6-8.6L26 12z"></path></svg>');
+}
+
+.is-mobile span[title="Fold line"]:after,
+.is-mobile .CodeMirror-foldgutter-open:after {
+  transform: translateX(-2px) !important;
 }
 
 /*LINE NUMBER + GUTTER*/
