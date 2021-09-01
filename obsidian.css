@@ -8738,6 +8738,7 @@ OBSIDIAN-CALENDAR-PLUGIN
   --color-text-title: var(--text-normal);
   --color-text-heading: var(--text-muted);
   --color-text-day: var(--text-normal);
+  --color-text-week-num: var(--text-normal);
   --color-text-today: var(--interactive-accent);
   --color-arrow: var(--text-faint);
   --color-arrow-hover: var(--interactive-accent-hover);
@@ -8828,6 +8829,7 @@ OBSIDIAN-CALENDAR-PLUGIN
   color: var(--interactive-accent) !important;
 }
 
+#calendar-container .week-num.active,
 #calendar-container .day.active {
   transition: 100ms;
   color: var(--text-normal);
