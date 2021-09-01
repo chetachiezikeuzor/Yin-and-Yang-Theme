@@ -3208,16 +3208,6 @@ MODALS
   padding-right: 0;
 }
 
-.modal-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(2px);
-  background-color: var(--background-modifier-cover);
-}
-
 .modal {
   border: 1px solid var(--background-modifier-border);
   border-radius: 6px;
