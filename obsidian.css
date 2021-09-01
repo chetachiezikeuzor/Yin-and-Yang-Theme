@@ -8380,8 +8380,8 @@ body:not(.is-mobile).wys-headings
 MOBILE TWEAKS
 ----------------------------------------------------------------*/
 
-.workspace-drawer-active-tab-icon {
-  display: none;
+.workspace-drawer-active-tab-container.is-fullscreen {
+  z-index: 4;
 }
 
 .is-mobile svg.right-triangle {
@@ -8419,8 +8419,15 @@ MOBILE TWEAKS
   padding-left: 16px;
 }
 
+.is-mobile .nav-buttons-container {
+  padding: 8px 0;
+  border: 0;
+  line-height: 1;
+}
+
 .is-mobile .nav-action-button {
   padding: 8px 8px !important;
+  display: flex;
 }
 
 .is-mobile .tree-item-self:hover {
