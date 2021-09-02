@@ -3654,13 +3654,7 @@ li::marker {
 
 body:not(.is-mobile) ul li::marker {
   font-family: Karmilla;
-  font-weight: 900;
-}
-
-/*rule for all lists*/
-ul li p,
-ol li p {
-  display: inline;
+  font-weight: 500;
 }
 
 /*----------------------------------------------------------------
@@ -3790,6 +3784,10 @@ body:not(.is-mobile) ol ul ul ul ul ul ul ul ul ul ul ul ul {
 TASK LISTS
 ----------------------------------------------------------------*/
 
+.markdown-preview-view ul > li.task-list-item > * {
+  text-indent: unset;
+}
+
 input[type="checkbox"],
 .markdown-preview-view .task-list-item-checkbox {
   cursor: pointer;
@@ -3802,8 +3800,8 @@ input[type="checkbox"],
   position: relative;
   line-height: 0;
   right: 3px;
-  margin-left: 5px;
-  margin-right: 3px !important;
+  margin-left: 3px;
+  margin-right: 4px !important;
   filter: none;
   margin-bottom: 0;
   top: 2px;
@@ -3815,7 +3813,8 @@ input[type="checkbox"],
 }
 
 .is-mobile input[type="checkbox"],
-.markdown-preview-view .task-list-item-checkbox {
+.is-mobile .markdown-preview-view .task-list-item-checkbox {
+  margin-left: 5px;
   margin-right: 7px !important;
 }
 
