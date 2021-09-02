@@ -8496,16 +8496,6 @@ MOBILE TWEAKS
   background-color: var(--background-secondary);
 }
 
-.is-mobile .workspace-drawer.mod-left {
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
-}
-
-.is-mobile .workspace-drawer.mod-right {
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
-}
-
 .is-mobile .workspace-drawer-ribbon {
   background: var(--background-secondary);
   border-right: 1px solid var(--background-modifier-border);
