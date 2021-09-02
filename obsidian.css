@@ -8465,9 +8465,6 @@ MOBILE TWEAKS
 .is-mobile .modal,
 .is-mobile .prompt,
 .is-mobile .suggestion-container {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  user-select: none;
   padding: 10px;
   overflow: hidden;
 }
