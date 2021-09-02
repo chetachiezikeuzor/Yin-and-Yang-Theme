@@ -8469,9 +8469,9 @@ MOBILE TWEAKS
 .is-mobile .modal,
 .is-mobile .prompt,
 .is-mobile .suggestion-container {
-  border-radius: 0 0;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
   max-height: calc(100% - 56px);
-  width: calc(100% - 0px);
   max-width: calc(100% - 0px);
 }
 
