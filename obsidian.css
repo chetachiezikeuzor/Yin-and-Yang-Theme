@@ -3624,7 +3624,7 @@ body.is-mobile
 }
 
 html .CodeMirror-lines {
-  padding-top: 3rem !important;
+  padding-top: 3rem;
 }
 
 .markdown-embed .markdown-preview-section > div {
