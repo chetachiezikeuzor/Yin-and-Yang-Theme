@@ -764,7 +764,7 @@ settings:
 
   --strong-weight: var(--bold-weight);
   --strong-color: hsl(var(--boldpink));
-  --em-color: var(--paleblue);
+  --em-color: var(--lilac);
 
   --s-header-1-pre: 1.98em;
   --s-header-2-pre: 1.88em;
@@ -824,7 +824,7 @@ settings:
   --fairpink: #eed3e1;
   --yellow: #fff3a3;
   --linen: #fcecec;
-  --paleblue: #bdd2ff;
+  --lilac: #9a9af5;
   --purple: #d2b3ff;
   --palegreen: #a1ffa1;
   --dusk: #474e5e;
@@ -934,7 +934,7 @@ settings:
   --text-title-h3: var(--red);
   --text-title-h4: var(--boldorange);
   --text-title-h5: var(--boldgreen);
-  --text-title-h6: var(--paleblue);
+  --text-title-h6: var(--lilac);
   --text-link: var(--frost0);
   --text-a-hover: var(--pink);
   --text-accent: hsl(
@@ -995,7 +995,7 @@ settings:
     calc(var(--base-d) + 4%)
   );
   --inline-code: var(--light-cornflower-blue);
-  --code-block: var(--paleblue);
+  --code-block: var(--lilac);
   --code-block-border: var(--light0);
   --vim-cursor: var(--interactive-accent);
 
