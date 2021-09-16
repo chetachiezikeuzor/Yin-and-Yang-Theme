@@ -2306,6 +2306,10 @@ a:hover,
 }
 
 /*MARKINGS*/
+.cm-s-obsidian .cm-header.cm-hashtag,
+.cm-s-obsidian span.cm-hashtag {
+  color: var(--text-muted);
+}
 
 .cm-s-obsidian span.cm-formatting-link,
 .cm-s-obsidian .cm-header.cm-formatting-link,
@@ -4944,6 +4948,14 @@ TAGS
 /*----------------------------------------------------------------
 TAG PILLS
 ----------------------------------------------------------------*/
+.markdown-preview-section h1 a.tag,
+.markdown-preview-section h2 a.tag,
+.markdown-preview-section h3 a.tag,
+.markdown-preview-section h4 a.tag,
+.markdown-preview-section h5 a.tag,
+.markdown-preview-section h4 a.tag {
+  font-weight: inherit;
+}
 
 .tag {
   background-color: var(--tag-base);
