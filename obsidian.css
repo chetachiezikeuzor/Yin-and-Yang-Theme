@@ -6787,6 +6787,40 @@ body:not(.no-svg-replace):not(.is-mobile)
   width: 18px;
 }
 
+/*starred*/
+
+body:not(.no-svg-replace)
+  .workspace-leaf-content[data-type="starred"]
+  svg.document {
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="red" d="M19.903 8.586a.997.997 0 0 0-.196-.293l-6-6a.997.997 0 0 0-.293-.196c-.03-.014-.062-.022-.094-.033a.991.991 0 0 0-.259-.051C13.04 2.011 13.021 2 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-.021-.011-.04-.013-.062a.952.952 0 0 0-.051-.259c-.01-.032-.019-.063-.033-.093zM16.586 8H14V5.414L16.586 8zM6 20V4h6v5a1 1 0 0 0 1 1h5l.002 10H6z"/><path fill="red" d="M8 12h8v2H8zm0 4h8v2H8zm0-8h2v2H8z"></path></svg>');
+}
+
+body:not(.no-svg-replace)
+  .workspace-leaf-content[data-type="starred"]
+  svg.search {
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100"><path fill="red" d="M57.113 9.554C56.333 8.771 55.275 8.333 54.167 8.333H25C20.404 8.333 16.667 12.071 16.667 16.667v66.667c0 4.596 3.738 8.333 8.333 8.333h50c4.596 0 8.333 -3.738 8.333 -8.333V37.5c0 -1.108 -0.438 -2.167 -1.221 -2.946L57.113 9.554zM25 16.667h27.442L75 39.225l0.008 38.225l-10.7 -10.7C65.767 64.271 66.667 61.413 66.667 58.333c0 -9.192 -7.475 -16.667 -16.667 -16.667s-16.667 7.475 -16.667 16.667s7.475 16.667 16.667 16.667c3.079 0 5.938 -0.9 8.417 -2.358L69.108 83.333H25V16.667zM50 66.667c-4.596 0 -8.333 -3.738 -8.333 -8.333s3.738 -8.333 8.333 -8.333s8.333 3.738 8.333 8.333S54.596 66.667 50 66.667z"></path></svg>');
+}
+
+body:not(.no-svg-replace)
+  .workspace-leaf-content[data-type="starred"]
+  .nav-file-icon {
+  display: inline-block;
+  margin-right: 4px;
+  margin-left: 5px;
+  position: relative;
+  top: 2px;
+  height: 18px;
+  width: 18px;
+}
+
+body:not(.no-svg-replace)
+  .workspace-leaf-content[data-type="starred"]
+  .nav-file-icon
+  svg {
+  height: 18px;
+  width: 18px;
+}
+
 /*TAG PANE ICONS*/
 
 .tag-pane-tag {
