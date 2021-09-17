@@ -53,7 +53,7 @@ settings:
     default: 5
     format: '%'
     min: 4
-    max: 18
+    max: 32
     step: 1 
   -
     id: custom-fonts
@@ -1538,6 +1538,19 @@ input.prompt-input:hover {
 
 /*Focus Input */
 
+textarea:focus {
+  box-shadow: 0 0 0 0.1px rgba(0, 0, 0, 0.1),
+    0 0 0 3px hsla(var(--accent-hsl), 0.35);
+  border: 1px solid var(--interactive-accent) !important;
+}
+
+textarea {
+  outline: 0;
+  padding: 10px 10px;
+  padding: 5px 10px;
+  height: auto;
+}
+
 input[type="text"]:focus-within,
 input[type="search"]:focus-within,
 input[type="email"]:focus-within,
@@ -1580,7 +1593,6 @@ input.search-input:focus {
 }
 
 .templater-prompt-input:focus,
-textarea:focus,
 .dropdown:focus,
 input:not(input[type="range"]):focus,
 .search-result-file-match:not(.search-info-more-matches):hover {
@@ -1607,14 +1619,6 @@ input.document-search-input:focus,
 input.document-replace-input:focus {
   transition: all 0.5s ease-in-out;
   border: 1px solid var(--interactive-accent);
-}
-
-textarea:focus {
-  border-color: hsla(var(--accent-hsl), 1) !important;
-}
-
-textarea {
-  padding: 10px 10px;
 }
 
 /*----------------------------------------------------------------
@@ -2634,7 +2638,7 @@ PREVIEW SECTION
 .theme-dark pre[class*="language-"],
 .theme-light code[class*="language-"],
 .theme-light pre[class*="language-"] {
-  white-space: pre;
+  white-space: break-spaces;
   word-spacing: normal;
   word-break: normal;
   word-wrap: normal;
@@ -4557,6 +4561,10 @@ WORKSPACE
   color: inherit;
 }
 
+.workspace-split.mod-vertical > .workspace-split {
+  padding: 0;
+}
+
 .workspace-split.mod-root {
   background-color: var(--background-secondary);
 }
@@ -5677,8 +5685,8 @@ body:not(.is-mobile) .frontmatter-container .frontmatter-section-label {
   background-repeat: no-repeat, repeat;
   background-position: right 0.6em top 50%, 0 0;
   background-size: 1em auto, 100%;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1),
-    inset 0px 1px 3px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 3px rgba(255, 255, 255, 0.15);
   transition: 100ms;
   cursor: pointer;
 }
@@ -6391,7 +6399,7 @@ body:not(.no-svg-replace)
   -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="red" d="M19.903 8.586a.997.997 0 0 0-.196-.293l-6-6a.997.997 0 0 0-.293-.196c-.03-.014-.062-.022-.094-.033a.991.991 0 0 0-.259-.051C13.04 2.011 13.021 2 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-.021-.011-.04-.013-.062a.952.952 0 0 0-.051-.259c-.01-.032-.019-.063-.033-.093zM16.586 8H14V5.414L16.586 8zM6 20V4h6v5a1 1 0 0 0 1 1h5l.002 10H6z"/><path fill="red" d="M8 12h8v2H8zm0 4h8v2H8zm0-8h2v2H8z"></path></svg>');
   font-size: calc(var(--large-font-size) + 4px);
   display: inline-block;
-  vertical-align: -0.05em;
+  vertical-align: -0.075em;
   margin-right: 8px;
   margin-left: 0px;
 }
@@ -6402,7 +6410,7 @@ body:not(.no-svg-replace) .nav-file-title-content:before {
   -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="red" d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6h-3v2H9v2h2v2H9v2h2v8H7v-6h2v-2H7V8h2V6H7V4h2V2H6zm7 2l5 5h-5V4z"/><path fill="red" d="M8 15h2v2H8z"></path></svg>');
   font-size: calc(var(--large-font-size) + 4px);
   display: inline-block;
-  vertical-align: -0.05em;
+  vertical-align: -0.075em;
   margin-right: 8px;
   margin-left: 0px;
 }
@@ -7889,7 +7897,7 @@ span[title="Fold line"]:after,
   margin: 0;
 }
 
-.min-clean-embed .markdown-embed-link {
+.min-clean-embed .internal-embed .markdown-embed-link {
   top: -5px;
   right: -5px;
   line-height: inherit;
