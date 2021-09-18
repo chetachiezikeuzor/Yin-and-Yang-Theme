@@ -2391,7 +2391,7 @@ del,
 }
 
 /* ITALICS */
-
+em,
 .cm-s-obsidian .cm-em.cm-header,
 .markdown-preview-section em,
 .cm-s-obsidian .cm-em {
@@ -3775,13 +3775,13 @@ CUSTOM/READABLE LINE WIDTH
   padding-right: 1em;
 }
 
-.markdown-embed.is-readable-line-width .markdown-preview-section > div {
+.markdown-embed.is-readable-line-width .markdown-preview-section {
   margin: 0;
   width: auto;
   max-width: none;
 }
 
-.is-readable-line-width .markdown-preview-section > div {
+.is-readable-line-width .markdown-preview-section {
   margin: 0 auto 0 auto;
   width: var(--line-width);
   max-width: var(--max-width);
