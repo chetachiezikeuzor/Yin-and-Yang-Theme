@@ -44,5 +44,5 @@ I owe a huge thanks to @mgmeyers and the [California Coast Obsidian Theme](https
 <a href="https://www.buymeacoffee.com/chetachi"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&amp;emoji=&amp;slug=chetachi&amp;button_colour=e3e7ef&amp;font_colour=262626&amp;font_family=Inter&amp;outline_colour=262626&amp;coffee_colour=ff0000"/></a>
 
 <a href="https://paypal.me/chelseaezikeuzor">
-<img src="assets/PayPal-Logo.png"/>
+<img src="assets/paypal.png"/>
 </a>
