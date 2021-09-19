@@ -2658,6 +2658,18 @@ body:not(.no-show-lang) pre[class*="language-"]::after {
   bottom: 7px;
 }
 
+body:not(.no-show-lang).is-mobile pre[class*="language-"]::after {
+  content: attr(class);
+  transition: 200ms;
+  animation: pop-pop 250ms ease-in-out;
+  font-size: 0.65em;
+  font-family: var(--monospace-font);
+  color: var(--text-muted);
+  position: absolute;
+  right: 34px;
+  bottom: -5px;
+}
+
 code.yellow {
   color: var(--text-normal);
   background-color: var(--yellow-highlighter);
@@ -2740,87 +2752,116 @@ code.yellow-green {
   }
 }
 
-body:not(.no-show-lang) pre[class~="language-admonition"]:after {
+body:not(.no-show-lang) pre[class~="language-admonition"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-admonition"]:after {
   content: "ad";
 }
-body:not(.no-show-lang) pre[class~="language-c"]:after {
+body:not(.no-show-lang) pre[class~="language-c"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-c"]:after {
   content: "c";
 }
-body:not(.no-show-lang) pre[class~="language-python"]:after {
+body:not(.no-show-lang) pre[class~="language-python"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-python"]:after {
   content: "py";
 }
-body:not(.no-show-lang) pre[class~="language-nginx"]:after {
+body:not(.no-show-lang) pre[class~="language-nginx"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-nginx"]:after {
   content: "nginx";
 }
-body:not(.no-show-lang) pre[class~="language-css"]:after {
+body:not(.no-show-lang) pre[class~="language-css"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-css"]:after {
   content: "css";
 }
-body:not(.no-show-lang) pre[class~="language-svg"]:after {
+body:not(.no-show-lang) pre[class~="language-svg"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-svg"]:after {
   content: "svg";
 }
-body:not(.no-show-lang) pre[class~="language-node"]:after {
+body:not(.no-show-lang) pre[class~="language-node"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-node"]:after {
   content: "node";
 }
-body:not(.no-show-lang) pre[class~="language-react"]:after {
+body:not(.no-show-lang) pre[class~="language-react"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-react"]:after {
   content: "jsx";
 }
 body:not(.no-show-lang) pre[class~="language-javascript"]:after,
-body:not(.no-show-lang) pre[class~="language-js"]:after {
+body:not(.no-show-lang) pre[class~="language-js"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-javascript"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-js"]:after {
   content: "js";
 }
-body:not(.no-show-lang) pre[class~="language-php"]:after {
+body:not(.no-show-lang) pre[class~="language-php"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-php"]:after {
   content: "php";
 }
-body:not(.no-show-lang) pre[class~="language-shell"]:after {
+body:not(.no-show-lang) pre[class~="language-shell"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-shell"]:after {
   content: "sh";
 }
-body:not(.no-show-lang) pre[class~="language-bash"]:after {
+body:not(.no-show-lang) pre[class~="language-bash"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-bash"]:after {
   content: "sh";
 }
-body:not(.no-show-lang) pre[class~="language-typescript"]:after {
+body:not(.no-show-lang) pre[class~="language-typescript"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-typescript"]:after {
   content: "ts";
 }
-body:not(.no-show-lang) pre[class~="language-shell"]:after {
+body:not(.no-show-lang) pre[class~="language-shell"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-shell"]:after {
   content: "sh";
 }
-body:not(.no-show-lang) pre[class~="language-flow"]:after {
+body:not(.no-show-lang) pre[class~="language-flow"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-flow"]:after {
   content: "flow";
 }
-body:not(.no-show-lang) pre[class~="language-sequence"]:after {
+body:not(.no-show-lang) pre[class~="language-sequence"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-sequence"]:after {
   content: "seq";
 }
-body:not(.no-show-lang) pre[class~="language-sql"]:after {
+body:not(.no-show-lang) pre[class~="language-sql"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-sql"]:after {
   content: "sql";
 }
-body:not(.no-show-lang) pre[class~="language-yaml"]:after {
+body:not(.no-show-lang) pre[class~="language-yaml"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-yaml"]:after {
   content: "yml";
 }
-body:not(.no-show-lang) pre[class~="language-ini"]:after {
+body:not(.no-show-lang) pre[class~="language-ini"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-ini"]:after {
   content: "ini";
 }
-body:not(.no-show-lang) pre[class~="language-xml"]:after {
+body:not(.no-show-lang) pre[class~="language-xml"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-xml"]:after {
   content: "xml";
 }
-body:not(.no-show-lang) pre[class~="language-git"]:after {
+body:not(.no-show-lang) pre[class~="language-git"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-git"]:after {
   content: "git";
 }
-body:not(.no-show-lang) pre[class~="language-cs"]:after {
+body:not(.no-show-lang) pre[class~="language-cs"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-cs"]:after {
   content: "cs";
 }
-body:not(.no-show-lang) pre[class~="language-cpp"]:after {
+body:not(.no-show-lang) pre[class~="language-cpp"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-cpp"]:after {
   content: "cpp";
 }
-body:not(.no-show-lang) pre[class~="language-java"]:after {
+body:not(.no-show-lang) pre[class~="language-java"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-java"]:after {
   content: "java";
 }
-body:not(.no-show-lang) pre[class~="language-json"]:after {
+body:not(.no-show-lang) pre[class~="language-json"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-json"]:after {
   content: "json";
 }
-body:not(.no-show-lang) pre[class~="language-html"]:after {
+body:not(.no-show-lang) pre[class~="language-html"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-html"]:after {
   content: "html";
 }
 body:not(.no-show-lang) pre[class~="language-text"]:after,
-body:not(.no-show-lang) pre[class~="language-txt"]:after {
+body:not(.no-show-lang) pre[class~="language-txt"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-text"]:after,
+body:not(.no-show-lang).is-mobile pre[class~="language-txt"]:after {
   content: "txt";
 }
 
@@ -7721,11 +7762,11 @@ FOLDS (credits to @mgmeyers for this)
   margin-top: 0.3rem;
 }
 
-.markdown-preview-view .is-collapsed .collapse-indicator > svg.right-triangle {
+body:not(.no-svg-replace) .markdown-preview-view .is-collapsed .collapse-indicator > svg.right-triangle {
   transform: translateY(-15%) rotate(-90deg);
 }
 
-.markdown-preview-view .collapse-indicator > svg.right-triangle {
+body:not(.no-svg-replace) .markdown-preview-view .collapse-indicator > svg.right-triangle {
   left: -2.33rem;
   top: 50%;
   background-color: var(--text-faint);
@@ -7791,7 +7832,7 @@ details[open] summary:not(.admonition-title)::before {
   transition: 250ms ease-in-out;
 }
 
-.tree-item-self .tree-item-icon > svg.right-triangle {
+body:not(.no-svg-replace) .tree-item-self .tree-item-icon > svg.right-triangle {
   height: 11px;
   width: 11px;
   fill: var(--text-muted);
@@ -7799,13 +7840,13 @@ details[open] summary:not(.admonition-title)::before {
 
 /*collapse icon in workspace*/
 
-.frontmatter-collapse-indicator svg.right-triangle {
+body:not(.no-svg-replace) .frontmatter-collapse-indicator svg.right-triangle {
   background-color: currentColor;
   -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"><path fill="red" stroke-width="2" stroke="currentColor" d="M16 22L6 12l1.4-1.4l8.6 8.6l8.6-8.6L26 12z"></path></svg>');
 }
 
-span[title="Fold line"],
-span[title="Unfold line"] {
+body:not(.no-svg-replace) span[title="Fold line"],
+body:not(.no-svg-replace) span[title="Unfold line"] {
   position: relative;
   font-size: 0;
   color: transparent;
@@ -7814,17 +7855,17 @@ span[title="Unfold line"] {
   align-items: center;
 }
 
-span[title="Fold line"]:hover,
-span[title="Unfold line"]:hover,
-.CodeMirror-foldgutter-open:hover,
-.CodeMirror-foldgutter-folded:hover {
+body:not(.no-svg-replace) span[title="Fold line"]:hover,
+body:not(.no-svg-replace) span[title="Unfold line"]:hover,
+body:not(.no-svg-replace) .CodeMirror-foldgutter-open:hover,
+body:not(.no-svg-replace) .CodeMirror-foldgutter-folded:hover {
   color: var(--text-muted);
 }
 
-span[title="Fold line"]:after,
-span[title="Unfold line"]:after,
-.CodeMirror-foldgutter-open:after,
-.CodeMirror-foldgutter-folded:after {
+body:not(.no-svg-replace) span[title="Fold line"]:after,
+body:not(.no-svg-replace) span[title="Unfold line"]:after,
+body:not(.no-svg-replace) .CodeMirror-foldgutter-open:after,
+body:not(.no-svg-replace) .CodeMirror-foldgutter-folded:after {
   text-align: center;
   color: var(--text-faint);
   font-size: 1.25rem;
@@ -7836,35 +7877,35 @@ span[title="Unfold line"]:after,
   height: 1rem;
 }
 
-body:not(.is-mobile) span[title="Fold line"]:after,
-body:not(.is-mobile) span[title="Unfold line"]:after,
-body:not(.is-mobile) .CodeMirror-foldgutter-open:after,
-body:not(.is-mobile) .CodeMirror-foldgutter-folded:after {
+body:not(.is-mobile):not(.no-svg-replace) span[title="Fold line"]:after,
+body:not(.is-mobile):not(.no-svg-replace) span[title="Unfold line"]:after,
+body:not(.is-mobile):not(.no-svg-replace) .CodeMirror-foldgutter-open:after,
+body:not(.is-mobile):not(.no-svg-replace) .CodeMirror-foldgutter-folded:after {
   margin-top: 0.35rem;
   margin-left: 2px;
 }
 
-body.is-mobile .ͼ1 .cm-lineNumbers .cm-gutterElement {
+body:not(.no-svg-replace) .is-mobile .ͼ1 .cm-lineNumbers .cm-gutterElement {
   padding: 0 3px 0 0px;
   min-width: 15px;
   text-align: right;
   white-space: nowrap;
 }
 
-span[title="Fold line"]:after,
-span[title="Unfold line"]:after {
+body:not(.no-svg-replace) span[title="Fold line"]:after,
+body:not(.no-svg-replace) span[title="Unfold line"]:after {
   font-size: 1rem;
   line-height: 1;
 }
 
-span[title="Fold line"]:after,
-span[title="Unfold line"]:after {
+body:not(.no-svg-replace) span[title="Fold line"]:after,
+body:not(.no-svg-replace) span[title="Unfold line"]:after {
   font-size: 1rem;
   line-height: 1;
 }
 
-span[title="Unfold line"]:after,
-.CodeMirror-foldgutter-folded:after {
+body:not(.no-svg-replace) span[title="Unfold line"]:after,
+body:not(.no-svg-replace) .CodeMirror-foldgutter-folded:after {
   background-color: currentColor;
   background-color: var(--text-faint);
   height: 12px;
@@ -7874,8 +7915,8 @@ span[title="Unfold line"]:after,
   transform: rotate(-90deg);
 }
 
-span[title="Fold line"]:after,
-.CodeMirror-foldgutter-open:after {
+body:not(.no-svg-replace) span[title="Fold line"]:after,
+body:not(.no-svg-replace) .CodeMirror-foldgutter-open:after {
   background-color: currentColor;
   height: 12px;
   width: 12px;
@@ -8652,27 +8693,26 @@ MOBILE TWEAKS
 .workspace-drawer-active-tab-container.is-fullscreen {
   z-index: 4;
 }
-
-.is-mobile svg.right-triangle {
+body:not(.no-svg-replace).is-mobile svg.right-triangle {
   width: 12px;
   height: 12px;
 }
 
-.is-mobile .frontmatter-collapse-indicator svg.right-triangle {
+body:not(.no-svg-replace).is-mobile .frontmatter-collapse-indicator svg.right-triangle {
   margin-left: 25px;
   margin-top: -4px;
 }
 
-.is-mobile span[title="Unfold line"]:after,
-.is-mobile .CodeMirror-foldgutter-folded:after {
+body:not(.no-svg-replace).is-mobile span[title="Unfold line"]:after,
+body:not(.no-svg-replace).is-mobile .CodeMirror-foldgutter-folded:after {
   content: "›";
   font-family: sans-serif;
   transform: translateY(-2px);
   transform: rotate(-90deg);
 }
 
-.is-mobile span[title="Fold line"]:after,
-.is-mobile .CodeMirror-foldgutter-open:after {
+body:not(.no-svg-replace).is-mobile span[title="Fold line"]:after,
+body:not(.no-svg-replace).is-mobile .CodeMirror-foldgutter-open:after {
   content: "›";
   font-family: sans-serif;
   transform: rotate(360deg);
