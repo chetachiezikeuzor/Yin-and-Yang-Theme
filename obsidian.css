@@ -3811,7 +3811,7 @@ html .CodeMirror-lines {
   padding-top: 3rem;
 }
 
-.markdown-embed .markdown-preview-section > div {
+.markdown-embed .markdown-preview-section {
   width: auto;
   max-width: none;
 }
@@ -4212,14 +4212,14 @@ EMBEDS
   min-height: 0 !important;
 }
 
-.markdown-embed .markdown-preview-section > div {
+.markdown-embed .markdown-preview-section {
   padding: 0;
   margin: 0;
   width: auto;
   max-width: none;
 }
 
-.markdown-embed-content .markdown-preview-section > div {
+.markdown-embed-content .markdown-preview-section {
   padding-left: 0;
   padding-right: 0;
 }
