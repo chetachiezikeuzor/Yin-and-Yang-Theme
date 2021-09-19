@@ -2638,7 +2638,7 @@ PREVIEW SECTION
 .theme-dark pre[class*="language-"],
 .theme-light code[class*="language-"],
 .theme-light pre[class*="language-"] {
-  white-space: break-spaces;
+  white-space: pre-wrap;
   word-spacing: normal;
   word-break: normal;
   word-wrap: normal;
@@ -3775,7 +3775,7 @@ CUSTOM/READABLE LINE WIDTH
   padding-right: 1em;
 }
 
-.markdown-embed.is-readable-line-width .markdown-preview-section {
+.markdown-embed.is-readable-line-width .markdown-preview-section{
   margin: 0;
   width: auto;
   max-width: none;
@@ -4212,7 +4212,7 @@ EMBEDS
   min-height: 0 !important;
 }
 
-.markdown-embed .markdown-preview-section {
+.markdown-embed .markdown-preview-section{
   padding: 0;
   margin: 0;
   width: auto;
