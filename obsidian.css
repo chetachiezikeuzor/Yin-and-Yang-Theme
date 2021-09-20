@@ -2160,27 +2160,39 @@ SPECIFIC HEADINGS
   color: var(--sphd-pre-6);
 }
 
-.spec-color-head .cm-s-obsidian .cm-header.cm-header-1 {
+.spec-color-head
+  .cm-s-obsidian
+  .cm-header:not(.cm-hastag):not(.cm-em).cm-header-1:not(.cm-hmd-internal-link) {
   color: var(--sphd-ed-1);
 }
 
-.spec-color-head .cm-s-obsidian .cm-header.cm-header-2 {
+.spec-color-head
+  .cm-s-obsidian
+  .cm-header:not(.cm-hastag):not(.cm-em).cm-header-2:not(.cm-hmd-internal-link) {
   color: var(--sphd-ed-2);
 }
 
-.spec-color-head .cm-s-obsidian .cm-header.cm-header-3 {
+.spec-color-head
+  .cm-s-obsidian
+  .cm-header:not(.cm-hastag):not(.cm-em).cm-header-3:not(.cm-hmd-internal-link) {
   color: var(--sphd-ed-3);
 }
 
-.spec-color-head .cm-s-obsidian .cm-header.cm-header-4 {
+.spec-color-head
+  .cm-s-obsidian
+  .cm-header:not(.cm-hastag):not(.cm-em).cm-header-4:not(.cm-hmd-internal-link) {
   color: var(--sphd-ed-4);
 }
 
-.spec-color-head .cm-s-obsidian .cm-header.cm-header-5 {
+.spec-color-head
+  .cm-s-obsidian
+  .cm-header:not(.cm-hastag):not(.cm-em).cm-header-5:not(.cm-hmd-internal-link) {
   color: var(--sphd-ed-5);
 }
 
-.spec-color-head .cm-s-obsidian .cm-header.cm-header-6 {
+.spec-color-head
+  .cm-s-obsidian
+  .cm-header:not(.cm-hastag):not(.cm-em).cm-header-6:not(.cm-hmd-internal-link) {
   color: var(--sphd-ed-6);
 }
 
@@ -2427,6 +2439,7 @@ strong,
 .rainbow-headers .cm-s-obsidian .cm-strong.cm-header.cm-header-4,
 .rainbow-headers .cm-s-obsidian .cm-strong.cm-header.cm-header-5,
 .rainbow-headers .cm-s-obsidian .cm-strong.cm-header.cm-header-6,
+.cm-header.cm-header-3.cm-hmd-internal-link,
 .markdown-preview-section strong,
 .cm-s-obsidian .cm-strong {
   font-weight: var(--strong-weight);
@@ -6052,6 +6065,11 @@ FILE EXPLORER
 .nav-folder-title.is-being-dragged-over {
   background-color: var(--interactive-accent-hover);
   color: var(--text-on-accent);
+}
+
+.nav-folder-title-content.is-being-renamed,
+.nav-file-title-content.is-being-renamed {
+  color: var(--text-muted);
 }
 
 .nav-folder-title.is-being-dragged-over svg.right-triangle,
