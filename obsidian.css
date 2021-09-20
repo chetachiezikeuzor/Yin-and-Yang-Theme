@@ -2393,6 +2393,12 @@ del,
 /* ITALICS */
 em,
 .cm-s-obsidian .cm-em.cm-header,
+.cm-s-obsidian .cm-em.cm-header.cm-header-1,
+.cm-s-obsidian .cm-em.cm-header.cm-header-2,
+.cm-s-obsidian .cm-em.cm-header.cm-header-3,
+.cm-s-obsidian .cm-em.cm-header.cm-header-4,
+.cm-s-obsidian .cm-em.cm-header.cm-header-5,
+.cm-s-obsidian .cm-em.cm-header.cm-header-6,
 .markdown-preview-section em,
 .cm-s-obsidian .cm-em {
   font-style: italic;
@@ -2403,6 +2409,12 @@ em,
 
 strong,
 .cm-s-obsidian .cm-strong.cm-header,
+.cm-s-obsidian .cm-strong.cm-header.cm-header-1,
+.cm-s-obsidian .cm-strong.cm-header.cm-header-2,
+.cm-s-obsidian .cm-strong.cm-header.cm-header-3,
+.cm-s-obsidian .cm-strong.cm-header.cm-header-4,
+.cm-s-obsidian .cm-strong.cm-header.cm-header-5,
+.cm-s-obsidian .cm-strong.cm-header.cm-header-6,
 .markdown-preview-section strong,
 .cm-s-obsidian .cm-strong {
   font-weight: var(--strong-weight);
@@ -3816,7 +3828,7 @@ CUSTOM/READABLE LINE WIDTH
   padding-right: 1em;
 }
 
-.markdown-embed.is-readable-line-width .markdown-preview-section{
+.markdown-embed.is-readable-line-width .markdown-preview-section {
   margin: 0;
   width: auto;
   max-width: none;
@@ -4253,7 +4265,7 @@ EMBEDS
   min-height: 0 !important;
 }
 
-.markdown-embed .markdown-preview-section{
+.markdown-embed .markdown-preview-section {
   padding: 0;
   margin: 0;
   width: auto;
@@ -7762,11 +7774,18 @@ FOLDS (credits to @mgmeyers for this)
   margin-top: 0.3rem;
 }
 
-body:not(.no-svg-replace) .markdown-preview-view .is-collapsed .collapse-indicator > svg.right-triangle {
+body:not(.no-svg-replace)
+  .markdown-preview-view
+  .is-collapsed
+  .collapse-indicator
+  > svg.right-triangle {
   transform: translateY(-15%) rotate(-90deg);
 }
 
-body:not(.no-svg-replace) .markdown-preview-view .collapse-indicator > svg.right-triangle {
+body:not(.no-svg-replace)
+  .markdown-preview-view
+  .collapse-indicator
+  > svg.right-triangle {
   left: -2.33rem;
   top: 50%;
   background-color: var(--text-faint);
@@ -8698,7 +8717,9 @@ body:not(.no-svg-replace).is-mobile svg.right-triangle {
   height: 12px;
 }
 
-body:not(.no-svg-replace).is-mobile .frontmatter-collapse-indicator svg.right-triangle {
+body:not(.no-svg-replace).is-mobile
+  .frontmatter-collapse-indicator
+  svg.right-triangle {
   margin-left: 25px;
   margin-top: -4px;
 }
