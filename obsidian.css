@@ -1264,6 +1264,9 @@ FOR EXPORT
   p {
     color: black !important;
   }
+  li {
+    color: black !important;
+  }
   ul > li::before,
   ol > li::before {
     border-left: 1px solid #ecedf1;
