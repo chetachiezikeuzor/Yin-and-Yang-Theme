@@ -1,6 +1,6 @@
 # Yin and Yang
 
-![](https://raw.githubusercontent.com/chetachiezikeuzor/Yin-and-Yang-Theme/main/assets/Yin%20and%20Yang%20Demo%20Header.png)
+![](https://raw.githubusercontent.com/chetachiezikeuzor/Yin-and-Yang-Theme/main/assets/screenshot.png)
 
 Welcome to the Yin and Yang Obsidian theme! This theme was created with both dark mode and light mode in mind. Hopefully, you too will enjoy the stark contrast in colors.
 
@@ -13,7 +13,7 @@ Welcome to the Yin and Yang Obsidian theme! This theme was created with both dar
 
 https://user-images.githubusercontent.com/79069364/124992838-1cf3cf80-e009-11eb-884b-611052f35228.mp4
 
-![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/screenshot.png)
+![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/maindemo.png)
 
 ![](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/dark1.png)
 
