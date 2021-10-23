@@ -5220,21 +5220,6 @@ STYLING FOR PLUGIN MODES (SLIDING PANES/FOCUS MODE/HIDER ETC.)
   padding-right: 0px;
 }
 
-.focus-mode .cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line {
-  opacity: 0.6 !important;
-  filter: saturate(1) !important;
-}
-
-.focus-mode div.workspace-ribbon {
-  visibility: unset !important;
-}
-
-.focus-mode .side-dock-actions,
-.focus-mode .side-dock-settings,
-.focus-mode .workspace-ribbon.mod-left .workspace-ribbon-collapse-btn {
-  visibility: hidden;
-}
-
 body.plugin-sliding-panes.plugin-sliding-panes-rotate-header.hider-ribbon
   .workspace
   > .mod-root
