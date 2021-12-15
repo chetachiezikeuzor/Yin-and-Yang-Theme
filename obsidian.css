@@ -4072,6 +4072,11 @@ input[type="checkbox"],
   box-shadow: inset 0px 0.5px 1px var(--background-zero);
 }
 
+input[type="checkbox"],
+.markdown-source-view.mod-cm6 .task-list-item-checkbox  {
+  vertical-align: top;
+}
+
 .is-mobile input[type="checkbox"],
 .is-mobile .markdown-preview-view .task-list-item-checkbox {
   margin-left: 3px;
