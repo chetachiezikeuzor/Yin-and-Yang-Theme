@@ -41,6 +41,18 @@ If you have any issues and/or suggestions, please submit an issue or raise a PR.
 
 I owe a huge thanks to @mgmeyers and the [California Coast Obsidian Theme](https://github.com/mgmeyers/obsidian-california-coast-theme) for inspiration!
 
-<a href="https://www.buymeacoffee.com/chetachi"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&amp;emoji=&amp;slug=chetachi&amp;button_colour=e3e7ef&amp;font_colour=262626&amp;font_family=Inter&amp;outline_colour=262626&amp;coffee_colour=ff0000"/></a>
+---
 
-<a href="https://paypal.me/chelseaezikeuzor"><img src="assets/paypal.svg" height="70"></a>
+## Support
+
+If you like this Plugin and are considering donating to support continued development, use the button below!
+
+Created with ❤️ by Chetachi
+
+<a href="https://www.buymeacoffee.com/chetachi"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&amp;emoji=&amp;slug=chetachi&amp;button_colour=e3e7ef&amp;font_colour=262626&amp;font_family=Poppins&amp;outline_colour=262626&amp;coffee_colour=ff0000"></a>
+
+<a href="https://paypal.me/chelseaezikeuzor">
+<img src="https://raw.githubusercontent.com/chetachiezikeuzor/Yin-and-Yang-Theme/master/assets/paypal.svg" height="70"></a>
+<br/>
+<a href="https://ko-fi.com/chetachi">
+<img src="https://raw.githubusercontent.com/chetachiezikeuzor/Yin-and-Yang-Theme/master/assets/kofi_color.svg" height="50"></a>
