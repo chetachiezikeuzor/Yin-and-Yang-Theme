@@ -1955,6 +1955,13 @@ HEADINGS
   font-family: inherit !important;
 }
 
+.markdown-source-view:not(.mod-cm6.cm-s-obsidian)
+  .cm-s-obsidian
+  .cm-header:is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6) {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
 .cm-s-obsidian .cm-header.cm-header-1,
 .cm-s-obsidian .cm-header.cm-header-2,
 .cm-s-obsidian .cm-header.cm-header-3,
@@ -4073,7 +4080,7 @@ input[type="checkbox"],
 }
 
 input[type="checkbox"],
-.markdown-source-view.mod-cm6 .task-list-item-checkbox  {
+.markdown-source-view.mod-cm6 .task-list-item-checkbox {
   vertical-align: top;
 }
 
