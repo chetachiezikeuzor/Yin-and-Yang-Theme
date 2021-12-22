@@ -1963,6 +1963,8 @@ HEADINGS
 .cm-s-obsidian .cm-header.cm-header-6 {
   font-family: var(--header-font-ed);
   color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
   font-style: inherit;
   line-height: inherit;
 }
@@ -4070,11 +4072,6 @@ input[type="checkbox"],
   border: 1px solid var(--background-modifier-border);
   border-radius: 3px;
   box-shadow: inset 0px 0.5px 1px var(--background-zero);
-}
-
-input[type="checkbox"],
-.markdown-source-view.mod-cm6 .task-list-item-checkbox  {
-  vertical-align: top;
 }
 
 .is-mobile input[type="checkbox"],
