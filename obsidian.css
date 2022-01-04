@@ -5832,7 +5832,7 @@ DOCUMENT SEARCH
   width: 100%;
   position: absolute;
   height: unset;
-  bottom: unset;
+  bottom: unset !important;
   top: 0;
   padding: 6px 10px;
   border-top: 1px solid var(--background-modifier-border);
