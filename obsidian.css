@@ -3839,7 +3839,7 @@ CUSTOM/READABLE LINE WIDTH
   width: var(--line-width);
 }
 
-.markdown-source-view.mod-cm6 {
+.markdown-source-view.mod-cm6.is-readable-line-width {
   height: 100%;
   max-width: var(--max-width);
   width: var(--line-width) !important;
