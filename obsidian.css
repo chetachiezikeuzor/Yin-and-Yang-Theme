@@ -1297,7 +1297,7 @@ FOR EXPORT
 }
 
 @media print {
-  /* revise block quote colour and border in pdf exporting */
+  /* revise blockquote colour and border in pdf exporting */
   .print .markdown-preview-view blockquote {
     line-height: var(--editor-line-height);
     color: #000000; 
@@ -1312,7 +1312,7 @@ FOR EXPORT
     padding-bottom: 1rem;
   }
 
-  /* revise external links' colour in pdf exporting */
+  /* revise external links colour in pdf exporting */
   .print .markdown-preview-view .external-link {
     color: var(--text-normal);
   }
@@ -1587,7 +1587,7 @@ input[type="number"],
 input[type="search"],
 .splash-brand-name {
   min-height: 2.4em;
-  height: auto;
+  /*height: auto;*/ /* solve over enlarged prompt-input */
 }
 
 input[type="text"],
@@ -1601,10 +1601,12 @@ input[type="number"] {
   border-radius: 5px;
 }
 
-input.prompt-input,
+/* remove propt-input padding */
+/*input.prompt-input,
 input.prompt-input:hover {
   padding-left: 10px;
-}
+  box-shadow: unset;
+}*/
 
 /*Focus Input */
 
@@ -1666,9 +1668,10 @@ input.search-input:focus {
 .dropdown:focus,
 input:not(input[type="range"]):focus,
 .search-result-file-match:not(.search-info-more-matches):hover {
-  box-shadow: 0 0 0 0.1px rgba(0, 0, 0, 0.1),
-    0 0 0 3px hsla(var(--accent-hsl), 0.35);
+  /*box-shadow: 0 0 0 0.1px rgba(0, 0, 0, 0.1),
+    0 0 0 1px hsla(var(--accent-hsl), 0.35);*/ /* remove prompt-input shadow*/
   border: 1px solid var(--interactive-accent) !important;
+  border-radius: 10px; /* solve focus prompt-input border break */
 }
 
 .workspace-split.mod-root .search-result-file-match:hover,
@@ -4364,7 +4367,7 @@ EMBEDS
   padding-right: 0;
 }
 
-/* remove the annoying white rectangle in the embedded box  */
+/* remove strange white rectangle in embedded box  */
 /* .markdown-preview-view .markdown-embed-content {
   overflow: scroll;
 } */
@@ -4734,7 +4737,7 @@ WORKSPACE
   background-color: var(--background-secondary);
 }
 
-/* remove the right border of the left sidebar */
+/* remove right border of the left side bar */
 .workspace-ribbon{
   border-right: unset;
 }
@@ -4897,7 +4900,7 @@ body:not(.is-mobile) .workspace-leaf-resize-handle {
 
 /*WORKSPACE TABS*/
 
-/* remove the tab panel's bottom border */
+/* remove tab panel's bottom border */
 .workspace-tab-header-container {
   border-bottom: unset;
   padding: 1px 10px 1px 10px;
@@ -5833,7 +5836,7 @@ body:not(.is-mobile) .frontmatter-container .frontmatter-section-label {
 .dropdown {
   font-size: 0.875em;
   color: var(--text-normal);
-  line-height: 1; /* adjust the font size in the theme selection drop-down manual */
+  line-height: 1; /* adjust the font size in theme selection drop-down manual */
   padding: 0.6em 1.9em 0.6em 0.8em;
   max-width: 100%;
   box-sizing: border-box;
@@ -7062,7 +7065,7 @@ body:not(.hider-ribbon):not(.hider-frameless)
 .workspace-ribbon.mod-right,
 .workspace-ribbon.mod-left {
   padding: 0 0 0 5px;
-  /*position: relative;*/ /* align the left-sidebar bottom in full-screen mode */
+  /*position: relative;*/ /* aligned the left-side bar bottom in full screen mode */
   flex-basis: unset;
   flex-shrink: 0;
   flex-grow: 0;
@@ -9346,7 +9349,7 @@ OBSIDIAN-CALENDAR-PLUGIN
   font-size: var(--small-font-size);
   --color-background-day-empty: var(--background-secondary-alt);
   /*--color-background-day-active: var(--interactive-accent);*/
-  --color-background-day-active: var(--color-background-day); /* remove the highlight background of the active day in the calendar plugin */
+  --color-background-day-active: var(--color-background-day); /* remove hightlight background of the active day in calandar */
   --color-background-day-hover: var(--background-primary-alt);
   --color-dot: var(--background-modifier-accent) !important;
   --color-text-title: var(--text-normal);
