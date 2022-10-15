@@ -1601,7 +1601,7 @@ input[type="number"] {
   border-radius: 5px;
 }
 
-/* remove propt-input padding */
+/* remove prompt-input padding */
 /*input.prompt-input,
 input.prompt-input:hover {
   padding-left: 10px;
@@ -1668,8 +1668,8 @@ input.search-input:focus {
 .dropdown:focus,
 input:not(input[type="range"]):focus,
 .search-result-file-match:not(.search-info-more-matches):hover {
-  /*box-shadow: 0 0 0 0.1px rgba(0, 0, 0, 0.1),
-    0 0 0 1px hsla(var(--accent-hsl), 0.35);*/ /* remove prompt-input shadow*/
+  box-shadow: 0 0 0 0.1px rgba(0, 0, 0, 0.1),
+    0 0 0 2px hsla(var(--accent-hsl), 0.35);
   border: 1px solid var(--interactive-accent) !important;
   border-radius: 10px; /* solve focus prompt-input border break */
 }
@@ -3848,6 +3848,7 @@ SUGGESTIONS
   border: 1px solid var(--background-modifier-border);
   box-shadow: 0px 3px 15px
     hsla(var(--base-h), var(--base-s), calc(var(--base-l) - 50%), 0.15) !important;
+  padding: 1px; /* solve focus prompt-input border break */
 }
 
 .modal,
