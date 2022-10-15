@@ -1312,6 +1312,11 @@ FOR EXPORT
     padding-bottom: 1rem;
   }
 
+  /* unlimited embedded box height in pdf exporting */
+  .print .markdown-preview-view .markdown-embed-content > .markdown-preview-view {
+    max-height: none !important;
+  }
+
   /* revise external links colour in pdf exporting */
   .print .markdown-preview-view .external-link {
     color: var(--text-normal);
@@ -3843,8 +3848,13 @@ SUGGESTIONS
 
 .menu,
 .modal,
-.prompt,
 .suggestion-container {
+  border: 1px solid var(--background-modifier-border);
+  box-shadow: 0px 3px 15px
+    hsla(var(--base-h), var(--base-s), calc(var(--base-l) - 50%), 0.15) !important;
+}
+
+.prompt {
   border: 1px solid var(--background-modifier-border);
   box-shadow: 0px 3px 15px
     hsla(var(--base-h), var(--base-s), calc(var(--base-l) - 50%), 0.15) !important;
@@ -4373,8 +4383,18 @@ EMBEDS
   overflow: scroll;
 } */
 
-.markdown-preview-view .markdown-embed-content > .markdown-preview-view {
-  max-height: none !important;
+/* adjust embedded box max height */
+.markdown-preview-view .markdown-embed-content {
+  /*max-height: none !important;*/
+  max-height: 800px;
+}
+
+.markdown-embed-title {
+  font-weight: var(--bold-weight);
+  text-align: center; /* set title text alignment as center */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 0 var(--size-4-2) 0;
 }
 
 .markdown-embed-content .markdown-preview-section {
