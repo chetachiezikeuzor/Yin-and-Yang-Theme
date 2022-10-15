@@ -1296,13 +1296,83 @@ FOR EXPORT
   }
 }
 
+@media print {
+  /* revise block quote colour and border in pdf exporting */
+  .print .markdown-preview-view blockquote {
+    line-height: var(--editor-line-height);
+    color: #000000; 
+    font-family: var(--default-font);
+    border: none;
+    /* border-left: 0.3rem solid #737373; */
+    background-color: #FFFFFF00;
+    /* border-radius: 0px; */
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  /* revise external links' colour in pdf exporting */
+  .print .markdown-preview-view .external-link {
+    color: var(--text-normal);
+  }
+
+  /* revise heading 1~6 sizes in pdf exporting */
+  .print .markdown-preview-view h1 {
+    line-height: 1.2em;
+    font-weight: 750;
+    font-size: var(--s-header-1-pre);
+    color: var(--text-normal);
+  }
+
+  .print .markdown-preview-view h2 {
+    line-height: 1.2em;
+    font-weight: 700;
+    font-size: var(--s-header-2-pre);
+    color: var(--text-normal);
+  }
+
+  .print .markdown-preview-view h3 {
+    line-height: 1.2em;
+    font-weight: 650;
+    font-size: var(--s-header-3-pre);
+    color: var(--text-normal);
+  }
+
+  .print .markdown-preview-view h4 {
+    font-weight: 650;
+    font-size: var(--s-header-4-pre);
+    color: var(--text-normal);
+  }
+
+  .print .markdown-preview-view h5 {
+    line-height: 1.2em;
+    font-weight: 650;
+    font-size: var(--s-header-5-pre);
+    color: var(--text-normal);
+  }
+
+  .print .markdown-preview-view h6 {
+    font-weight: 600;
+    font-size: var(--s-header-6-pre);
+    color: var(--text-normal);
+  }
+}
+
 /*----------------------------------------------------------------
 TITLEBAR
 ----------------------------------------------------------------*/
 
-body:not(.hider-frameless):not(.is-fullscreen):not(.is-mobile) {
-  padding-top: var(--titlebar-height) !important;
+/* revise the note tab style to simple rounded rectangle */
+.workspace-split.mod-root .workspace-tab-header.is-active::before, .workspace-split.mod-root .workspace-tab-header.is-active::after {
+  box-shadow: unset;
+  /*box-shadow: inset 0 0 0 var(--tab-outline-width) var(--tab-outline-color), 0 0 0 calc(var(--tab-curve) * 4) var(--tab-background-active);*/
 }
+
+/* align the top-lines of the note and the sidebars */
+/*body:not(.hider-frameless):not(.is-fullscreen):not(.is-mobile) {
+  padding-top: var(--titlebar-height) !important;
+}*/
 
 .hider-frameless .titlebar,
 .hider-frameless .titlebar-inner {
@@ -2314,6 +2384,12 @@ a:hover,
 .external-link:hover,
 .cm-hmd-internal-link:hover {
   color: var(--text-accent);
+}
+
+/* remove the underline of external link */
+.external-link{
+  text-decoration-line: unset;
+  /*var(--link-external-decoration);*/
 }
 
 /* LINKS IN PREVIEW*/
@@ -4288,9 +4364,10 @@ EMBEDS
   padding-right: 0;
 }
 
-.markdown-preview-view .markdown-embed-content {
+/* remove the annoying white rectangle in the embedded box  */
+/* .markdown-preview-view .markdown-embed-content {
   overflow: scroll;
-}
+} */
 
 .markdown-preview-view .markdown-embed-content > .markdown-preview-view {
   max-height: none !important;
@@ -4657,6 +4734,16 @@ WORKSPACE
   background-color: var(--background-secondary);
 }
 
+/* remove the right border of the left sidebar */
+.workspace-ribbon{
+  border-right: unset;
+}
+
+/* remove bottom border of the left-up cornor */
+.workspace-ribbon.mod-left:before{
+  border-bottom: unset;
+}
+
 .workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed {
   border-right-color: var(--background-primary-alt);
 }
@@ -4810,8 +4897,9 @@ body:not(.is-mobile) .workspace-leaf-resize-handle {
 
 /*WORKSPACE TABS*/
 
+/* remove the tab panel's bottom border */
 .workspace-tab-header-container {
-  height: unset;
+  border-bottom: unset;
   padding: 1px 10px 1px 10px;
 }
 
@@ -5745,7 +5833,7 @@ body:not(.is-mobile) .frontmatter-container .frontmatter-section-label {
 .dropdown {
   font-size: 0.875em;
   color: var(--text-normal);
-  line-height: 1.4;
+  line-height: 1; /* adjust the font size in the theme selection drop-down manual */
   padding: 0.6em 1.9em 0.6em 0.8em;
   max-width: 100%;
   box-sizing: border-box;
@@ -6438,6 +6526,13 @@ body:not(.persistent-sb) .is-translucent .status-bar:hover {
 
 /*FILE EXPLORER ICONS*/
 
+/* remove relationship lines in file explorer */
+.nav-folder.mod-root .nav-folder > .nav-folder-children {
+  padding-left: var(--size-4-2);
+  margin: 0 0 0 0;
+  border-left: unset;
+}
+
 .fx-rel-lines .theme-light .nav-folder-children .nav-folder-children {
   border-left: 1px solid var(--background-tertiary);
 }
@@ -6967,7 +7062,7 @@ body:not(.hider-ribbon):not(.hider-frameless)
 .workspace-ribbon.mod-right,
 .workspace-ribbon.mod-left {
   padding: 0 0 0 5px;
-  position: relative;
+  /*position: relative;*/ /* align the left-sidebar bottom in full-screen mode */
   flex-basis: unset;
   flex-shrink: 0;
   flex-grow: 0;
@@ -9250,7 +9345,8 @@ OBSIDIAN-CALENDAR-PLUGIN
   padding: 5px 15px;
   font-size: var(--small-font-size);
   --color-background-day-empty: var(--background-secondary-alt);
-  --color-background-day-active: var(--interactive-accent);
+  /*--color-background-day-active: var(--interactive-accent);*/
+  --color-background-day-active: var(--color-background-day); /* remove the highlight background of the active day in the calendar plugin */
   --color-background-day-hover: var(--background-primary-alt);
   --color-dot: var(--background-modifier-accent) !important;
   --color-text-title: var(--text-normal);
