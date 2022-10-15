@@ -5409,16 +5409,17 @@ html
   display: flex;
 }
 
-body.is-mobile .view-header-icon {
+/* remove strange icon in view header bar */
+/*body.is-mobile .view-header-icon {
   margin-left: 5px;
   cursor: grab;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   line-height: 1;
   padding: 4px 6px;
   position: static;
   top: 0;
-}
+}*/
 
 body:not(.plugin-sliding-panes-rotate-header):not(.is-mobile)
   .view-header-icon {
@@ -5565,6 +5566,7 @@ div.view-header {
   background-color: var(--background-primary) !important;
 }
 
+/* remove view header background (consider) */
 .workspace-tabs div.view-header {
   background-color: var(--background-secondary) !important;
 }
@@ -8846,12 +8848,20 @@ MOBILE TWEAKS
   transition: unset !important;
   transform: unset !important;
   animation: unset !important;
+  box-shadow: 0px 3px 15px
+    hsla(var(--base-h), var(--base-s), calc(var(--base-l) - 50%), 0.15) !important;
+  padding: 2px; /* solve focus prompt-input border break */
 }
 
 .is-mobile .workspace {
   border-radius: 0 !important;
   transform: none !important;
   padding: 15px; /* adjust mobile workspace padding */
+}
+
+/* adjust embedded box content padding */
+.is-mobile .markdown-preview-sizer .markdown-embed-content{
+  padding: 15px;
 }
 
 .workspace-drawer-active-tab-container.is-fullscreen {
@@ -8891,7 +8901,7 @@ body:not(.no-svg-replace).is-mobile .CodeMirror-foldgutter-open:after {
 
 .is-mobile input.prompt-input,
 .is-mobile input.prompt-input:hover {
-  padding-left: 16px;
+  padding: 16px;
 }
 
 .is-mobile .nav-buttons-container {
