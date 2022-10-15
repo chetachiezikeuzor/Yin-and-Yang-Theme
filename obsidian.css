@@ -8851,6 +8851,7 @@ MOBILE TWEAKS
 .is-mobile .workspace {
   border-radius: 0 !important;
   transform: none !important;
+  padding: 15px; /* adjust mobile workspace padding */
 }
 
 .workspace-drawer-active-tab-container.is-fullscreen {
