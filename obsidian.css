@@ -2392,6 +2392,7 @@ a:hover,
 .external-link:hover,
 .cm-hmd-internal-link:hover {
   color: var(--text-accent);
+  text-decoration-line: unset; /* remove the underline of external link when hover */
 }
 
 /* remove the underline of external link */
@@ -2404,6 +2405,10 @@ a:hover,
 
 .markdown-preview-view .internal-link {
   text-decoration: none;
+}
+
+.markdown-preview-view .internal-link:hover {
+  text-decoration-line: unset; /* remove the underline of internal link when hover */
 }
 
 .markdown-preview-view .internal-link.is-unresolved {
@@ -4393,8 +4398,10 @@ EMBEDS
   font-weight: var(--bold-weight);
   text-align: center; /* set title text alignment as center */
   text-overflow: ellipsis;
-  white-space: nowrap;
-  padding: 0 0 var(--size-4-2) 0;
+  /*white-space: nowrap;*/
+  white-space: inherit; /* title wrapping */
+  margin-right: 10pt;
+  padding: 0 var(--size-4-2) var(--size-4-2) var(--size-4-2); /* title padding */
 }
 
 .markdown-embed-content .markdown-preview-section {
