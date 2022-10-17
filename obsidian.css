@@ -6120,7 +6120,7 @@ FILE EXPLORER
 
 .nav-folder-title-content,
 .nav-file-title-content {
-  line-height: 1.2em;
+  line-height: 1.5em; /* enlarge line height in file explorer */
 }
 
 .nav-folder,
