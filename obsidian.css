@@ -4381,6 +4381,10 @@ EMBEDS
   margin: 1rem 0 1rem 0;
   padding-left: 0;
   padding-right: 0;
+  /*restore embed rounded box in v.1.1.8*/
+  border: 1px solid var(--background-modifier-border);
+  background-color: var(--background-primary-alt);
+  border-radius: 6px;
 }
 
 /* remove strange white rectangle in embedded box  */
