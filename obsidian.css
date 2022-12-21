@@ -4398,6 +4398,11 @@ EMBEDS
   max-height: 800px;
 }
 
+.embed-title {
+  display: block; /* set title text alignment as center */
+  font-size: small;
+}
+
 .markdown-embed-title {
   font-weight: var(--bold-weight);
   text-align: center; /* set title text alignment as center */
