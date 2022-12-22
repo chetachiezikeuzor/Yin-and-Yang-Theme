@@ -4395,7 +4395,7 @@ EMBEDS
 /* adjust embedded box max height */
 .markdown-preview-view .markdown-embed-content {
   /*max-height: none !important;*/
-  max-height: 800px;
+  max-height: 600px;
 }
 
 .embed-title {
