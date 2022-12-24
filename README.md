@@ -1,3 +1,9 @@
+> This repository is forked from [chetachiezikeuzor/Yin-and-Yang-Theme](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme), a widely loved Obsidian theme with minimal and tasteful appearance. However, it seems that the original author [chetachiezikeuzor](https://github.com/chetachiezikeuzor) is no longer maintaining it.
+> 
+> This fork aims at adapting it to Obsidian 1.x. A [pull-request](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/pull/102) has been created for [chetachiezikeuzor](https://github.com/chetachiezikeuzor) to review.
+> 
+> If you'd like to try it in advance, you can open your Obsidian vault folder and replace all contents in `.obsdian/themes/Yin and Yang/theme.css` with the contents in [obsidian.css](https://github.com/TOB-KNPOB/Yin-and-Yang-Theme/blob/main/obsidian.css) in this repository.
+
 # Yin and Yang
 
 ![](https://raw.githubusercontent.com/chetachiezikeuzor/Yin-and-Yang-Theme/main/assets/screenshot.png)
