@@ -4006,6 +4006,16 @@ body:not(.is-mobile) .markdown-embed .markdown-preview-view {
 }
 
 /* ----------------------------------------------------------------
+WINDOWS & LINUX TITLE BOTTONS
+----------------------------------------------------------------*/
+
+element.style {
+}
+.mod-linux .titlebar-button, .mod-windows .titlebar-button {
+    padding: 5pt 5pt;
+}
+
+/* ----------------------------------------------------------------
 LISTS  
 ----------------------------------------------------------------*/
 
