@@ -4792,6 +4792,7 @@ WORKSPACE
 /* remove bottom border of the left-up cornor */
 .workspace-ribbon.mod-left:before{
   border-bottom: unset;
+  height: calc(var(--header-height) - var(--tab-outline-width) + 1pt);
 }
 
 .workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed {
@@ -4988,9 +4989,10 @@ body:not(.is-mobile) .workspace-leaf-resize-handle {
   background: transparent;
 }
 
-.workspace-tab-header-container {
+/* unified sidebar header background */
+/*.workspace-tab-header-container {
   background-color: transparent;
-}
+}*/
 
 /*WORKSPACE TAB ICON*/
 
@@ -5078,7 +5080,7 @@ body:not(.plugin-sliding-panes-rotate-header)
 body:not(.plugin-sliding-panes-rotate-header)
   .workspace-leaf-content[data-type="markdown"]
   .view-header {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.06);
+  /*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.06);*/ /*cancel workspace-leaf-content header shadow*/
   position: relative;
 }
 
@@ -5592,10 +5594,10 @@ div.view-header {
   background-color: var(--background-primary) !important;
 }
 
-/* remove view header background (consider) */
-.workspace-tabs div.view-header {
+/* remove view header background */
+/*.workspace-tabs div.view-header {
   background-color: var(--background-secondary) !important;
-}
+}*/
 
 .focus-mode div.view-header {
   border-top: 1px solid var(--background-primary) !important;
