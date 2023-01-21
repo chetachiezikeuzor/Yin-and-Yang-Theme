@@ -4408,6 +4408,11 @@ EMBEDS
   max-height: 600px;
 }
 
+/* fix embedded box content overflow in page preview */
+.inline-embed .markdown-embed-content {
+  height: -webkit-fill-available;
+}
+
 .embed-title {
   display: block; /* set title text alignment as center */
   font-size: small;
