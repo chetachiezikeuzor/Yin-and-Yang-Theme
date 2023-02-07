@@ -1296,13 +1296,88 @@ FOR EXPORT
   }
 }
 
+@media print {
+  /* revise blockquote colour and border in pdf exporting */
+  .print .markdown-preview-view blockquote {
+    line-height: var(--editor-line-height);
+    color: #000000; 
+    font-family: var(--default-font);
+    border: none;
+    /* border-left: 0.3rem solid #737373; */
+    background-color: #FFFFFF00;
+    /* border-radius: 0px; */
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  /* unlimited embedded box height in pdf exporting */
+  .print .markdown-preview-view .markdown-embed-content > .markdown-preview-view {
+    max-height: none !important;
+  }
+
+  /* revise external links colour in pdf exporting */
+  .print .markdown-preview-view .external-link {
+    color: var(--text-normal);
+  }
+
+  /* revise heading 1~6 sizes in pdf exporting */
+  .print .markdown-preview-view h1 {
+    line-height: 1.2em;
+    font-weight: 750;
+    font-size: var(--s-header-1-pre);
+    color: var(--text-normal);
+  }
+
+  .print .markdown-preview-view h2 {
+    line-height: 1.2em;
+    font-weight: 700;
+    font-size: var(--s-header-2-pre);
+    color: var(--text-normal);
+  }
+
+  .print .markdown-preview-view h3 {
+    line-height: 1.2em;
+    font-weight: 650;
+    font-size: var(--s-header-3-pre);
+    color: var(--text-normal);
+  }
+
+  .print .markdown-preview-view h4 {
+    font-weight: 650;
+    font-size: var(--s-header-4-pre);
+    color: var(--text-normal);
+  }
+
+  .print .markdown-preview-view h5 {
+    line-height: 1.2em;
+    font-weight: 650;
+    font-size: var(--s-header-5-pre);
+    color: var(--text-normal);
+  }
+
+  .print .markdown-preview-view h6 {
+    font-weight: 600;
+    font-size: var(--s-header-6-pre);
+    color: var(--text-normal);
+  }
+}
+
 /*----------------------------------------------------------------
 TITLEBAR
 ----------------------------------------------------------------*/
 
-body:not(.hider-frameless):not(.is-fullscreen):not(.is-mobile) {
-  padding-top: var(--titlebar-height) !important;
+/* revise the note tab style to simple rounded rectangle */
+.workspace-split.mod-root .workspace-tab-header.is-active::before, .workspace-split.mod-root .workspace-tab-header.is-active::after {
+  box-shadow: unset;
+  /*box-shadow: inset 0 0 0 var(--tab-outline-width) var(--tab-outline-color), 0 0 0 calc(var(--tab-curve) * 4) var(--tab-background-active);*/
 }
+
+/* align the top-lines of the note and the sidebars */
+/*body:not(.hider-frameless):not(.is-fullscreen):not(.is-mobile) {
+  padding-top: var(--titlebar-height) !important;
+}*/
 
 .hider-frameless .titlebar,
 .hider-frameless .titlebar-inner {
@@ -1517,7 +1592,7 @@ input[type="number"],
 input[type="search"],
 .splash-brand-name {
   min-height: 2.4em;
-  height: auto;
+  /*height: auto;*/ /* solve over enlarged prompt-input */
 }
 
 input[type="text"],
@@ -1531,10 +1606,12 @@ input[type="number"] {
   border-radius: 5px;
 }
 
-input.prompt-input,
+/* remove prompt-input padding */
+/*input.prompt-input,
 input.prompt-input:hover {
   padding-left: 10px;
-}
+  box-shadow: unset;
+}*/
 
 /*Focus Input */
 
@@ -1597,8 +1674,9 @@ input.search-input:focus {
 input:not(input[type="range"]):focus,
 .search-result-file-match:not(.search-info-more-matches):hover {
   box-shadow: 0 0 0 0.1px rgba(0, 0, 0, 0.1),
-    0 0 0 3px hsla(var(--accent-hsl), 0.35);
+    0 0 0 2px hsla(var(--accent-hsl), 0.35);
   border: 1px solid var(--interactive-accent) !important;
+  border-radius: 10px; /* solve focus prompt-input border break */
 }
 
 .workspace-split.mod-root .search-result-file-match:hover,
@@ -2314,12 +2392,23 @@ a:hover,
 .external-link:hover,
 .cm-hmd-internal-link:hover {
   color: var(--text-accent);
+  text-decoration-line: unset; /* remove the underline of external link when hover */
+}
+
+/* remove the underline of external link */
+.external-link{
+  text-decoration-line: unset;
+  /*var(--link-external-decoration);*/
 }
 
 /* LINKS IN PREVIEW*/
 
 .markdown-preview-view .internal-link {
   text-decoration: none;
+}
+
+.markdown-preview-view .internal-link:hover {
+  text-decoration-line: unset; /* remove the underline of internal link when hover */
 }
 
 .markdown-preview-view .internal-link.is-unresolved {
@@ -3540,7 +3629,7 @@ padding: 1.2em 1em 1.2em 1em;*/
   flex-grow: 0;
   width: auto;
   margin: 0;
-  padding: 10px 10px;
+  /*padding: 10px 10px;*/ /* aligned search icon in "search installed plugins" */
 }
 
 .modal.mod-settings
@@ -3764,11 +3853,17 @@ SUGGESTIONS
 
 .menu,
 .modal,
-.prompt,
 .suggestion-container {
   border: 1px solid var(--background-modifier-border);
   box-shadow: 0px 3px 15px
     hsla(var(--base-h), var(--base-s), calc(var(--base-l) - 50%), 0.15) !important;
+}
+
+.prompt {
+  border: 1px solid var(--background-modifier-border);
+  box-shadow: 0px 3px 15px
+    hsla(var(--base-h), var(--base-s), calc(var(--base-l) - 50%), 0.15) !important;
+  padding: 1px; /* solve focus prompt-input border break */
 }
 
 .modal,
@@ -3908,6 +4003,16 @@ body:not(.is-mobile) .markdown-embed .markdown-preview-view {
 .workspace-tabs .markdown-preview-view {
   padding-left: 2px;
   padding-right: 2px;
+}
+
+/* ----------------------------------------------------------------
+WINDOWS & LINUX TITLE BOTTONS
+----------------------------------------------------------------*/
+
+element.style {
+}
+.mod-linux .titlebar-button, .mod-windows .titlebar-button {
+    padding: 5pt 5pt;
 }
 
 /* ----------------------------------------------------------------
@@ -4088,6 +4193,11 @@ input[type="checkbox"],
 .is-mobile .markdown-preview-view .task-list-item-checkbox {
   margin-left: 3px;
   margin-right: 5px !important;
+}
+
+/* remove duplicated checkbox checked symbol */
+input[type=checkbox]:checked:after{
+  content: unset;
 }
 
 .is-flashing input[type="checkbox"]:checked:before,
@@ -4286,14 +4396,41 @@ EMBEDS
   margin: 1rem 0 1rem 0;
   padding-left: 0;
   padding-right: 0;
+  /*restore embed rounded box in v.1.1.8*/
+  border: 1px solid var(--background-modifier-border);
+  background-color: var(--background-primary-alt);
+  border-radius: 6px;
 }
 
-.markdown-preview-view .markdown-embed-content {
+/* remove strange white rectangle in embedded box  */
+/* .markdown-preview-view .markdown-embed-content {
   overflow: scroll;
+} */
+
+/* adjust embedded box max height */
+.markdown-preview-view .markdown-embed-content {
+  /*max-height: none !important;*/
+  max-height: 600px;
 }
 
-.markdown-preview-view .markdown-embed-content > .markdown-preview-view {
-  max-height: none !important;
+/* fix embedded box content overflow in page preview */
+.inline-embed .markdown-embed-content {
+  height: 90%;
+}
+
+.embed-title {
+  display: block; /* set title text alignment as center */
+  font-size: small;
+}
+
+.markdown-embed-title {
+  font-weight: var(--bold-weight);
+  text-align: center; /* set title text alignment as center */
+  text-overflow: ellipsis;
+  /*white-space: nowrap;*/
+  white-space: inherit; /* title wrapping */
+  margin-right: 10pt;
+  padding: 0 var(--size-4-2) var(--size-4-2) var(--size-4-2); /* title padding */
 }
 
 .markdown-embed-content .markdown-preview-section {
@@ -4455,6 +4592,10 @@ img[alt*="centre"] {
   margin: 0;
 }
 
+.markdown-preview-view img:hover{
+  max-height: 50%;
+}
+
 /*----------------------------------------------------------------
 IMAGE ZOOM */
 
@@ -4575,6 +4716,12 @@ div.popover.hover-popover .markdown-preview-view {
   height: 18rem;
 }
 
+/* fix popover image preview sizing issue */
+.popover.hover-popover img:not(img.emoji):not([width]), .markdown-preview-view audio, .markdown-preview-view video {
+  width: 24rem;
+  margin-bottom: -6pt;
+}
+
 /*----------------------------------------------------------------
 SCROLLBARS
 ----------------------------------------------------------------*/
@@ -4655,6 +4802,17 @@ WORKSPACE
 
 .workspace-split.mod-root {
   background-color: var(--background-secondary);
+}
+
+/* remove right border of the left side bar */
+.workspace-ribbon{
+  border-right: unset;
+}
+
+/* remove bottom border of the left-up cornor */
+.workspace-ribbon.mod-left:before{
+  border-bottom: unset;
+  height: calc(var(--header-height) - var(--tab-outline-width) + 1pt);
 }
 
 .workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed {
@@ -4810,8 +4968,9 @@ body:not(.is-mobile) .workspace-leaf-resize-handle {
 
 /*WORKSPACE TABS*/
 
+/* remove tab panel's bottom border */
 .workspace-tab-header-container {
-  height: unset;
+  border-bottom: unset;
   padding: 1px 10px 1px 10px;
 }
 
@@ -4850,9 +5009,10 @@ body:not(.is-mobile) .workspace-leaf-resize-handle {
   background: transparent;
 }
 
-.workspace-tab-header-container {
+/* unified sidebar header background */
+/*.workspace-tab-header-container {
   background-color: transparent;
-}
+}*/
 
 /*WORKSPACE TAB ICON*/
 
@@ -4940,7 +5100,7 @@ body:not(.plugin-sliding-panes-rotate-header)
 body:not(.plugin-sliding-panes-rotate-header)
   .workspace-leaf-content[data-type="markdown"]
   .view-header {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.06);
+  /*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.06);*/ /*cancel workspace-leaf-content header shadow*/
   position: relative;
 }
 
@@ -5297,16 +5457,17 @@ html
   display: flex;
 }
 
-body.is-mobile .view-header-icon {
+/* remove strange icon in view header bar */
+/*body.is-mobile .view-header-icon {
   margin-left: 5px;
   cursor: grab;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   line-height: 1;
   padding: 4px 6px;
   position: static;
   top: 0;
-}
+}*/
 
 body:not(.plugin-sliding-panes-rotate-header):not(.is-mobile)
   .view-header-icon {
@@ -5453,9 +5614,10 @@ div.view-header {
   background-color: var(--background-primary) !important;
 }
 
-.workspace-tabs div.view-header {
+/* remove view header background */
+/*.workspace-tabs div.view-header {
   background-color: var(--background-secondary) !important;
-}
+}*/
 
 .focus-mode div.view-header {
   border-top: 1px solid var(--background-primary) !important;
@@ -5745,7 +5907,7 @@ body:not(.is-mobile) .frontmatter-container .frontmatter-section-label {
 .dropdown {
   font-size: 0.875em;
   color: var(--text-normal);
-  line-height: 1.4;
+  line-height: 1; /* adjust the font size in theme selection drop-down manual */
   padding: 0.6em 1.9em 0.6em 0.8em;
   max-width: 100%;
   box-sizing: border-box;
@@ -5791,9 +5953,16 @@ body:not(.is-mobile) .frontmatter-container .frontmatter-section-label {
   color: var(--text-normal);
 }
 
-.search-input-clear-button:before {
+/* remove duplicate search input clear button */
+/*.search-input-clear-button:before {
   font-size: var(--large-font-size);
   display: block;
+}*/
+
+/* align search input clear button */
+.search-input-clear-button::after {
+  margin-top: -2px;
+  margin-right: 2pt;
 }
 
 .search-input {
@@ -5992,7 +6161,7 @@ FILE EXPLORER
 
 .nav-folder-title-content,
 .nav-file-title-content {
-  line-height: 1.2em;
+  line-height: 1.5em; /* enlarge line height in file explorer */
 }
 
 .nav-folder,
@@ -6198,8 +6367,14 @@ FILE EXPLORER
   border-radius: 5px;
 }
 
+/* remove relationship lines in outline pane */
 .outline .tree-item-children {
-  margin-left: 22px;
+  /* padding-left: var(--size-4-2); */
+  padding-left: unset;
+  margin-left: var(--size-4-3);
+  margin-bottom: 1px;
+  /* border-left: var(--nav-indentation-guide-width) solid var(--nav-indentation-guide-color); */
+  border-left: unset;
 }
 
 /*tag pane*/
@@ -6437,6 +6612,13 @@ body:not(.persistent-sb) .is-translucent .status-bar:hover {
 }
 
 /*FILE EXPLORER ICONS*/
+
+/* remove relationship lines in file explorer */
+.nav-folder.mod-root .nav-folder > .nav-folder-children {
+  padding-left: var(--size-4-2);
+  margin: 0 0 0 0;
+  border-left: unset;
+}
 
 .fx-rel-lines .theme-light .nav-folder-children .nav-folder-children {
   border-left: 1px solid var(--background-tertiary);
@@ -6698,7 +6880,8 @@ body:not(.no-svg-replace) .document-search-close-button:before {
   -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="red" d="M9.172 16.242L12 13.414l2.828 2.828l1.414-1.414L13.414 12l2.828-2.828l-1.414-1.414L12 10.586L9.172 7.758L7.758 9.172L10.586 12l-2.828 2.828z"/><path fill="red" d="M12 22c5.514 0 10-4.486 10-10S17.514 2 12 2S2 6.486 2 12s4.486 10 10 10zm0-18c4.411 0 8 3.589 8 8s-3.589 8-8 8s-8-3.589-8-8s3.589-8 8-8z"></path></svg>');
 }
 
-body:not(.no-svg-replace) .search-input-clear-button:before {
+/* remove duplicate search input clear button */
+/*body:not(.no-svg-replace) .search-input-clear-button:before {
   width: 17px;
   height: 17px;
   content: " ";
@@ -6706,7 +6889,7 @@ body:not(.no-svg-replace) .search-input-clear-button:before {
   background-color: currentColor;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="red" d="M9.172 16.242L12 13.414l2.828 2.828l1.414-1.414L13.414 12l2.828-2.828l-1.414-1.414L12 10.586L9.172 7.758L7.758 9.172L10.586 12l-2.828 2.828z"/><path fill="red" d="M12 22c5.514 0 10-4.486 10-10S17.514 2 12 2S2 6.486 2 12s4.486 10 10 10zm0-18c4.411 0 8 3.589 8 8s-3.589 8-8 8s-8-3.589-8-8s3.589-8 8-8z"></path></svg>');
-}
+}*/
 
 /*edit icons*/
 
@@ -6967,7 +7150,7 @@ body:not(.hider-ribbon):not(.hider-frameless)
 .workspace-ribbon.mod-right,
 .workspace-ribbon.mod-left {
   padding: 0 0 0 5px;
-  position: relative;
+  /*position: relative;*/ /* aligned the left-side bar bottom in full screen mode */
   flex-basis: unset;
   flex-shrink: 0;
   flex-grow: 0;
@@ -8727,11 +8910,20 @@ MOBILE TWEAKS
   transition: unset !important;
   transform: unset !important;
   animation: unset !important;
+  box-shadow: 0px 3px 15px
+    hsla(var(--base-h), var(--base-s), calc(var(--base-l) - 50%), 0.15) !important;
+  padding: 2px; /* solve focus prompt-input border break */
 }
 
 .is-mobile .workspace {
   border-radius: 0 !important;
   transform: none !important;
+  padding: 15px; /* adjust mobile workspace padding */
+}
+
+/* adjust embedded box content padding */
+.is-mobile .markdown-preview-sizer .markdown-embed-content{
+  padding: 15px;
 }
 
 .workspace-drawer-active-tab-container.is-fullscreen {
@@ -8771,7 +8963,7 @@ body:not(.no-svg-replace).is-mobile .CodeMirror-foldgutter-open:after {
 
 .is-mobile input.prompt-input,
 .is-mobile input.prompt-input:hover {
-  padding-left: 16px;
+  padding: 16px;
 }
 
 .is-mobile .nav-buttons-container {
@@ -9250,7 +9442,8 @@ OBSIDIAN-CALENDAR-PLUGIN
   padding: 5px 15px;
   font-size: var(--small-font-size);
   --color-background-day-empty: var(--background-secondary-alt);
-  --color-background-day-active: var(--interactive-accent);
+  /*--color-background-day-active: var(--interactive-accent);*/
+  --color-background-day-active: var(--color-background-day); /* remove hightlight background of the active day in calandar */
   --color-background-day-hover: var(--background-primary-alt);
   --color-dot: var(--background-modifier-accent) !important;
   --color-text-title: var(--text-normal);
