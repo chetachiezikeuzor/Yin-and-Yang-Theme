@@ -4195,6 +4195,11 @@ input[type="checkbox"],
   margin-right: 5px !important;
 }
 
+/* remove duplicated checkbox checked symbol */
+input[type=checkbox]:checked:after{
+  content: unset;
+}
+
 .is-flashing input[type="checkbox"]:checked:before,
 input[type="checkbox"]:checked:before {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100"><path fill="white" stroke-width="2" stroke="white" d="M41.667 64.942l-13.721 -13.721l-5.892 5.892L41.667 76.725l40.446 -40.446l-5.892 -5.892z"></path></svg>');
