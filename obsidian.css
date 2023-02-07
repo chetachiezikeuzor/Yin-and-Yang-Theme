@@ -4410,7 +4410,7 @@ EMBEDS
 
 /* fix embedded box content overflow in page preview */
 .inline-embed .markdown-embed-content {
-  height: -webkit-fill-available;
+  height: 90%;
 }
 
 .embed-title {
@@ -4587,6 +4587,10 @@ img[alt*="centre"] {
   margin: 0;
 }
 
+.markdown-preview-view img:hover{
+  max-height: 50%;
+}
+
 /*----------------------------------------------------------------
 IMAGE ZOOM */
 
@@ -4705,6 +4709,12 @@ div.popover.hover-popover .markdown-preview-view {
 
 .popover.hover-popover .markdown-embed {
   height: 18rem;
+}
+
+/* fix popover image preview sizing issue */
+.popover.hover-popover img:not(img.emoji):not([width]), .markdown-preview-view audio, .markdown-preview-view video {
+  width: 24rem;
+  margin-bottom: -6pt;
 }
 
 /*----------------------------------------------------------------
