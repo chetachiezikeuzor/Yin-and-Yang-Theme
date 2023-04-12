@@ -1,16 +1,3 @@
-# Purpose
-This repository is a fork of https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme. I love this theme, but it is unfortunately outdated and no longer appears in Obsidian's theme explorer. I have integrated the theme supplied by https://github.com/TOB-KNPOB/Yin-and-Yang-Theme to match the structure of https://github.com/colineckert/obsidian-things so that it can be installed again. 
-
-# How to install
-Follow these steps:
-1. Navigate to your vault's root directory. 
-2. Head to `.obsidian/themes`
-3. If it does not already exist, create a new directory named `Yin and Yang`
-4. Copy the files [`theme.css`](https://raw.githubusercontent.com/DevJake/Yin-and-Yang-Theme/main/theme.css) and [`manifest.json`](https://raw.githubusercontent.com/DevJake/Yin-and-Yang-Theme/main/manifest.json) into here. 
-5. Open Obsidian and locate the theme named `Yin and Yang` in the dropdown -- you might need to reopen Obsidian if it does not show. 
-
-
-
 # Yin and Yang
 
 ![](https://raw.githubusercontent.com/chetachiezikeuzor/Yin-and-Yang-Theme/main/assets/screenshot.png)
